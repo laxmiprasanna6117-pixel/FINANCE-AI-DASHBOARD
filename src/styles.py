@@ -1,6 +1,6 @@
 """
 UI Themes and CSS Styling for the Finance Data Analysis & AI Automation Dashboard.
-Provides a modern dark FinTech aesthetic, responsive metric cards, and badge accents.
+Provides a modern dark FinTech aesthetic, responsive metric cards, user profile badges, and accents.
 """
 
 CUSTOM_CSS = """
@@ -10,6 +10,51 @@ CUSTOM_CSS = """
     background-color: #0F172A;
     color: #F8FAFC;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* User Profile Badge */
+.profile-badge {
+    background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+    border: 1px solid #3B82F6;
+    border-radius: 12px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    margin-bottom: 14px;
+}
+
+.profile-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.profile-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.profile-role {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    margin: 0;
+}
+
+.profile-org {
+    font-size: 0.75rem;
+    color: #38BDF8;
+    margin-top: 2px;
 }
 
 /* Metric Card Containers */
@@ -91,15 +136,15 @@ CUSTOM_CSS = """
     background: linear-gradient(90deg, #1E1B4B 0%, #1E293B 50%, #0F172A 100%);
     border: 1px solid #4338CA;
     border-radius: 14px;
-    padding: 24px 28px;
-    margin-bottom: 24px;
+    padding: 22px 28px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header-title {
-    font-size: 2.0rem;
+    font-size: 1.95rem;
     font-weight: 800;
     color: #FFFFFF;
     margin: 0;
@@ -107,21 +152,9 @@ CUSTOM_CSS = """
 }
 
 .header-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: #CBD5E1;
-    margin-top: 6px;
-}
-
-/* Section Dividers */
-.section-header {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #F1F5F9;
-    margin-top: 20px;
-    margin-bottom: 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin-top: 5px;
 }
 
 /* AI Assistant Chat Bubble */
@@ -135,18 +168,18 @@ CUSTOM_CSS = """
     line-height: 1.6;
 }
 
-/* Risk meter tags */
-.risk-low {
-    color: #10B981;
-    font-weight: bold;
-}
-.risk-med {
-    color: #F59E0B;
-    font-weight: bold;
-}
-.risk-high {
-    color: #EF4444;
-    font-weight: bold;
+/* Dataset active banner */
+.dataset-banner {
+    background: linear-gradient(90deg, rgba(59, 130, 246, 0.15) 0%, rgba(16, 185, 129, 0.1) 100%);
+    border: 1px solid #3B82F6;
+    border-radius: 10px;
+    padding: 12px 18px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #E2E8F0;
+    font-size: 0.9rem;
 }
 </style>
 """
@@ -162,5 +195,23 @@ def metric_card(title, value, subtext="", badge="", badge_type="pos"):
         <div class="fin-title">{title}</div>
         <div class="fin-value">{value}</div>
         <div class="fin-sub">{badge_html} <span>{subtext}</span></div>
+    </div>
+    """
+
+def user_profile_card(user):
+    name = user.get("name", "User")
+    initials = "".join([part[0] for part in name.split()[:2]]).upper() or "U"
+    role = user.get("role", "Financial Analyst")
+    org = user.get("organization", "Enterprise Organization")
+    color = user.get("avatar_color", "#3B82F6")
+    
+    return f"""
+    <div class="profile-badge">
+        <div class="profile-avatar" style="background-color: {color};">{initials}</div>
+        <div style="flex-grow: 1;">
+            <div class="profile-name">{name}</div>
+            <div class="profile-role">{role}</div>
+            <div class="profile-org">🏢 {org}</div>
+        </div>
     </div>
     """

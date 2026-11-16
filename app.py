@@ -1,6 +1,7 @@
 """
 Finance Data Analysis & AI Automation Dashboard
-Enterprise-grade Financial Analytics, Autonomous Auditing, Portfolio Risk Engine & AI Advisor.
+Enterprise-grade Financial Analytics, Autonomous Auditing, Portfolio Risk Engine, AI Advisor,
+User Account Profiles, and Universal Multi-Format CSV Ingestion.
 """
 
 import os
@@ -15,6 +16,14 @@ if current_dir not in sys.path:
     sys.path.append(current_dir)
 
 from src.data_generator import generate_all, DATA_DIR
+from src.data_normalizer import load_and_normalize_csv
+from src.auth import (
+    load_users,
+    register_user,
+    authenticate_user,
+    add_user_uploaded_file,
+    get_user_workspace_dir
+)
 from src.analytics import calculate_kpis, detect_anomalies, calculate_portfolio_metrics, run_monte_carlo_forecast
 from src.ai_engine import FinancialAIEngine
 from src.visualizations import (
@@ -26,7 +35,7 @@ from src.visualizations import (
     make_monte_carlo_fan_chart,
     make_audit_scatter_chart
 )
-from src.styles import CUSTOM_CSS, metric_card
+from src.styles import CUSTOM_CSS, metric_card, user_profile_card
 
 # --- Page Setup ---
 st.set_page_config(
@@ -38,9 +47,28 @@ st.set_page_config(
 
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
+# --- Initialize Session State for User Auth & Uploaded Datasets ---
+if "current_user" not in st.session_state:
+    # Default to initial enterprise CFO account
+    users = load_users()
+    default_email = "prasad@fda.finance"
+    st.session_state["current_user"] = users.get(default_email, list(users.values())[0])
+
+if "active_dataset_name" not in st.session_state:
+    st.session_state["active_dataset_name"] = "Default Enterprise Multi-Year Financials"
+
+if "custom_fin_df" not in st.session_state:
+    st.session_state["custom_fin_df"] = None
+
+if "custom_tx_df" not in st.session_state:
+    st.session_state["custom_tx_df"] = None
+
+if "mapping_info" not in st.session_state:
+    st.session_state["mapping_info"] = None
+
 # --- Data Loading with Caching ---
 @st.cache_data(show_spinner=False)
-def load_datasets():
+def load_default_datasets():
     fin_path = os.path.join(DATA_DIR, "company_financials.csv")
     tx_path = os.path.join(DATA_DIR, "transactions_ledger.csv")
     port_path = os.path.join(DATA_DIR, "portfolio_assets.csv")
@@ -53,49 +81,140 @@ def load_datasets():
     df_port = pd.read_csv(port_path)
     return df_fin, df_tx, df_port
 
-df_fin_raw, df_tx_raw, df_port_raw = load_datasets()
+df_fin_default, df_tx_default, df_port_default = load_default_datasets()
 
-# --- Sidebar Filters & Controls ---
+# Decide which dataset is active
+if st.session_state["custom_fin_df"] is not None:
+    df_fin_active = st.session_state["custom_fin_df"].copy()
+    df_tx_active = st.session_state["custom_tx_df"].copy() if st.session_state["custom_tx_df"] is not None else df_tx_default.copy()
+else:
+    df_fin_active = df_fin_default.copy()
+    df_tx_active = df_tx_default.copy()
+
+df_port_active = df_port_default.copy()
+
+# ==============================================================================
+# SIDEBAR: USER ACCOUNT & CONTROLS
+# ==============================================================================
 with st.sidebar:
     st.image("https://img.icons8.com/fluency/96/bullish.png", width=64)
     st.markdown("### 🏢 **Enterprise Finance Hub**")
-    st.caption("AI-Powered Financial Intelligence & Automation")
+    
+    # 1. User Profile Card
+    current_user = st.session_state["current_user"]
+    st.markdown(user_profile_card(current_user), unsafe_allow_html=True)
+    
+    # User Account Actions: Switch / Register
+    with st.expander("👤 Account Profile & Register", expanded=False):
+        auth_tab1, auth_tab2 = st.tabs(["Switch Profile", "Register New User"])
+        
+        with auth_tab1:
+            all_users = load_users()
+            user_options = {f"{u['name']} ({u['role']})": u['email'] for u in all_users.values()}
+            selected_user_label = st.selectbox(
+                "Select User Account",
+                options=list(user_options.keys()),
+                index=0
+            )
+            if st.button("Switch Account", use_container_width=True):
+                target_email = user_options[selected_user_label]
+                st.session_state["current_user"] = all_users[target_email]
+                st.success(f"Switched to {all_users[target_email]['name']}")
+                st.rerun()
+                
+        with auth_tab2:
+            st.markdown("##### Create New User Account")
+            new_name = st.text_input("Full Name", placeholder="e.g. Sarah Connor")
+            new_email = st.text_input("Corporate Email", placeholder="e.g. sconnor@fda.finance")
+            new_org = st.text_input("Organization", placeholder="e.g. FDA BioTech Holdings")
+            new_role = st.selectbox(
+                "Corporate Role",
+                ["Chief Financial Officer (CFO)", "Senior Financial Analyst", "VP of Finance", "Treasury & Risk Director", "Compliance & Audit Lead"]
+            )
+            new_pass = st.text_input("Password / PIN", type="password", placeholder="At least 4 chars")
+            
+            if st.button("Register & Log In", use_container_width=True):
+                success, result = register_user(new_name, new_email, new_pass, new_org, new_role)
+                if success:
+                    st.session_state["current_user"] = result
+                    st.success(f"Welcome, {result['name']}! Profile created and logged in.")
+                    st.rerun()
+                else:
+                    st.error(result)
+
     st.markdown("---")
     
+    # 2. Universal CSV Ingestion
+    st.markdown("#### 📥 **Upload Any Financial CSV**")
+    st.caption("Upload any CSV (Sales, Ledger, P&L, Expenses, or Bank statement). Our universal normalizer will auto-map columns.")
+    
+    uploaded_file = st.file_uploader(
+        "Upload CSV File",
+        type=["csv"],
+        help="Upload custom corporate financials CSV to override default dataset"
+    )
+    
+    if uploaded_file is not None:
+        # Check if already processed to prevent rerun loops
+        file_key = f"processed_{uploaded_file.name}_{uploaded_file.size}"
+        if st.session_state.get("last_uploaded_key") != file_key:
+            with st.spinner("Intelligently normalizing & mapping CSV schema..."):
+                norm_fin, norm_tx, mapping_info, success, msg = load_and_normalize_csv(uploaded_file)
+                if success and norm_fin is not None:
+                    st.session_state["custom_fin_df"] = norm_fin
+                    st.session_state["custom_tx_df"] = norm_tx
+                    st.session_state["mapping_info"] = mapping_info
+                    st.session_state["active_dataset_name"] = uploaded_file.name
+                    st.session_state["last_uploaded_key"] = file_key
+                    
+                    # Save into user's private workspace
+                    user_dir = get_user_workspace_dir(current_user["id"])
+                    saved_path = os.path.join(user_dir, uploaded_file.name)
+                    try:
+                        norm_fin.to_csv(saved_path, index=False)
+                        add_user_uploaded_file(current_user["email"], uploaded_file.name, saved_path, len(norm_fin), len(norm_fin.columns))
+                    except Exception:
+                        pass
+                        
+                    st.success(msg)
+                    st.rerun()
+                else:
+                    st.error(msg)
+
+    # Dataset Toggle (Back to Default)
+    if st.session_state["custom_fin_df"] is not None:
+        if st.button("⏪ Reset to Default Enterprise Data", use_container_width=True):
+            st.session_state["custom_fin_df"] = None
+            st.session_state["custom_tx_df"] = None
+            st.session_state["mapping_info"] = None
+            st.session_state["active_dataset_name"] = "Default Enterprise Multi-Year Financials"
+            st.session_state["last_uploaded_key"] = None
+            st.rerun()
+
+    st.markdown("---")
     st.markdown("#### 🔍 **Global Filters**")
     
     # Year Filter
-    all_years = sorted(df_fin_raw["Year"].unique())
+    all_years = sorted(df_fin_active["Year"].unique())
     selected_years = st.multiselect("Fiscal Year(s)", options=all_years, default=all_years)
     
     # Segment Filter
-    all_segments = sorted(df_fin_raw["Segment"].unique())
-    selected_segments = st.multiselect("Business Segment", options=all_segments, default=all_segments)
+    all_segments = sorted(df_fin_active["Segment"].unique())
+    selected_segments = st.multiselect("Business Segment / Department", options=all_segments, default=all_segments)
     
     # Region Filter
-    all_regions = sorted(df_fin_raw["Region"].unique())
+    all_regions = sorted(df_fin_active["Region"].unique())
     selected_regions = st.multiselect("Geographic Region", options=all_regions, default=all_regions)
     
     st.markdown("---")
-    st.markdown("#### 📥 **Custom Data Ingestion**")
-    uploaded_file = st.file_uploader("Upload Financials CSV", type=["csv"], help="Upload custom corporate financials CSV to override default dataset")
-    
-    if uploaded_file is not None:
-        try:
-            custom_fin = pd.read_csv(uploaded_file)
-            st.success("Custom CSV uploaded successfully!")
-            df_fin_raw = custom_fin
-        except Exception as e:
-            st.error(f"Error reading CSV: {e}")
-            
-    st.markdown("---")
-    if st.button("🔄 Reset & Regenerate Data", use_container_width=True):
+    if st.button("🔄 Regenerate Base Data", use_container_width=True):
         st.cache_data.clear()
         generate_all()
+        st.session_state["custom_fin_df"] = None
         st.rerun()
 
-# Apply Filters
-filtered_fin = df_fin_raw.copy()
+# Apply Filters to Active Dataset
+filtered_fin = df_fin_active.copy()
 if selected_years:
     filtered_fin = filtered_fin[filtered_fin["Year"].isin(selected_years)]
 if selected_segments:
@@ -103,23 +222,61 @@ if selected_segments:
 if selected_regions:
     filtered_fin = filtered_fin[filtered_fin["Region"].isin(selected_regions)]
 
+# If filtering results in empty, fallback to full active
+if filtered_fin.empty:
+    filtered_fin = df_fin_active.copy()
+
 # Compute KPIs
 kpis = calculate_kpis(filtered_fin)
-ai_engine = FinancialAIEngine(filtered_fin, df_tx_raw, df_port_raw)
+ai_engine = FinancialAIEngine(filtered_fin, df_tx_active, df_port_active)
 
 # --- Header Banner ---
-st.markdown("""
+st.markdown(f"""
 <div class="header-container">
     <div>
         <h1 class="header-title">Finance Data Analysis & AI Automation Dashboard</h1>
         <div class="header-subtitle">Continuous Real-Time Financial Intelligence, Portfolio Risk Engine & Autonomous Audit Scanner</div>
     </div>
     <div style="text-align: right;">
-        <span class="badge-neutral" style="font-size: 0.9rem; padding: 6px 14px;">⚡ System Active</span>
-        <div style="font-size: 0.8rem; color: #94A3B8; margin-top: 6px;">Live Multi-Asset Tracking</div>
+        <span class="badge-neutral" style="font-size: 0.9rem; padding: 6px 14px;">👤 {current_user['name']} ({current_user['role'].split('(')[-1].replace(')', '')})</span>
+        <div style="font-size: 0.8rem; color: #94A3B8; margin-top: 6px;">Org: {current_user['organization']}</div>
     </div>
 </div>
 """, unsafe_allow_html=True)
+
+# Active Dataset Notification Banner
+is_custom = st.session_state["custom_fin_df"] is not None
+active_name = st.session_state["active_dataset_name"]
+badge_txt = "CUSTOM USER UPLOAD" if is_custom else "DEFAULT SYSTEM DATASET"
+badge_class = "badge-pos" if is_custom else "badge-neutral"
+
+st.markdown(f"""
+<div class="dataset-banner">
+    <div>
+        <strong>Active Dataset:</strong> <code>{active_name}</code> ({len(filtered_fin):,} records active)
+        &nbsp;&nbsp;<span class="{badge_class}">{badge_txt}</span>
+    </div>
+    <div>
+        <span>Account: <strong>{current_user['email']}</strong></span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# If custom mapping was performed, show column matching accordion
+if st.session_state.get("mapping_info"):
+    with st.expander("🔍 View Universal CSV Auto-Column Mapping Breakdown", expanded=False):
+        m_info = st.session_state["mapping_info"]
+        col_m1, col_m2 = st.columns(2)
+        with col_m1:
+            st.markdown(f"- **Raw File Rows:** `{m_info.get('Raw_Rows', 0):,}`")
+            st.markdown(f"- **Matched Date Column:** `{m_info.get('Matched_Date')}`")
+            st.markdown(f"- **Matched Revenue Column:** `{m_info.get('Matched_Revenue')}`")
+            st.markdown(f"- **Matched Costs / Expense:** `{m_info.get('Matched_Costs')}`")
+        with col_m2:
+            st.markdown(f"- **Matched Profit Column:** `{m_info.get('Matched_Profit')}`")
+            st.markdown(f"- **Matched Segment / Category:** `{m_info.get('Matched_Segment')}`")
+            st.markdown(f"- **Matched Region / Geo:** `{m_info.get('Matched_Region')}`")
+            st.markdown(f"- **Raw Source Columns:** `{', '.join(m_info.get('Raw_Columns', []))}`")
 
 # --- Tabs Navigation ---
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
@@ -128,7 +285,7 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🛡️ Autonomous Audit & Risk",
     "💼 Portfolio & Risk Engine",
     "🔮 Scenario & Stress Testing",
-    "📂 Data & Report Exports"
+    "📂 Data Hub & User Workspaces"
 ])
 
 # ==============================================================================
@@ -209,7 +366,6 @@ with tab1:
             "Free_Cash_Flow": "sum"
         }).reset_index().tail(8)
         
-        # Format currency
         for col in ["Revenue", "Gross_Profit", "EBITDA", "Net_Income", "Free_Cash_Flow"]:
             quarterly_summary[col] = quarterly_summary[col].apply(lambda x: f"${x:,.0f}")
             
@@ -227,7 +383,6 @@ with tab2:
     with ai_col1:
         st.markdown("#### 💬 Ask the AI Financial Analyst")
         
-        # Predefined prompt chips
         st.markdown("**Quick Inquiries:**")
         chip_col1, chip_col2, chip_col3 = st.columns(3)
         with chip_col1:
@@ -284,7 +439,6 @@ with tab3:
     
     anomalies_df, audit_stats = ai_engine.audit_transactions()
     
-    # Audit summary cards
     aud1, aud2, aud3, aud4 = st.columns(4)
     with aud1:
         st.markdown(metric_card("Total Ledger Records", f"{audit_stats.get('Total_Transactions', 0):,}", "Transactions scanned", "Audited", "neutral"), unsafe_allow_html=True)
@@ -302,7 +456,7 @@ with tab3:
     st.markdown("---")
     
     st.markdown("#### 🔍 Anomaly Scatter Distribution & Risk Score Magnitude")
-    audit_chart = make_audit_scatter_chart(df_tx_raw)
+    audit_chart = make_audit_scatter_chart(df_tx_active)
     st.altair_chart(audit_chart, use_container_width=True)
     
     st.markdown("---")
@@ -334,9 +488,8 @@ with tab4:
     st.markdown("### 💼 Corporate Treasury Portfolio & Quantitative Risk Modeling")
     st.caption("Modern Portfolio Theory analytics, Sharpe Ratio optimization, Value at Risk (VaR), and Stochastic Monte Carlo Simulations.")
     
-    port_metrics = calculate_portfolio_metrics(df_port_raw)
+    port_metrics = calculate_portfolio_metrics(df_port_active)
     
-    # Portfolio KPIs
     p1, p2, p3, p4 = st.columns(4)
     with p1:
         aum = port_metrics["Total_Portfolio_Value_M"]
@@ -356,10 +509,10 @@ with tab4:
     p_col1, p_col2 = st.columns([3, 2])
     with p_col1:
         st.markdown("#### 🎯 Risk vs Return Efficient Frontier")
-        st.altair_chart(make_portfolio_frontier_chart(df_port_raw), use_container_width=True)
+        st.altair_chart(make_portfolio_frontier_chart(df_port_active), use_container_width=True)
     with p_col2:
         st.markdown("#### ⚖️ Target Asset Allocation Breakdown")
-        st.altair_chart(make_portfolio_allocation_chart(df_port_raw), use_container_width=True)
+        st.altair_chart(make_portfolio_allocation_chart(df_port_active), use_container_width=True)
 
     st.markdown("---")
     st.markdown("#### 🎲 Stochastic Monte Carlo Financial Forecast Engine")
@@ -414,7 +567,6 @@ with tab5:
     
     st.markdown("---")
     
-    # Delta comparison cards
     sc1, sc2, sc3, sc4 = st.columns(4)
     with sc1:
         st.markdown(metric_card(
@@ -451,7 +603,6 @@ with tab5:
             "pos" if sim_runway > 18 else "neg"
         ), unsafe_allow_html=True)
 
-    # Comparative Waterfall Table
     st.markdown("#### 📊 Base Case vs Stress-Tested Scenario Comparison")
     comp_df = pd.DataFrame({
         "Financial Metric": ["Total Revenue", "Gross Profit", "Total OPEX", "EBITDA", "Net Income"],
@@ -480,40 +631,51 @@ with tab5:
     st.dataframe(comp_df, use_container_width=True, hide_index=True)
 
 # ==============================================================================
-# TAB 6: DATA & EXPORTS
+# TAB 6: DATA HUB & USER WORKSPACES
 # ==============================================================================
 with tab6:
-    st.markdown("### 📂 Data Hub, Schema Explorer & Bulk Exports")
-    st.caption("Inspect raw datasets, download transformed data tables, or download audit logs for compliance.")
+    st.markdown("### 📂 Data Hub, User Workspaces & Custom Export")
+    st.caption("Manage your user-specific uploads, inspect raw data tables, or export transformed datasets.")
     
-    sub_tab1, sub_tab2, sub_tab3 = st.tabs(["Company Financials", "Transactions Ledger", "Portfolio Assets"])
+    st.markdown(f"#### 👤 **User Workspace:** `{current_user['name']}` ({current_user['email']})")
+    user_uploads = current_user.get("uploaded_files", [])
+    if user_uploads:
+        st.markdown(f"**Your Uploaded Files History ({len(user_uploads)} files):**")
+        up_df = pd.DataFrame(user_uploads)
+        st.dataframe(up_df, use_container_width=True, hide_index=True)
+    else:
+        st.info("No custom files saved in this user account yet. Upload a CSV using the sidebar to populate your workspace.")
+        
+    st.markdown("---")
+    
+    sub_tab1, sub_tab2, sub_tab3 = st.tabs(["Active Financial Dataset", "Active Transactions Ledger", "Portfolio Assets"])
     
     with sub_tab1:
-        st.markdown(f"**Total Records:** {len(filtered_fin)} rows")
+        st.markdown(f"**Total Records Active:** {len(filtered_fin):,} rows")
         st.dataframe(filtered_fin, use_container_width=True)
         csv_fin = filtered_fin.to_csv(index=False).encode('utf-8')
         st.download_button(
-            label="📥 Export Financials as CSV",
+            label="📥 Export Active Financials as CSV",
             data=csv_fin,
-            file_name="company_financials_export.csv",
+            file_name=f"active_financials_{pd.Timestamp.now().strftime('%Y%m%d')}.csv",
             mime="text/csv"
         )
         
     with sub_tab2:
-        st.markdown(f"**Total Transactions:** {len(df_tx_raw)} rows")
-        st.dataframe(df_tx_raw, use_container_width=True)
-        csv_tx = df_tx_raw.to_csv(index=False).encode('utf-8')
+        st.markdown(f"**Total Transactions Active:** {len(df_tx_active):,} rows")
+        st.dataframe(df_tx_active, use_container_width=True)
+        csv_tx = df_tx_active.to_csv(index=False).encode('utf-8')
         st.download_button(
             label="📥 Export Ledger as CSV",
             data=csv_tx,
-            file_name="transactions_ledger_export.csv",
+            file_name=f"active_ledger_{pd.Timestamp.now().strftime('%Y%m%d')}.csv",
             mime="text/csv"
         )
         
     with sub_tab3:
-        st.markdown(f"**Total Portfolio Assets:** {len(df_port_raw)} assets")
-        st.dataframe(df_port_raw, use_container_width=True)
-        csv_port = df_port_raw.to_csv(index=False).encode('utf-8')
+        st.markdown(f"**Total Portfolio Assets:** {len(df_port_active):,} assets")
+        st.dataframe(df_port_active, use_container_width=True)
+        csv_port = df_port_active.to_csv(index=False).encode('utf-8')
         st.download_button(
             label="📥 Export Portfolio Assets as CSV",
             data=csv_port,
@@ -522,4 +684,4 @@ with tab6:
         )
 
 st.markdown("---")
-st.caption("© 2026 Enterprise Finance AI Automation Platform | Powered by Streamlit, Pandas & Altair")
+st.caption(f"© 2026 Enterprise Finance AI Automation Platform | Logged in as {current_user['name']} ({current_user['role']})")

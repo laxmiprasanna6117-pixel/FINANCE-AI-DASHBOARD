@@ -15,5 +15,5 @@ echo.
 echo Launching Streamlit Dashboard...
 echo Local URL: http://localhost:8501
 echo.
-python -m streamlit run app.py --server.headless false
+python -m streamlit run app.py --server.headless false --browser.gatherUsageStats false
 pause

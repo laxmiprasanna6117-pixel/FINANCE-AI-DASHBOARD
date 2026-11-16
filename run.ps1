@@ -1,13 +1,23 @@
 # PowerShell Launcher for Finance Data Analysis & AI Automation Dashboard
+Set-Location -Path $PSScriptRoot
+
 Write-Host "=====================================================================" -ForegroundColor Cyan
 Write-Host " Finance Data Analysis & AI Automation Dashboard " -ForegroundColor Green
 Write-Host "=====================================================================" -ForegroundColor Cyan
 
-Write-Host "Checking Python environment..." -ForegroundColor Yellow
-$pyVersion = python --version 2>&1
-Write-Host "Detected: $pyVersion" -ForegroundColor Gray
+$pyPath = (Get-Command python -ErrorAction SilentlyContinue).Source
+if (-not $pyPath) {
+    $alt = "$env:LOCALAPPDATA\Programs\Python\Python314\python.exe"
+    if (Test-Path $alt) { $pyPath = $alt }
+}
 
-Write-Host "`nLaunching Dashboard..." -ForegroundColor Green
-Write-Host "Opening at http://localhost:8501 `n" -ForegroundColor Yellow
+if (-not $pyPath) {
+    Write-Host "[ERROR] Python was not found in system PATH." -ForegroundColor Red
+    pause
+    exit 1
+}
 
-python -m streamlit run app.py --browser.gatherUsageStats false
+Write-Host "Python Path: $pyPath" -ForegroundColor Gray
+Write-Host "`nLaunching Dashboard and opening browser at http://localhost:8501...`n" -ForegroundColor Yellow
+
+& $pyPath launcher.py

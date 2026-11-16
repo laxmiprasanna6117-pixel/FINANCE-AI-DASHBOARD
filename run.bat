@@ -1,8 +1,5 @@
 @echo off
-setlocal enabledelayedexpansion
 title Finance Data Analysis & AI Automation Dashboard
-
-:: Always ensure current directory is the project directory
 cd /d "%~dp0"
 
 echo =====================================================================
@@ -10,35 +7,24 @@ echo  Finance Data Analysis & AI Automation Dashboard
 echo =====================================================================
 echo Working Directory: %CD%
 
-:: Locate Python executable
-set "PY_BIN="
-where python >nul 2>nul
-if %errorlevel% equ 0 (
-    set "PY_BIN=python"
-) else if exist "%LOCALAPPDATA%\Programs\Python\Python314\python.exe" (
-    set "PY_BIN=%LOCALAPPDATA%\Programs\Python\Python314\python.exe"
-) else if exist "%ProgramFiles%\Python314\python.exe" (
-    set "PY_BIN=%ProgramFiles%\Python314\python.exe"
+:: Clean up any lingering process on port 8501 if present
+for /f "tokens=5" %%a in ('netstat -aon ^| findstr :8501 ^| findstr LISTENING') do (
+    echo Freeing port 8501 (PID %%a)...
+    taskkill /f /pid %%a >nul 2>nul
 )
 
-if "%PY_BIN%"=="" (
-    echo [ERROR] Python was not found in your system PATH or standard folders.
-    echo Please ensure Python 3.10+ is installed.
-    echo.
-    pause
-    exit /b 1
-)
+:: Auto-open browser
+start "" http://localhost:8501
 
-echo Using Python: %PY_BIN%
-"%PY_BIN%" --version
 echo.
-echo Launching Dashboard (will open http://localhost:8501 automatically)...
+echo Launching Streamlit Server on http://localhost:8501 ...
+echo Keep this command window open while using the dashboard.
 echo.
 
-"%PY_BIN%" launcher.py
+python -m streamlit run app.py --server.port 8501 --server.headless true --server.showEmailPrompt false --browser.gatherUsageStats false
 
 if %errorlevel% neq 0 (
     echo.
-    echo [NOTICE] Dashboard process ended with code %errorlevel%.
+    echo [ERROR] Streamlit encountered an issue (Exit Code %errorlevel%).
     pause
 )

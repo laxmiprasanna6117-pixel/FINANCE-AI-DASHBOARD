@@ -1,0 +1,1201 @@
+Transaction_ID,Date,Department,Category,Vendor,Amount,Payment_Method,Status,Is_Anomaly,Anomaly_Reason,Risk_Score
+TXN-26-00025,2026-10-29,Operations & HR,Workplace & People Ops,Deel Global Payroll,3073.97,Corporate Wire,Approved,No,Normal,20
+TXN-26-00010,2026-10-28,Product & AI,AI Models & APIs,Weights & Biases,18420.55,ACH Transfer,Approved,No,Normal,14
+TXN-26-00939,2026-10-28,Product & AI,AI Models & APIs,OpenAI API Services,16476.48,ACH Transfer,Approved,No,Normal,5
+TXN-26-00831,2026-10-26,Sales,Sales Enablement & CRM,Salesforce Enterprise,1912.68,ACH Transfer,Approved,No,Normal,23
+TXN-26-00629,2026-10-25,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,33859.87,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-26-01190,2026-10-25,Sales,Sales Enablement & CRM,DocuSign,5439.7,Corporate Wire,Approved,No,Normal,27
+TXN-26-00040,2026-10-24,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,11264.46,Corporate Wire,Settled,No,Normal,5
+TXN-26-00382,2026-10-24,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,32544.6,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,66
+TXN-26-00587,2026-10-24,Product & AI,AI Models & APIs,OpenAI API Services,9542.78,Corporate Wire,Pending Review,No,Normal,16
+TXN-26-00056,2026-10-21,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,43989.81,ACH Transfer,Settled,No,Normal,14
+TXN-26-00698,2026-10-21,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,32057.98,Corporate Card,Approved,No,Normal,15
+TXN-26-01020,2026-10-19,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,1502104.65,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,76
+TXN-26-01047,2026-10-19,Sales,Sales Enablement & CRM,Salesforce Enterprise,16034.96,ACH Transfer,Approved,No,Normal,26
+TXN-26-00462,2026-10-18,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,24321.09,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,76
+TXN-26-00961,2026-10-18,Sales,Sales Enablement & CRM,ZoomInfo Tech,23447.62,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,77
+TXN-26-00999,2026-10-18,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,22453.55,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-26-00290,2026-10-17,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,16264.82,ACH Transfer,Approved,No,Normal,23
+TXN-26-00931,2026-10-17,Sales,Sales Enablement & CRM,Highspot Enablement,2291.58,Corporate Wire,Settled,No,Normal,6
+TXN-26-00975,2026-10-17,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,1177.09,ACH Transfer,Approved,No,Normal,28
+TXN-26-00454,2026-10-16,Engineering,Cloud Compute & Infra,MongoDB Atlas,7711.71,Corporate Card,Approved,No,Normal,18
+TXN-26-01127,2026-10-16,Product & AI,AI Models & APIs,Scale AI Labeling,51830.95,ACH Transfer,Approved,No,Normal,10
+TXN-26-00148,2026-10-15,Product & AI,AI Models & APIs,Anthropic Claude AI,41376.2,ACH Transfer,Approved,No,Normal,10
+TXN-26-00360,2026-10-15,Product & AI,AI Models & APIs,Pinecone Vector DB,20714.17,ACH Transfer,Settled,No,Normal,7
+TXN-26-00491,2026-10-15,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,11290.64,Corporate Wire,Approved,No,Normal,19
+TXN-26-01038,2026-10-15,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,17202.53,Corporate Card,Approved,No,Normal,14
+TXN-26-00099,2026-10-13,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,16481.71,Corporate Wire,Settled,No,Normal,10
+TXN-26-00586,2026-10-13,Engineering,Cloud Compute & Infra,Datadog Monitoring,4813.92,Corporate Wire,Approved,No,Normal,14
+TXN-26-00994,2026-10-13,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,102683.04,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,92
+TXN-26-00048,2026-10-12,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,32539.73,Corporate Wire,Approved,No,Normal,22
+TXN-26-00405,2026-10-12,Sales,Sales Enablement & CRM,ZoomInfo Tech,5310.72,ACH Transfer,Approved,No,Normal,17
+TXN-26-01082,2026-10-11,Sales,Sales Enablement & CRM,Gong.io Analytics,10507.24,ACH Transfer,Settled,No,Normal,22
+TXN-26-00335,2026-10-10,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,8852.54,ACH Transfer,Settled,No,Normal,25
+TXN-26-00365,2026-10-10,Engineering,Cloud Compute & Infra,Datadog Monitoring,5541.05,ACH Transfer,Approved,No,Normal,28
+TXN-26-00539,2026-10-09,Sales,Sales Enablement & CRM,ZoomInfo Tech,13914.48,Corporate Wire,Approved,No,Normal,5
+TXN-26-00684,2026-10-08,Product & AI,AI Models & APIs,Weights & Biases,25009.46,ACH Transfer,Approved,No,Normal,28
+TXN-26-00559,2026-10-07,Engineering,Cloud Compute & Infra,GitHub Enterprise,116348.48,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,93
+TXN-26-00534,2026-10-06,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,10625.49,Corporate Wire,Settled,No,Normal,16
+TXN-26-00667,2026-10-06,Sales,Sales Enablement & CRM,DocuSign,20397.71,Corporate Wire,Approved,No,Normal,10
+TXN-26-01002,2026-10-06,Operations & HR,Workplace & People Ops,Workday HRMS,11954.35,Corporate Wire,Settled,No,Normal,8
+TXN-26-01128,2026-10-06,Product & AI,AI Models & APIs,Scale AI Labeling,9460.85,Corporate Card,Approved,No,Normal,27
+TXN-26-00238,2026-10-04,Sales,Sales Enablement & CRM,Highspot Enablement,3433.22,Direct Debit,Settled,No,Normal,28
+TXN-26-00412,2026-10-04,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,52450.79,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,90
+TXN-26-00771,2026-10-04,Sales,Sales Enablement & CRM,Salesforce Enterprise,2479.94,ACH Transfer,Settled,No,Normal,27
+TXN-26-00133,2026-10-02,Product & AI,AI Models & APIs,Scale AI Labeling,6678.26,Corporate Wire,Approved,No,Normal,29
+TXN-26-00392,2026-10-02,Marketing & Growth,Digital Ads & Acquisition,Google Ads,9351.99,ACH Transfer,Approved,No,Normal,19
+TXN-26-00691,2026-10-02,Operations & HR,Workplace & People Ops,Workday HRMS,2017.46,ACH Transfer,Settled,No,Normal,20
+TXN-26-00856,2026-10-02,Product & AI,AI Models & APIs,Scale AI Labeling,14499.21,Corporate Wire,Settled,No,Normal,9
+TXN-26-00676,2026-09-30,Engineering,Cloud Compute & Infra,Datadog Monitoring,9039.75,Direct Debit,Settled,No,Normal,11
+TXN-26-00791,2026-09-30,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,2037.65,Corporate Wire,Approved,No,Normal,10
+TXN-26-01069,2026-09-30,Operations & HR,Workplace & People Ops,Workday HRMS,463.28,Corporate Wire,Approved,No,Normal,13
+TXN-26-01183,2026-09-30,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,22768.84,ACH Transfer,Approved,No,Normal,12
+TXN-26-00806,2026-09-28,Operations & HR,Workplace & People Ops,WeWork Global Offices,4488.36,ACH Transfer,Approved,No,Normal,28
+TXN-26-01057,2026-09-28,Operations & HR,Workplace & People Ops,Slack Technologies,549.36,Corporate Wire,Approved,No,Normal,11
+TXN-26-00317,2026-09-27,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,47553.59,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,68
+TXN-26-00672,2026-09-27,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,5444.81,ACH Transfer,Settled,No,Normal,13
+TXN-26-00496,2026-09-26,Operations & HR,Workplace & People Ops,WeWork Global Offices,4281.29,Corporate Wire,Approved,No,Normal,27
+TXN-26-00671,2026-09-26,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,21477.59,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,79
+TXN-26-00303,2026-09-25,Engineering,Cloud Compute & Infra,GitHub Enterprise,40754.85,ACH Transfer,Approved,No,Normal,13
+TXN-26-00333,2026-09-25,Product & AI,AI Models & APIs,OpenAI API Services,1343.78,ACH Transfer,Approved,No,Normal,19
+TXN-26-00095,2026-09-24,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,18204.28,Corporate Wire,Settled,No,Normal,13
+TXN-26-00754,2026-09-24,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,27018.5,Corporate Card,Approved,No,Normal,13
+TXN-26-00041,2026-09-23,Sales,Sales Enablement & CRM,DocuSign,5289.48,Corporate Wire,Approved,No,Normal,6
+TXN-26-00117,2026-09-23,Sales,Sales Enablement & CRM,Salesforce Enterprise,6382.42,Corporate Wire,Settled,No,Normal,9
+TXN-26-00300,2026-09-23,Sales,Sales Enablement & CRM,ZoomInfo Tech,3031.04,Corporate Wire,Approved,No,Normal,12
+TXN-26-01033,2026-09-23,Sales,Sales Enablement & CRM,Salesforce Enterprise,7212.0,ACH Transfer,Settled,No,Normal,15
+TXN-26-01194,2026-09-23,Sales,Sales Enablement & CRM,Gong.io Analytics,7363.71,Corporate Wire,Approved,No,Normal,23
+TXN-26-00021,2026-09-22,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,3283.88,Corporate Wire,Approved,No,Normal,28
+TXN-26-00674,2026-09-22,Marketing & Growth,Digital Ads & Acquisition,Google Ads,16342.55,ACH Transfer,Approved,No,Normal,12
+TXN-26-00344,2026-09-21,Operations & HR,Workplace & People Ops,Slack Technologies,6767.24,Corporate Card,Approved,No,Normal,9
+TXN-26-01176,2026-09-21,Engineering,Cloud Compute & Infra,MongoDB Atlas,4990.82,ACH Transfer,Approved,No,Normal,8
+TXN-26-00731,2026-09-20,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,30550.87,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,78
+TXN-26-00733,2026-09-19,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,11431.78,ACH Transfer,Settled,No,Normal,9
+TXN-26-00767,2026-09-19,Operations & HR,Workplace & People Ops,Deel Global Payroll,13494.16,Corporate Wire,Approved,No,Normal,12
+TXN-26-00138,2026-09-18,Sales,Sales Enablement & CRM,DocuSign,5376.19,Corporate Wire,Approved,No,Normal,28
+TXN-26-00363,2026-09-18,Marketing & Growth,Digital Ads & Acquisition,Google Ads,1875.05,Corporate Wire,Approved,No,Normal,6
+TXN-26-00773,2026-09-18,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,11471.45,Corporate Wire,Settled,No,Normal,17
+TXN-26-00936,2026-09-18,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,8763.58,Corporate Wire,Approved,No,Normal,27
+TXN-26-01080,2026-09-18,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,268660.52,Direct Debit,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,90
+TXN-26-01084,2026-09-18,Operations & HR,Workplace & People Ops,Brex Corporate Cards,1313.13,Corporate Wire,Approved,No,Normal,23
+TXN-26-00299,2026-09-17,Product & AI,AI Models & APIs,Pinecone Vector DB,6190.55,Corporate Wire,Approved,No,Normal,24
+TXN-26-00051,2026-09-16,Product & AI,AI Models & APIs,Weights & Biases,4175.57,Corporate Wire,Approved,No,Normal,15
+TXN-26-00004,2026-09-14,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,8631.72,Corporate Wire,Approved,No,Normal,5
+TXN-26-00127,2026-09-14,Engineering,Cloud Compute & Infra,MongoDB Atlas,25943.55,Corporate Wire,Approved,No,Normal,5
+TXN-26-00556,2026-09-14,Marketing & Growth,Digital Ads & Acquisition,Google Ads,28512.85,ACH Transfer,Pending Review,No,Normal,8
+TXN-26-00756,2026-09-14,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,28814.69,Corporate Wire,Settled,No,Normal,9
+TXN-26-01168,2026-09-14,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,21368.82,ACH Transfer,Approved,No,Normal,15
+TXN-26-00948,2026-09-13,Operations & HR,Workplace & People Ops,Slack Technologies,987.09,Corporate Wire,Approved,No,Normal,29
+TXN-26-00951,2026-09-13,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,6830.72,Corporate Wire,Approved,No,Normal,11
+TXN-26-01116,2026-09-13,Product & AI,AI Models & APIs,OpenAI API Services,15682.44,ACH Transfer,Settled,No,Normal,16
+TXN-26-00710,2026-09-12,Product & AI,AI Models & APIs,Pinecone Vector DB,3409.64,Corporate Card,Approved,No,Normal,12
+TXN-26-00027,2026-09-11,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,5665.97,ACH Transfer,Approved,No,Normal,8
+TXN-26-00863,2026-09-11,Operations & HR,Workplace & People Ops,WeWork Global Offices,3529.89,Corporate Wire,Approved,No,Normal,19
+TXN-26-00217,2026-09-10,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,36841.38,ACH Transfer,Approved,No,Normal,11
+TXN-26-00380,2026-09-10,Engineering,Cloud Compute & Infra,GitHub Enterprise,40644.03,Corporate Wire,Approved,No,Normal,24
+TXN-26-00609,2026-09-10,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,7227.76,Corporate Wire,Approved,No,Normal,15
+TXN-26-01028,2026-09-10,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,6418.62,ACH Transfer,Approved,No,Normal,17
+TXN-26-01110,2026-09-10,Sales,Sales Enablement & CRM,ZoomInfo Tech,3768.58,Corporate Wire,Settled,No,Normal,21
+TXN-26-00753,2026-09-09,Sales,Sales Enablement & CRM,ZoomInfo Tech,4844.97,ACH Transfer,Approved,No,Normal,25
+TXN-26-00848,2026-09-09,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,36982.53,ACH Transfer,Pending Review,No,Normal,9
+TXN-26-01001,2026-09-09,Operations & HR,Workplace & People Ops,WeWork Global Offices,7168.83,ACH Transfer,Settled,No,Normal,11
+TXN-26-01199,2026-09-09,Sales,Sales Enablement & CRM,ZoomInfo Tech,13700.1,Corporate Wire,Approved,No,Normal,7
+TXN-26-00049,2026-09-08,Operations & HR,Workplace & People Ops,Slack Technologies,4581.04,Direct Debit,Approved,No,Normal,11
+TXN-26-00151,2026-09-08,Product & AI,AI Models & APIs,Anthropic Claude AI,2189.15,Corporate Card,Settled,No,Normal,15
+TXN-26-00851,2026-09-07,Product & AI,AI Models & APIs,Anthropic Claude AI,25840.47,Corporate Wire,Approved,No,Normal,16
+TXN-26-01055,2026-09-07,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,14041.49,ACH Transfer,Approved,No,Normal,18
+TXN-26-01042,2026-09-06,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,35976.58,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,71
+TXN-26-00242,2026-09-04,Sales,Sales Enablement & CRM,Gong.io Analytics,11053.98,Corporate Card,Approved,No,Normal,16
+TXN-26-00528,2026-09-04,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,4881.59,Direct Debit,Approved,No,Normal,18
+TXN-26-00673,2026-09-04,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,14045.49,Corporate Card,Approved,No,Normal,11
+TXN-26-00327,2026-09-03,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,12251.03,Corporate Wire,Approved,No,Normal,14
+TXN-26-00895,2026-09-03,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,8219.96,Corporate Wire,Approved,No,Normal,5
+TXN-26-00575,2026-09-02,Operations & HR,Workplace & People Ops,Slack Technologies,8670.62,ACH Transfer,Approved,No,Normal,21
+TXN-26-01181,2026-09-02,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,1031.3,Corporate Wire,Approved,No,Normal,18
+TXN-26-00252,2026-09-01,Operations & HR,Workplace & People Ops,Workday HRMS,2651.6,Corporate Wire,Approved,No,Normal,24
+TXN-26-00727,2026-09-01,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,3274.24,Corporate Wire,Approved,No,Normal,7
+TXN-26-00039,2026-08-30,Engineering,Cloud Compute & Infra,GitHub Enterprise,6506.43,ACH Transfer,Settled,No,Normal,16
+TXN-26-00976,2026-08-30,Operations & HR,Workplace & People Ops,Brex Corporate Cards,1128.88,ACH Transfer,Approved,No,Normal,28
+TXN-26-00190,2026-08-29,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,32176.55,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,85
+TXN-26-00757,2026-08-29,Sales,Sales Enablement & CRM,ZoomInfo Tech,6206.9,ACH Transfer,Approved,No,Normal,23
+TXN-26-00368,2026-08-27,Operations & HR,Workplace & People Ops,Slack Technologies,11591.77,ACH Transfer,Approved,No,Normal,15
+TXN-26-00597,2026-08-27,Product & AI,AI Models & APIs,OpenAI API Services,4230.82,Corporate Card,Approved,No,Normal,29
+TXN-26-00928,2026-08-27,Product & AI,AI Models & APIs,Anthropic Claude AI,11909.13,ACH Transfer,Approved,No,Normal,7
+TXN-26-00070,2026-08-26,Sales,Sales Enablement & CRM,DocuSign,3024.58,Corporate Card,Settled,No,Normal,28
+TXN-26-00581,2026-08-25,Sales,Sales Enablement & CRM,Highspot Enablement,474.34,ACH Transfer,Approved,No,Normal,27
+TXN-26-00964,2026-08-25,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,20863.88,Corporate Wire,Pending Review,No,Normal,18
+TXN-26-00278,2026-08-24,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,66985.95,Corporate Wire,Approved,No,Normal,8
+TXN-26-00409,2026-08-24,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,67940.13,ACH Transfer,Pending Review,No,Normal,23
+TXN-26-00803,2026-08-24,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,44517.35,ACH Transfer,Approved,No,Normal,14
+TXN-26-00967,2026-08-24,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,9359.83,Corporate Wire,Approved,No,Normal,15
+TXN-26-01187,2026-08-24,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,6533.36,Corporate Wire,Settled,No,Normal,25
+TXN-26-00486,2026-08-21,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,20481.86,Corporate Wire,Approved,No,Normal,16
+TXN-26-00549,2026-08-20,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,14832.12,ACH Transfer,Approved,No,Normal,12
+TXN-26-00845,2026-08-20,Product & AI,AI Models & APIs,Pinecone Vector DB,11749.3,Corporate Wire,Settled,No,Normal,23
+TXN-26-00379,2026-08-19,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,7027.33,Corporate Card,Approved,No,Normal,13
+TXN-26-00463,2026-08-19,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,38819.97,ACH Transfer,Settled,No,Normal,22
+TXN-26-00343,2026-08-18,Product & AI,AI Models & APIs,Pinecone Vector DB,6486.92,ACH Transfer,Settled,No,Normal,17
+TXN-26-00206,2026-08-16,Product & AI,AI Models & APIs,Pinecone Vector DB,6797.16,ACH Transfer,Approved,No,Normal,26
+TXN-26-00254,2026-08-16,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,30769.39,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,86
+TXN-26-00367,2026-08-16,Engineering,Cloud Compute & Infra,Datadog Monitoring,15589.62,Corporate Card,Approved,No,Normal,17
+TXN-26-00297,2026-08-15,Product & AI,AI Models & APIs,Scale AI Labeling,26299.7,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,78
+TXN-26-00877,2026-08-15,Operations & HR,Workplace & People Ops,Slack Technologies,4731.36,Corporate Card,Approved,No,Normal,28
+TXN-26-01070,2026-08-15,Marketing & Growth,Digital Ads & Acquisition,Google Ads,31981.71,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,84
+TXN-26-01156,2026-08-15,Sales,Sales Enablement & CRM,ZoomInfo Tech,22518.67,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,75
+TXN-26-00121,2026-08-14,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,11075.46,ACH Transfer,Approved,No,Normal,25
+TXN-26-00866,2026-08-14,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,23144.36,Corporate Wire,Approved,No,Normal,7
+TXN-26-00947,2026-08-14,Sales,Sales Enablement & CRM,Highspot Enablement,7299.32,Corporate Card,Approved,No,Normal,7
+TXN-26-00993,2026-08-14,Operations & HR,Workplace & People Ops,Slack Technologies,5185.59,ACH Transfer,Approved,No,Normal,25
+TXN-26-01195,2026-08-14,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,41036.88,Corporate Wire,Settled,No,Normal,20
+TXN-26-00329,2026-08-13,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,7567.9,Direct Debit,Settled,No,Normal,29
+TXN-26-00383,2026-08-13,Sales,Sales Enablement & CRM,DocuSign,12612.53,Corporate Wire,Approved,No,Normal,10
+TXN-26-00617,2026-08-13,Product & AI,AI Models & APIs,Anthropic Claude AI,3349.87,Corporate Card,Approved,No,Normal,16
+TXN-26-00793,2026-08-12,Operations & HR,Workplace & People Ops,Brex Corporate Cards,512.52,ACH Transfer,Approved,No,Normal,16
+TXN-26-00033,2026-08-11,Marketing & Growth,Digital Ads & Acquisition,Google Ads,38330.53,Corporate Wire,Approved,No,Normal,14
+TXN-26-00354,2026-08-11,Engineering,Cloud Compute & Infra,Datadog Monitoring,11406.36,Corporate Wire,Approved,No,Normal,28
+TXN-26-00654,2026-08-11,Sales,Sales Enablement & CRM,Highspot Enablement,3241.39,Corporate Wire,Approved,No,Normal,10
+TXN-26-00668,2026-08-11,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,7841.54,ACH Transfer,Approved,No,Normal,14
+TXN-26-00887,2026-08-10,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,8020.32,ACH Transfer,Approved,No,Normal,26
+TXN-26-00820,2026-08-09,Product & AI,AI Models & APIs,OpenAI API Services,53762.08,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,83
+TXN-26-01172,2026-08-09,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,4593.01,Corporate Wire,Approved,No,Normal,6
+TXN-26-00193,2026-08-08,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,84957.6,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,75
+TXN-26-00215,2026-08-08,Engineering,Cloud Compute & Infra,MongoDB Atlas,30091.6,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,84
+TXN-26-00548,2026-08-08,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,8315.19,ACH Transfer,Approved,No,Normal,11
+TXN-26-00678,2026-08-08,Sales,Sales Enablement & CRM,DocuSign,16503.69,ACH Transfer,Approved,No,Normal,8
+TXN-26-00972,2026-08-08,Product & AI,AI Models & APIs,OpenAI API Services,16396.14,Corporate Card,Approved,No,Normal,14
+TXN-26-00397,2026-08-07,Sales,Sales Enablement & CRM,ZoomInfo Tech,4341.69,Direct Debit,Approved,No,Normal,25
+TXN-26-00015,2026-08-06,Product & AI,AI Models & APIs,Anthropic Claude AI,10940.28,ACH Transfer,Approved,No,Normal,6
+TXN-26-00364,2026-08-06,Product & AI,AI Models & APIs,Anthropic Claude AI,7099.51,ACH Transfer,Approved,No,Normal,23
+TXN-26-00770,2026-08-05,Engineering,Cloud Compute & Infra,GitHub Enterprise,30810.87,ACH Transfer,Approved,No,Normal,9
+TXN-26-00954,2026-08-05,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,32974.63,Corporate Wire,Approved,No,Normal,22
+TXN-26-00204,2026-08-04,Sales,Sales Enablement & CRM,Gong.io Analytics,29130.49,Corporate Wire,Settled,No,Normal,27
+TXN-26-00120,2026-08-02,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,10928.76,ACH Transfer,Settled,No,Normal,19
+TXN-26-00925,2026-08-02,Operations & HR,Workplace & People Ops,Workday HRMS,1230.11,ACH Transfer,Approved,No,Normal,27
+TXN-26-00662,2026-08-01,Operations & HR,Workplace & People Ops,Slack Technologies,530.6,Corporate Wire,Approved,No,Normal,10
+TXN-26-00690,2026-08-01,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,1535.38,ACH Transfer,Settled,No,Normal,14
+TXN-26-00113,2026-07-31,Product & AI,AI Models & APIs,Scale AI Labeling,2744.62,Corporate Wire,Approved,No,Normal,18
+TXN-26-00761,2026-07-31,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,13612.35,Corporate Wire,Settled,No,Normal,5
+TXN-26-00028,2026-07-30,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,26581.62,Corporate Wire,Settled,No,Normal,8
+TXN-26-00101,2026-07-30,Sales,Sales Enablement & CRM,DocuSign,3775.4,Corporate Wire,Settled,No,Normal,22
+TXN-26-00389,2026-07-30,Marketing & Growth,Digital Ads & Acquisition,Google Ads,20507.61,Corporate Wire,Approved,No,Normal,20
+TXN-26-00666,2026-07-30,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,55074.84,Corporate Wire,Settled,No,Normal,5
+TXN-26-00821,2026-07-28,Operations & HR,Workplace & People Ops,Workday HRMS,869.24,ACH Transfer,Approved,No,Normal,14
+TXN-26-00693,2026-07-27,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,59373.66,Corporate Wire,Approved,No,Normal,9
+TXN-26-00775,2026-07-26,Product & AI,AI Models & APIs,OpenAI API Services,19505.51,ACH Transfer,Approved,No,Normal,26
+TXN-26-01188,2026-07-26,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,27536.05,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,90
+TXN-26-00009,2026-07-25,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,12658.78,Corporate Wire,Approved,No,Normal,21
+TXN-26-00186,2026-07-23,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,17881.78,Corporate Wire,Approved,No,Normal,29
+TXN-26-00298,2026-07-23,Sales,Sales Enablement & CRM,Highspot Enablement,6813.06,ACH Transfer,Settled,No,Normal,22
+TXN-26-00594,2026-07-23,Product & AI,AI Models & APIs,Anthropic Claude AI,15708.96,Corporate Card,Approved,No,Normal,5
+TXN-26-00747,2026-07-23,Sales,Sales Enablement & CRM,ZoomInfo Tech,1070.03,Corporate Card,Approved,No,Normal,20
+TXN-26-00053,2026-07-22,Engineering,Cloud Compute & Infra,Datadog Monitoring,7376.76,Corporate Card,Approved,No,Normal,22
+TXN-26-00511,2026-07-22,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,4994.9,ACH Transfer,Approved,No,Normal,12
+TXN-26-00514,2026-07-22,Engineering,Cloud Compute & Infra,Datadog Monitoring,50187.9,Corporate Wire,Approved,No,Normal,14
+TXN-26-00686,2026-07-22,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,49162.3,Corporate Wire,Approved,No,Normal,29
+TXN-26-00214,2026-07-21,Product & AI,AI Models & APIs,Anthropic Claude AI,33486.76,Corporate Wire,Settled,No,Normal,17
+TXN-26-00598,2026-07-21,Engineering,Cloud Compute & Infra,GitHub Enterprise,13119.68,Corporate Wire,Approved,No,Normal,24
+TXN-26-00026,2026-07-20,Product & AI,AI Models & APIs,Weights & Biases,15207.44,Corporate Card,Approved,No,Normal,28
+TXN-26-00077,2026-07-20,Operations & HR,Workplace & People Ops,Brex Corporate Cards,4735.76,Corporate Wire,Approved,No,Normal,27
+TXN-26-00872,2026-07-19,Sales,Sales Enablement & CRM,Highspot Enablement,30975.76,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,82
+TXN-26-00476,2026-07-18,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,1950.29,ACH Transfer,Approved,No,Normal,22
+TXN-26-00485,2026-07-17,Product & AI,AI Models & APIs,Pinecone Vector DB,6632.34,ACH Transfer,Settled,No,Normal,12
+TXN-26-00726,2026-07-17,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,57129.33,ACH Transfer,Settled,No,Normal,5
+TXN-26-00213,2026-07-16,Engineering,Cloud Compute & Infra,GitHub Enterprise,1564.54,ACH Transfer,Approved,No,Normal,13
+TXN-26-00819,2026-07-16,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,45576.06,Direct Debit,Settled,No,Normal,22
+TXN-26-01074,2026-07-16,Operations & HR,Workplace & People Ops,Brex Corporate Cards,13071.73,Corporate Wire,Approved,No,Normal,6
+TXN-26-00760,2026-07-15,Sales,Sales Enablement & CRM,Gong.io Analytics,11637.32,ACH Transfer,Approved,No,Normal,18
+TXN-26-01167,2026-07-15,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,19996.31,Corporate Wire,Approved,No,Normal,10
+TXN-26-00211,2026-07-14,Product & AI,AI Models & APIs,OpenAI API Services,19280.92,Corporate Wire,Approved,No,Normal,17
+TXN-26-00276,2026-07-14,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,54980.25,ACH Transfer,Approved,No,Normal,26
+TXN-26-00636,2026-07-14,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,1305.98,Corporate Wire,Pending Review,No,Normal,27
+TXN-26-00257,2026-07-13,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,46521.53,Corporate Wire,Approved,No,Normal,26
+TXN-26-00431,2026-07-13,Sales,Sales Enablement & CRM,Highspot Enablement,4358.75,ACH Transfer,Approved,No,Normal,14
+TXN-26-00543,2026-07-13,Operations & HR,Workplace & People Ops,WeWork Global Offices,3035.19,Corporate Wire,Settled,No,Normal,11
+TXN-26-00875,2026-07-11,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,2741.79,ACH Transfer,Approved,No,Normal,28
+TXN-26-00403,2026-07-10,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,6938.35,Corporate Wire,Approved,No,Normal,12
+TXN-26-00373,2026-07-09,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,13535.06,ACH Transfer,Approved,No,Normal,25
+TXN-26-00111,2026-07-08,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,76495.91,Corporate Wire,Approved,No,Normal,10
+TXN-26-00657,2026-07-08,Operations & HR,Workplace & People Ops,Deel Global Payroll,2842.32,ACH Transfer,Approved,No,Normal,22
+TXN-26-01162,2026-07-08,Sales,Sales Enablement & CRM,ZoomInfo Tech,6107.06,Corporate Wire,Approved,No,Normal,11
+TXN-26-00081,2026-07-07,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,19798.45,Corporate Card,Settled,No,Normal,12
+TXN-26-00256,2026-07-07,Operations & HR,Workplace & People Ops,Brex Corporate Cards,5793.59,ACH Transfer,Approved,No,Normal,26
+TXN-26-00493,2026-07-07,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,55429.79,Corporate Wire,Settled,No,Normal,25
+TXN-26-00529,2026-07-07,Marketing & Growth,Digital Ads & Acquisition,Google Ads,23157.51,Corporate Wire,Approved,No,Normal,22
+TXN-26-00606,2026-07-06,Operations & HR,Workplace & People Ops,Workday HRMS,4623.86,Corporate Wire,Settled,No,Normal,27
+TXN-26-00934,2026-07-02,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,27260.25,Corporate Wire,Approved,No,Normal,18
+TXN-26-01124,2026-07-02,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,8828.97,Direct Debit,Approved,No,Normal,6
+TXN-26-00311,2026-07-01,Marketing & Growth,Digital Ads & Acquisition,Google Ads,19572.91,ACH Transfer,Approved,No,Normal,19
+TXN-26-00566,2026-07-01,Sales,Sales Enablement & CRM,Gong.io Analytics,8564.26,Corporate Wire,Settled,No,Normal,29
+TXN-26-00969,2026-07-01,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,13109.05,Corporate Wire,Approved,No,Normal,10
+TXN-26-00741,2026-06-30,Sales,Sales Enablement & CRM,Salesforce Enterprise,5057.62,Corporate Card,Approved,No,Normal,11
+TXN-26-01152,2026-06-30,Product & AI,AI Models & APIs,OpenAI API Services,23663.24,ACH Transfer,Approved,No,Normal,14
+TXN-26-01175,2026-06-29,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,9217.95,Corporate Card,Approved,No,Normal,15
+TXN-26-00212,2026-06-28,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,6619.62,ACH Transfer,Approved,No,Normal,17
+TXN-26-00237,2026-06-28,Operations & HR,Workplace & People Ops,Workday HRMS,4992.95,ACH Transfer,Settled,No,Normal,22
+TXN-26-00322,2026-06-28,Operations & HR,Workplace & People Ops,Workday HRMS,8745.3,Corporate Wire,Approved,No,Normal,18
+TXN-26-01024,2026-06-27,Product & AI,AI Models & APIs,OpenAI API Services,13330.84,Corporate Wire,Approved,No,Normal,10
+TXN-26-00201,2026-06-26,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,16266.88,Corporate Wire,Settled,No,Normal,27
+TXN-26-00429,2026-06-26,Marketing & Growth,Digital Ads & Acquisition,Google Ads,53412.23,Corporate Wire,Approved,No,Normal,6
+TXN-26-00949,2026-06-26,Operations & HR,Workplace & People Ops,Brex Corporate Cards,3728.03,Corporate Card,Settled,No,Normal,12
+TXN-26-00082,2026-06-25,Product & AI,AI Models & APIs,Weights & Biases,1712.09,Corporate Wire,Approved,No,Normal,26
+TXN-26-00719,2026-06-25,Sales,Sales Enablement & CRM,Salesforce Enterprise,488.66,Corporate Card,Approved,No,Normal,22
+TXN-26-00227,2026-06-24,Engineering,Cloud Compute & Infra,MongoDB Atlas,6909.69,Corporate Wire,Approved,No,Normal,13
+TXN-26-00232,2026-06-24,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,12584.05,Direct Debit,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,62
+TXN-26-00506,2026-06-24,Operations & HR,Workplace & People Ops,Deel Global Payroll,8888.18,Direct Debit,Approved,No,Normal,20
+TXN-26-01060,2026-06-24,Marketing & Growth,Digital Ads & Acquisition,Google Ads,37555.14,Corporate Wire,Approved,No,Normal,20
+TXN-26-00093,2026-06-23,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,20235.97,Corporate Wire,Approved,No,Normal,6
+TXN-26-01043,2026-06-23,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,3624.81,ACH Transfer,Approved,No,Normal,23
+TXN-26-00196,2026-06-22,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,70192.62,ACH Transfer,Settled,No,Normal,18
+TXN-26-00259,2026-06-22,Product & AI,AI Models & APIs,OpenAI API Services,18762.83,Corporate Wire,Approved,No,Normal,25
+TXN-26-00729,2026-06-22,Operations & HR,Workplace & People Ops,Deel Global Payroll,2079.47,Corporate Wire,Approved,No,Normal,29
+TXN-26-00287,2026-06-21,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,17614.1,Corporate Wire,Approved,No,Normal,18
+TXN-26-00930,2026-06-20,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,34766.59,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,85
+TXN-26-01144,2026-06-19,Operations & HR,Workplace & People Ops,Deel Global Payroll,3058.62,Corporate Card,Settled,No,Normal,12
+TXN-26-00538,2026-06-18,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,4839.0,Corporate Wire,Approved,No,Normal,28
+TXN-26-00184,2026-06-17,Operations & HR,Workplace & People Ops,Brex Corporate Cards,26202.93,Corporate Wire,Settled,No,Normal,19
+TXN-26-00203,2026-06-17,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,82651.35,Corporate Card,Approved,No,Normal,20
+TXN-26-00452,2026-06-17,Marketing & Growth,Digital Ads & Acquisition,Google Ads,3120.01,Corporate Card,Approved,No,Normal,11
+TXN-26-00591,2026-06-15,Product & AI,AI Models & APIs,Pinecone Vector DB,28372.86,Corporate Wire,Approved,No,Normal,19
+TXN-26-01087,2026-06-14,Operations & HR,Workplace & People Ops,WeWork Global Offices,5023.77,Corporate Card,Approved,No,Normal,19
+TXN-26-01197,2026-06-12,Product & AI,AI Models & APIs,Weights & Biases,22418.99,Corporate Wire,Approved,No,Normal,6
+TXN-26-00275,2026-06-08,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,21107.97,Corporate Wire,Settled,No,Normal,5
+TXN-26-00626,2026-06-08,Operations & HR,Workplace & People Ops,Workday HRMS,4530.41,ACH Transfer,Settled,No,Normal,26
+TXN-26-00019,2026-06-07,Product & AI,AI Models & APIs,Weights & Biases,8217.28,Direct Debit,Approved,No,Normal,9
+TXN-26-00571,2026-06-07,Operations & HR,Workplace & People Ops,Brex Corporate Cards,1736.76,Corporate Wire,Settled,No,Normal,15
+TXN-26-01192,2026-06-07,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,4322.11,Corporate Wire,Approved,No,Normal,9
+TXN-26-00116,2026-06-06,Engineering,Cloud Compute & Infra,Datadog Monitoring,13579.29,Corporate Wire,Approved,No,Normal,24
+TXN-26-01117,2026-06-06,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,16012.02,Direct Debit,Settled,No,Normal,17
+TXN-26-00078,2026-06-05,Engineering,Cloud Compute & Infra,MongoDB Atlas,11245.44,Corporate Wire,Settled,No,Normal,10
+TXN-26-00632,2026-06-04,Operations & HR,Workplace & People Ops,Slack Technologies,7762.13,Corporate Card,Approved,No,Normal,6
+TXN-26-00456,2026-06-03,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,12174.02,ACH Transfer,Approved,No,Normal,5
+TXN-26-00889,2026-06-03,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,6197.22,Corporate Card,Pending Review,No,Normal,10
+TXN-26-01049,2026-06-03,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,85002.32,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,88
+TXN-26-00149,2026-06-02,Operations & HR,Workplace & People Ops,Slack Technologies,884.06,Corporate Wire,Approved,No,Normal,8
+TXN-26-00565,2026-06-02,Product & AI,AI Models & APIs,Anthropic Claude AI,35770.67,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,93
+TXN-26-01011,2026-06-02,Operations & HR,Workplace & People Ops,Slack Technologies,6075.68,Corporate Wire,Approved,No,Normal,16
+TXN-26-01022,2026-06-02,Product & AI,AI Models & APIs,Scale AI Labeling,2955.52,Corporate Wire,Settled,No,Normal,19
+TXN-26-00244,2026-06-01,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,31429.81,ACH Transfer,Approved,No,Normal,27
+TXN-26-00413,2026-05-30,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,5420.14,Corporate Wire,Approved,No,Normal,21
+TXN-26-00997,2026-05-30,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,11234.74,Corporate Wire,Approved,No,Normal,27
+TXN-26-00233,2026-05-29,Product & AI,AI Models & APIs,Anthropic Claude AI,59857.11,Corporate Wire,Approved,No,Normal,21
+TXN-26-00285,2026-05-29,Sales,Sales Enablement & CRM,Gong.io Analytics,8869.42,Corporate Card,Approved,No,Normal,7
+TXN-26-00592,2026-05-29,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,111674.7,Corporate Wire,Pending Review,No,Normal,27
+TXN-26-00665,2026-05-29,Operations & HR,Workplace & People Ops,Slack Technologies,7000.08,ACH Transfer,Approved,No,Normal,23
+TXN-26-00381,2026-05-27,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,12162.89,Corporate Wire,Approved,No,Normal,5
+TXN-26-00448,2026-05-27,Sales,Sales Enablement & CRM,Highspot Enablement,10084.39,Corporate Wire,Approved,No,Normal,9
+TXN-26-00830,2026-05-27,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,9999.02,Corporate Wire,Approved,No,Normal,29
+TXN-26-00105,2026-05-25,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,26917.52,Corporate Wire,Pending Review,No,Normal,9
+TXN-26-00306,2026-05-25,Operations & HR,Workplace & People Ops,WeWork Global Offices,3226.72,ACH Transfer,Approved,No,Normal,22
+TXN-26-00420,2026-05-25,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,12006.43,ACH Transfer,Settled,No,Normal,28
+TXN-26-00515,2026-05-24,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,37285.34,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,79
+TXN-26-00960,2026-05-24,Marketing & Growth,Digital Ads & Acquisition,Google Ads,12012.71,Corporate Card,Approved,No,Normal,29
+TXN-26-01023,2026-05-24,Product & AI,AI Models & APIs,OpenAI API Services,41905.48,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,65
+TXN-26-01041,2026-05-24,Sales,Sales Enablement & CRM,Highspot Enablement,10191.58,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,81
+TXN-26-00187,2026-05-23,Sales,Sales Enablement & CRM,DocuSign,1992.16,Direct Debit,Settled,No,Normal,6
+TXN-26-00615,2026-05-23,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,4170.52,Corporate Wire,Settled,No,Normal,17
+TXN-26-00859,2026-05-23,Product & AI,AI Models & APIs,Pinecone Vector DB,1709.6,Corporate Wire,Approved,No,Normal,22
+TXN-26-01200,2026-05-23,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,1023.04,Corporate Wire,Approved,No,Normal,8
+TXN-26-00616,2026-05-22,Operations & HR,Workplace & People Ops,WeWork Global Offices,15568.78,Corporate Wire,Approved,No,Normal,29
+TXN-26-01153,2026-05-22,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,45745.32,Corporate Wire,Approved,No,Normal,10
+TXN-26-00112,2026-05-19,Sales,Sales Enablement & CRM,DocuSign,1111.32,ACH Transfer,Settled,No,Normal,9
+TXN-26-00406,2026-05-19,Operations & HR,Workplace & People Ops,Workday HRMS,7497.55,ACH Transfer,Settled,No,Normal,7
+TXN-26-00837,2026-05-19,Sales,Sales Enablement & CRM,Salesforce Enterprise,8465.43,Corporate Card,Approved,No,Normal,18
+TXN-26-00171,2026-05-18,Engineering,Cloud Compute & Infra,MongoDB Atlas,38126.42,ACH Transfer,Approved,No,Normal,21
+TXN-26-00378,2026-05-18,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,4714.76,ACH Transfer,Approved,No,Normal,27
+TXN-26-01059,2026-05-18,Product & AI,AI Models & APIs,OpenAI API Services,3350.76,Corporate Wire,Approved,No,Normal,15
+TXN-26-00139,2026-05-16,Product & AI,AI Models & APIs,Scale AI Labeling,13309.48,Corporate Wire,Settled,No,Normal,16
+TXN-26-00248,2026-05-16,Operations & HR,Workplace & People Ops,Slack Technologies,916.87,ACH Transfer,Approved,No,Normal,17
+TXN-26-00150,2026-05-15,Sales,Sales Enablement & CRM,Highspot Enablement,509.3,Corporate Wire,Approved,No,Normal,6
+TXN-26-00986,2026-05-15,Product & AI,AI Models & APIs,Pinecone Vector DB,25166.25,Direct Debit,Approved,No,Normal,9
+TXN-26-00089,2026-05-14,Engineering,Cloud Compute & Infra,GitHub Enterprise,100969.09,Corporate Wire,Approved,No,Normal,29
+TXN-26-00386,2026-05-14,Product & AI,AI Models & APIs,Weights & Biases,12269.15,Corporate Card,Settled,No,Normal,5
+TXN-26-01044,2026-05-14,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,10252.65,Corporate Card,Settled,No,Normal,29
+TXN-26-01179,2026-05-14,Engineering,Cloud Compute & Infra,Datadog Monitoring,4059.21,ACH Transfer,Approved,No,Normal,28
+TXN-26-00650,2026-05-13,Sales,Sales Enablement & CRM,Highspot Enablement,17253.74,Corporate Wire,Pending Review,No,Normal,18
+TXN-26-00681,2026-05-13,Sales,Sales Enablement & CRM,DocuSign,80842.0,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,88
+TXN-26-00765,2026-05-13,Sales,Sales Enablement & CRM,DocuSign,6802.95,Corporate Wire,Approved,No,Normal,24
+TXN-26-00076,2026-05-11,Sales,Sales Enablement & CRM,DocuSign,584.47,Corporate Wire,Approved,No,Normal,9
+TXN-26-00126,2026-05-11,Operations & HR,Workplace & People Ops,Workday HRMS,25943.35,Corporate Card,Settled,No,Normal,25
+TXN-26-01072,2026-05-11,Engineering,Cloud Compute & Infra,GitHub Enterprise,22487.16,ACH Transfer,Approved,No,Normal,23
+TXN-26-00310,2026-05-10,Operations & HR,Workplace & People Ops,Brex Corporate Cards,10914.23,ACH Transfer,Approved,No,Normal,15
+TXN-26-01009,2026-05-10,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,75358.58,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,72
+TXN-26-00542,2026-05-06,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,15948.66,Corporate Wire,Approved,No,Normal,25
+TXN-26-00898,2026-05-05,Marketing & Growth,Digital Ads & Acquisition,Google Ads,12287.1,Corporate Wire,Approved,No,Normal,8
+TXN-26-00084,2026-05-04,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,69544.38,Corporate Wire,Approved,No,Normal,28
+TXN-26-00482,2026-05-04,Engineering,Cloud Compute & Infra,GitHub Enterprise,2849.48,Corporate Wire,Approved,No,Normal,13
+TXN-26-01131,2026-05-03,Operations & HR,Workplace & People Ops,Workday HRMS,7676.29,Corporate Wire,Settled,No,Normal,27
+TXN-26-00568,2026-05-02,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,7925.63,Corporate Wire,Approved,No,Normal,21
+TXN-26-01054,2026-05-02,Product & AI,AI Models & APIs,Weights & Biases,6074.86,Corporate Wire,Approved,No,Normal,28
+TXN-26-00334,2026-05-01,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,26890.48,ACH Transfer,Approved,No,Normal,11
+TXN-26-00890,2026-05-01,Sales,Sales Enablement & CRM,Gong.io Analytics,2854.17,Corporate Card,Settled,No,Normal,18
+TXN-26-00498,2026-04-29,Operations & HR,Workplace & People Ops,Workday HRMS,5286.38,ACH Transfer,Approved,No,Normal,24
+TXN-26-00777,2026-04-29,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,18751.36,ACH Transfer,Approved,No,Normal,9
+TXN-26-00809,2026-04-29,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,7757.48,Corporate Wire,Approved,No,Normal,24
+TXN-26-01092,2026-04-28,Product & AI,AI Models & APIs,Weights & Biases,22509.79,Corporate Wire,Approved,No,Normal,11
+TXN-26-00995,2026-04-27,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,2406.96,ACH Transfer,Approved,No,Normal,29
+TXN-26-00005,2026-04-26,Product & AI,AI Models & APIs,Anthropic Claude AI,8541.84,Corporate Wire,Approved,No,Normal,10
+TXN-26-00168,2026-04-26,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,9814.72,ACH Transfer,Approved,No,Normal,20
+TXN-26-00624,2026-04-25,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,7227.53,ACH Transfer,Approved,No,Normal,29
+TXN-26-01093,2026-04-24,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,11565.27,Corporate Wire,Approved,No,Normal,26
+TXN-26-00530,2026-04-23,Operations & HR,Workplace & People Ops,Deel Global Payroll,6252.6,ACH Transfer,Pending Review,No,Normal,15
+TXN-26-00307,2026-04-22,Operations & HR,Workplace & People Ops,Slack Technologies,2157.94,ACH Transfer,Approved,No,Normal,15
+TXN-26-00935,2026-04-22,Operations & HR,Workplace & People Ops,Brex Corporate Cards,4565.45,Corporate Card,Approved,No,Normal,10
+TXN-26-00152,2026-04-21,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,29862.05,Corporate Card,Approved,No,Normal,8
+TXN-26-00826,2026-04-21,Product & AI,AI Models & APIs,Pinecone Vector DB,30314.2,ACH Transfer,Approved,No,Normal,5
+TXN-26-00563,2026-04-19,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,8272.62,Direct Debit,Settled,No,Normal,18
+TXN-26-00430,2026-04-18,Product & AI,AI Models & APIs,Anthropic Claude AI,11221.3,Corporate Wire,Settled,No,Normal,27
+TXN-26-00906,2026-04-17,Operations & HR,Workplace & People Ops,Slack Technologies,12198.54,Corporate Wire,Approved,No,Normal,14
+TXN-26-01173,2026-04-17,Sales,Sales Enablement & CRM,DocuSign,18670.31,Corporate Wire,Approved,No,Normal,8
+TXN-26-00106,2026-04-16,Sales,Sales Enablement & CRM,Salesforce Enterprise,5585.61,Corporate Card,Approved,No,Normal,26
+TXN-26-00797,2026-04-16,Sales,Sales Enablement & CRM,Salesforce Enterprise,10241.66,Corporate Wire,Approved,No,Normal,16
+TXN-26-01140,2026-04-16,Operations & HR,Workplace & People Ops,Deel Global Payroll,37038.06,Corporate Card,Settled,No,Normal,23
+TXN-26-00444,2026-04-15,Operations & HR,Workplace & People Ops,Slack Technologies,1387.27,Corporate Card,Approved,No,Normal,26
+TXN-26-00640,2026-04-14,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,6299.56,Corporate Wire,Approved,No,Normal,22
+TXN-26-00759,2026-04-14,Product & AI,AI Models & APIs,OpenAI API Services,13275.01,ACH Transfer,Approved,No,Normal,25
+TXN-26-00909,2026-04-13,Operations & HR,Workplace & People Ops,Brex Corporate Cards,7709.28,ACH Transfer,Settled,No,Normal,20
+TXN-26-00827,2026-04-12,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,7462.69,Corporate Wire,Approved,No,Normal,19
+TXN-26-00858,2026-04-12,Operations & HR,Workplace & People Ops,Deel Global Payroll,5039.42,ACH Transfer,Settled,No,Normal,5
+TXN-26-00958,2026-04-12,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,303245.69,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,86
+TXN-26-00158,2026-04-11,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,5821.38,ACH Transfer,Pending Review,No,Normal,18
+TXN-26-00746,2026-04-11,Operations & HR,Workplace & People Ops,Deel Global Payroll,20593.35,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-26-00941,2026-04-11,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,32859.94,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,82
+TXN-26-00802,2026-04-10,Sales,Sales Enablement & CRM,Gong.io Analytics,1678.48,Corporate Wire,Approved,No,Normal,19
+TXN-26-00293,2026-04-09,Marketing & Growth,Digital Ads & Acquisition,Google Ads,59101.75,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,76
+TXN-26-00536,2026-04-09,Sales,Sales Enablement & CRM,Gong.io Analytics,21383.51,ACH Transfer,Approved,No,Normal,10
+TXN-26-00641,2026-04-09,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,2173.06,ACH Transfer,Approved,No,Normal,21
+TXN-26-00776,2026-04-09,Sales,Sales Enablement & CRM,Highspot Enablement,9335.18,Corporate Wire,Approved,No,Normal,5
+TXN-26-00880,2026-04-09,Engineering,Cloud Compute & Infra,Datadog Monitoring,5289.5,Corporate Card,Approved,No,Normal,11
+TXN-26-00263,2026-04-07,Engineering,Cloud Compute & Infra,MongoDB Atlas,4078.99,Corporate Wire,Approved,No,Normal,15
+TXN-26-00294,2026-04-07,Sales,Sales Enablement & CRM,Gong.io Analytics,3529.4,Corporate Card,Settled,No,Normal,9
+TXN-26-00142,2026-04-06,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,2650.61,Corporate Card,Settled,No,Normal,20
+TXN-26-01158,2026-04-06,Sales,Sales Enablement & CRM,Salesforce Enterprise,17544.54,ACH Transfer,Settled,No,Normal,24
+TXN-26-00270,2026-04-05,Operations & HR,Workplace & People Ops,WeWork Global Offices,5676.16,Corporate Card,Settled,No,Normal,13
+TXN-26-00990,2026-04-05,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,30658.0,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,75
+TXN-26-00219,2026-04-04,Engineering,Cloud Compute & Infra,GitHub Enterprise,12737.39,Corporate Wire,Approved,No,Normal,15
+TXN-26-00706,2026-04-04,Engineering,Cloud Compute & Infra,Datadog Monitoring,65885.94,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,88
+TXN-26-00834,2026-04-04,Sales,Sales Enablement & CRM,DocuSign,788.09,Direct Debit,Settled,No,Normal,17
+TXN-26-00348,2026-04-03,Sales,Sales Enablement & CRM,DocuSign,7981.73,Corporate Wire,Approved,No,Normal,29
+TXN-26-00023,2026-04-01,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,4355.08,ACH Transfer,Pending Review,No,Normal,14
+TXN-26-00031,2026-04-01,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,25269.34,Corporate Wire,Approved,No,Normal,5
+TXN-26-00443,2026-04-01,Sales,Sales Enablement & CRM,Salesforce Enterprise,1543.15,Corporate Wire,Settled,No,Normal,11
+TXN-26-00782,2026-04-01,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,38085.47,ACH Transfer,Approved,No,Normal,10
+TXN-26-01121,2026-04-01,Sales,Sales Enablement & CRM,ZoomInfo Tech,5911.86,Corporate Wire,Pending Review,No,Normal,21
+TXN-26-00189,2026-03-31,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,15788.88,Corporate Wire,Approved,No,Normal,17
+TXN-26-00393,2026-03-31,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,7530.05,ACH Transfer,Approved,No,Normal,9
+TXN-26-00032,2026-03-30,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,19671.24,Corporate Wire,Approved,No,Normal,15
+TXN-26-00342,2026-03-30,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,18542.82,ACH Transfer,Approved,No,Normal,29
+TXN-26-00427,2026-03-30,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,1480.94,Corporate Card,Approved,No,Normal,27
+TXN-26-00724,2026-03-30,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,13076.99,Corporate Wire,Approved,No,Normal,24
+TXN-26-01122,2026-03-30,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,39070.94,Corporate Wire,Approved,No,Normal,11
+TXN-26-00922,2026-03-28,Sales,Sales Enablement & CRM,Gong.io Analytics,18435.53,Corporate Wire,Approved,No,Normal,22
+TXN-26-00992,2026-03-27,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,26268.03,Corporate Wire,Approved,No,Normal,16
+TXN-26-01078,2026-03-27,Sales,Sales Enablement & CRM,Salesforce Enterprise,6260.67,Corporate Wire,Approved,No,Normal,26
+TXN-26-00336,2026-03-26,Operations & HR,Workplace & People Ops,Workday HRMS,4323.39,ACH Transfer,Approved,No,Normal,24
+TXN-26-00388,2026-03-26,Product & AI,AI Models & APIs,Anthropic Claude AI,11433.17,ACH Transfer,Approved,No,Normal,14
+TXN-26-00864,2026-03-26,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,51157.06,ACH Transfer,Approved,No,Normal,5
+TXN-26-00743,2026-03-25,Product & AI,AI Models & APIs,Pinecone Vector DB,2973.53,Corporate Card,Approved,No,Normal,28
+TXN-26-00236,2026-03-24,Operations & HR,Workplace & People Ops,Brex Corporate Cards,2359.41,Direct Debit,Approved,No,Normal,12
+TXN-26-00465,2026-03-23,Product & AI,AI Models & APIs,Pinecone Vector DB,3442.17,ACH Transfer,Approved,No,Normal,23
+TXN-26-01005,2026-03-20,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,10465.71,Corporate Card,Approved,No,Normal,6
+TXN-26-00446,2026-03-18,Engineering,Cloud Compute & Infra,GitHub Enterprise,12762.07,Corporate Wire,Settled,No,Normal,19
+TXN-26-00080,2026-03-17,Operations & HR,Workplace & People Ops,WeWork Global Offices,1013.56,Corporate Card,Approved,No,Normal,26
+TXN-26-00495,2026-03-17,Engineering,Cloud Compute & Infra,Datadog Monitoring,97543.17,ACH Transfer,Settled,No,Normal,24
+TXN-26-00525,2026-03-17,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,13875.67,ACH Transfer,Approved,No,Normal,8
+TXN-26-00308,2026-03-16,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,7003.06,Corporate Wire,Approved,No,Normal,29
+TXN-26-00402,2026-03-16,Product & AI,AI Models & APIs,Scale AI Labeling,11113.1,Corporate Card,Approved,No,Normal,16
+TXN-26-00945,2026-03-16,Marketing & Growth,Digital Ads & Acquisition,Google Ads,6102.04,Corporate Wire,Approved,No,Normal,9
+TXN-26-01112,2026-03-16,Engineering,Cloud Compute & Infra,MongoDB Atlas,20431.32,ACH Transfer,Approved,No,Normal,15
+TXN-26-01191,2026-03-16,Operations & HR,Workplace & People Ops,Slack Technologies,12071.97,Corporate Wire,Pending Review,No,Normal,24
+TXN-26-00915,2026-03-14,Operations & HR,Workplace & People Ops,Brex Corporate Cards,7578.59,Corporate Wire,Approved,No,Normal,19
+TXN-26-01133,2026-03-14,Operations & HR,Workplace & People Ops,Brex Corporate Cards,7718.02,Corporate Wire,Approved,No,Normal,28
+TXN-26-00114,2026-03-13,Product & AI,AI Models & APIs,OpenAI API Services,19267.48,Corporate Card,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,78
+TXN-26-00309,2026-03-13,Engineering,Cloud Compute & Infra,GitHub Enterprise,62818.07,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,86
+TXN-26-00472,2026-03-13,Sales,Sales Enablement & CRM,Highspot Enablement,1092.52,Corporate Wire,Approved,No,Normal,22
+TXN-26-00596,2026-03-13,Product & AI,AI Models & APIs,Scale AI Labeling,11261.93,Corporate Wire,Pending Review,No,Normal,12
+TXN-26-01013,2026-03-13,Operations & HR,Workplace & People Ops,WeWork Global Offices,656.51,ACH Transfer,Approved,No,Normal,29
+TXN-26-00621,2026-03-12,Sales,Sales Enablement & CRM,Salesforce Enterprise,22657.64,Corporate Wire,Pending Review,No,Normal,8
+TXN-26-01062,2026-03-12,Product & AI,AI Models & APIs,Weights & Biases,3601.87,ACH Transfer,Approved,No,Normal,19
+TXN-26-00646,2026-03-11,Operations & HR,Workplace & People Ops,Deel Global Payroll,9912.18,ACH Transfer,Approved,No,Normal,22
+TXN-26-01105,2026-03-10,Marketing & Growth,Digital Ads & Acquisition,Google Ads,52301.07,Direct Debit,Approved,No,Normal,12
+TXN-26-00038,2026-03-09,Product & AI,AI Models & APIs,Weights & Biases,2759.98,Corporate Wire,Approved,No,Normal,22
+TXN-26-00593,2026-03-09,Product & AI,AI Models & APIs,Pinecone Vector DB,6390.72,Corporate Card,Approved,No,Normal,19
+TXN-26-00060,2026-03-08,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,44580.1,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,77
+TXN-26-00839,2026-03-08,Product & AI,AI Models & APIs,Anthropic Claude AI,17222.34,ACH Transfer,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,74
+TXN-26-00535,2026-03-07,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,18073.35,ACH Transfer,Approved,No,Normal,18
+TXN-26-00901,2026-03-06,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,1118.51,Corporate Card,Approved,No,Normal,12
+TXN-26-00230,2026-03-04,Operations & HR,Workplace & People Ops,Workday HRMS,2246.21,ACH Transfer,Approved,No,Normal,26
+TXN-26-00971,2026-03-03,Product & AI,AI Models & APIs,Anthropic Claude AI,20112.35,Corporate Card,Pending Review,No,Normal,17
+TXN-26-00156,2026-03-02,Operations & HR,Workplace & People Ops,Brex Corporate Cards,21239.16,ACH Transfer,Approved,No,Normal,19
+TXN-26-00488,2026-03-02,Operations & HR,Workplace & People Ops,Brex Corporate Cards,1736.97,Corporate Card,Settled,No,Normal,24
+TXN-26-00092,2026-03-01,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,15941.53,Corporate Wire,Approved,No,Normal,29
+TXN-26-00786,2026-02-28,Product & AI,AI Models & APIs,Scale AI Labeling,11731.27,ACH Transfer,Settled,No,Normal,22
+TXN-26-00094,2026-02-27,Sales,Sales Enablement & CRM,ZoomInfo Tech,6233.76,Corporate Wire,Approved,No,Normal,16
+TXN-26-01037,2026-02-27,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,10367.82,Corporate Wire,Settled,No,Normal,25
+TXN-26-00079,2026-02-25,Product & AI,AI Models & APIs,Pinecone Vector DB,13011.99,Corporate Wire,Approved,No,Normal,21
+TXN-26-00108,2026-02-25,Sales,Sales Enablement & CRM,Salesforce Enterprise,2239.98,ACH Transfer,Settled,No,Normal,11
+TXN-26-00243,2026-02-25,Sales,Sales Enablement & CRM,Salesforce Enterprise,4707.12,Corporate Wire,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,69
+TXN-26-00937,2026-02-25,Engineering,Cloud Compute & Infra,MongoDB Atlas,79126.46,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,84
+TXN-26-00537,2026-02-24,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,9426.05,ACH Transfer,Approved,No,Normal,28
+TXN-26-00002,2026-02-23,Operations & HR,Workplace & People Ops,WeWork Global Offices,10108.45,Corporate Wire,Settled,No,Normal,26
+TXN-26-00595,2026-02-23,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,41938.62,ACH Transfer,Approved,No,Normal,28
+TXN-26-01096,2026-02-23,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,12364.09,Direct Debit,Approved,No,Normal,7
+TXN-26-00003,2026-02-22,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,25076.15,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,81
+TXN-26-00369,2026-02-21,Operations & HR,Workplace & People Ops,Deel Global Payroll,2675.38,ACH Transfer,Settled,No,Normal,13
+TXN-26-00659,2026-02-20,Operations & HR,Workplace & People Ops,Deel Global Payroll,8855.2,ACH Transfer,Approved,No,Normal,27
+TXN-26-00504,2026-02-19,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,8643.83,ACH Transfer,Settled,No,Normal,23
+TXN-26-00578,2026-02-19,Product & AI,AI Models & APIs,Scale AI Labeling,20217.37,ACH Transfer,Approved,No,Normal,15
+TXN-26-00648,2026-02-19,Operations & HR,Workplace & People Ops,Slack Technologies,18552.34,Direct Debit,Approved,No,Normal,20
+TXN-26-00899,2026-02-19,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,8737.67,ACH Transfer,Approved,No,Normal,25
+TXN-26-00852,2026-02-17,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,24525.67,Corporate Wire,Approved,No,Normal,19
+TXN-26-00873,2026-02-17,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,63007.07,Corporate Card,Approved,No,Normal,28
+TXN-26-01075,2026-02-17,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,37384.13,Corporate Wire,Settled,No,Normal,9
+TXN-26-00956,2026-02-16,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,21881.64,ACH Transfer,Pending Review,No,Normal,18
+TXN-26-01147,2026-02-16,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,11985.31,Corporate Card,Settled,No,Normal,24
+TXN-26-00920,2026-02-15,Sales,Sales Enablement & CRM,Gong.io Analytics,915.68,Corporate Wire,Approved,No,Normal,18
+TXN-26-01139,2026-02-15,Operations & HR,Workplace & People Ops,Workday HRMS,7338.82,Corporate Wire,Pending Review,No,Normal,12
+TXN-26-00799,2026-02-14,Sales,Sales Enablement & CRM,Gong.io Analytics,38335.13,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,79
+TXN-26-01000,2026-02-14,Sales,Sales Enablement & CRM,Highspot Enablement,9859.8,Corporate Wire,Settled,No,Normal,13
+TXN-26-01115,2026-02-14,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,209456.44,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,84
+TXN-26-00656,2026-02-13,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,11434.61,Corporate Card,Approved,No,Normal,15
+TXN-26-00321,2026-02-12,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,8037.16,ACH Transfer,Approved,No,Normal,28
+TXN-26-00407,2026-02-12,Operations & HR,Workplace & People Ops,Brex Corporate Cards,7394.33,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,78
+TXN-26-00075,2026-02-11,Engineering,Cloud Compute & Infra,Datadog Monitoring,14964.75,ACH Transfer,Settled,No,Normal,21
+TXN-26-00634,2026-02-11,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,65634.65,Corporate Wire,Settled,No,Normal,27
+TXN-26-00589,2026-02-10,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,20994.71,Corporate Wire,Settled,No,Normal,22
+TXN-26-01050,2026-02-08,Operations & HR,Workplace & People Ops,WeWork Global Offices,7229.91,Direct Debit,Approved,No,Normal,11
+TXN-26-01148,2026-02-08,Operations & HR,Workplace & People Ops,Workday HRMS,1909.97,Corporate Wire,Settled,No,Normal,29
+TXN-26-01189,2026-02-08,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,21034.61,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,69
+TXN-26-00155,2026-02-07,Product & AI,AI Models & APIs,Pinecone Vector DB,2718.67,ACH Transfer,Approved,No,Normal,23
+TXN-26-00749,2026-02-07,Product & AI,AI Models & APIs,Anthropic Claude AI,7134.88,Corporate Wire,Approved,No,Normal,5
+TXN-26-00608,2026-02-06,Product & AI,AI Models & APIs,OpenAI API Services,7691.81,ACH Transfer,Approved,No,Normal,9
+TXN-26-00064,2026-02-04,Operations & HR,Workplace & People Ops,Slack Technologies,11268.58,ACH Transfer,Approved,No,Normal,9
+TXN-26-01046,2026-02-04,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,34536.08,ACH Transfer,Approved,No,Normal,13
+TXN-26-00736,2026-02-03,Sales,Sales Enablement & CRM,ZoomInfo Tech,7658.4,Corporate Card,Settled,No,Normal,26
+TXN-26-00371,2026-02-02,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,53048.09,Corporate Wire,Approved,No,Normal,12
+TXN-26-00718,2026-02-02,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,28258.35,Corporate Wire,Approved,No,Normal,22
+TXN-26-01196,2026-01-31,Product & AI,AI Models & APIs,Scale AI Labeling,15263.14,Corporate Card,Settled,No,Normal,24
+TXN-26-00164,2026-01-30,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,21245.44,Corporate Wire,Settled,No,Normal,27
+TXN-26-00963,2026-01-30,Sales,Sales Enablement & CRM,ZoomInfo Tech,4338.02,Corporate Wire,Approved,No,Normal,24
+TXN-26-00435,2026-01-29,Sales,Sales Enablement & CRM,DocuSign,7533.49,ACH Transfer,Approved,No,Normal,15
+TXN-26-00437,2026-01-29,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,19892.89,Corporate Wire,Pending Review,No,Normal,17
+TXN-26-00682,2026-01-29,Operations & HR,Workplace & People Ops,Brex Corporate Cards,99116.1,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,82
+TXN-26-00847,2026-01-29,Product & AI,AI Models & APIs,Pinecone Vector DB,53092.97,Corporate Card,Approved,No,Normal,9
+TXN-26-01010,2026-01-29,Operations & HR,Workplace & People Ops,Deel Global Payroll,3589.68,ACH Transfer,Settled,No,Normal,15
+TXN-26-01061,2026-01-29,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,2637.68,Corporate Wire,Settled,No,Normal,24
+TXN-26-00240,2026-01-28,Product & AI,AI Models & APIs,Weights & Biases,19869.01,Corporate Wire,Approved,No,Normal,28
+TXN-26-00473,2026-01-28,Product & AI,AI Models & APIs,OpenAI API Services,13952.51,Corporate Wire,Approved,No,Normal,8
+TXN-26-00867,2026-01-28,Product & AI,AI Models & APIs,Scale AI Labeling,19895.61,ACH Transfer,Approved,No,Normal,10
+TXN-26-00258,2026-01-27,Operations & HR,Workplace & People Ops,Deel Global Payroll,4635.93,Corporate Card,Settled,No,Normal,5
+TXN-26-00001,2026-01-26,Sales,Sales Enablement & CRM,DocuSign,137283.41,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,95
+TXN-26-00896,2026-01-24,Engineering,Cloud Compute & Infra,Datadog Monitoring,3758.1,ACH Transfer,Approved,No,Normal,5
+TXN-26-00421,2026-01-23,Operations & HR,Workplace & People Ops,Slack Technologies,11041.99,ACH Transfer,Approved,No,Normal,19
+TXN-26-01079,2026-01-23,Operations & HR,Workplace & People Ops,Workday HRMS,3047.21,ACH Transfer,Approved,No,Normal,25
+TXN-26-00083,2026-01-22,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,26167.44,ACH Transfer,Approved,No,Normal,17
+TXN-26-00061,2026-01-21,Operations & HR,Workplace & People Ops,WeWork Global Offices,3571.66,Corporate Wire,Approved,No,Normal,10
+TXN-26-00350,2026-01-21,Product & AI,AI Models & APIs,OpenAI API Services,5988.8,ACH Transfer,Settled,No,Normal,10
+TXN-26-00445,2026-01-20,Operations & HR,Workplace & People Ops,Slack Technologies,12476.93,Corporate Card,Approved,No,Normal,19
+TXN-26-00512,2026-01-20,Sales,Sales Enablement & CRM,Salesforce Enterprise,12504.43,ACH Transfer,Settled,No,Normal,26
+TXN-26-00550,2026-01-20,Sales,Sales Enablement & CRM,Salesforce Enterprise,1664.16,ACH Transfer,Settled,No,Normal,26
+TXN-26-00664,2026-01-20,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,13386.22,Corporate Wire,Settled,No,Normal,17
+TXN-26-01003,2026-01-19,Sales,Sales Enablement & CRM,DocuSign,3374.27,ACH Transfer,Approved,No,Normal,16
+TXN-26-00499,2026-01-18,Product & AI,AI Models & APIs,Pinecone Vector DB,8602.8,Corporate Wire,Settled,No,Normal,11
+TXN-26-01155,2026-01-18,Marketing & Growth,Digital Ads & Acquisition,Google Ads,4350.96,Corporate Wire,Settled,No,Normal,14
+TXN-26-00965,2026-01-17,Product & AI,AI Models & APIs,Scale AI Labeling,15542.81,Corporate Wire,Pending Review,No,Normal,21
+TXN-26-00210,2026-01-16,Product & AI,AI Models & APIs,Anthropic Claude AI,3510.79,ACH Transfer,Approved,No,Normal,29
+TXN-26-00620,2026-01-16,Operations & HR,Workplace & People Ops,WeWork Global Offices,6198.14,Corporate Wire,Approved,No,Normal,5
+TXN-26-01108,2026-01-16,Sales,Sales Enablement & CRM,Gong.io Analytics,3631.07,Corporate Card,Approved,No,Normal,25
+TXN-26-00385,2026-01-15,Sales,Sales Enablement & CRM,Salesforce Enterprise,6610.82,ACH Transfer,Approved,No,Normal,27
+TXN-26-00384,2026-01-14,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,26201.79,ACH Transfer,Approved,No,Normal,5
+TXN-26-00119,2026-01-12,Product & AI,AI Models & APIs,Weights & Biases,21541.21,Corporate Wire,Approved,No,Normal,16
+TXN-26-01048,2026-01-12,Engineering,Cloud Compute & Infra,GitHub Enterprise,3198.78,ACH Transfer,Approved,No,Normal,8
+TXN-26-00516,2026-01-11,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,11186.41,Corporate Wire,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,70
+TXN-26-00639,2026-01-11,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,17734.69,Corporate Wire,Approved,No,Normal,27
+TXN-26-00838,2026-01-11,Product & AI,AI Models & APIs,Pinecone Vector DB,2556.5,ACH Transfer,Settled,No,Normal,10
+TXN-26-00305,2026-01-10,Engineering,Cloud Compute & Infra,Datadog Monitoring,17650.07,ACH Transfer,Approved,No,Normal,18
+TXN-26-00655,2026-01-10,Engineering,Cloud Compute & Infra,GitHub Enterprise,34716.6,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,65
+TXN-26-00996,2026-01-10,Product & AI,AI Models & APIs,Weights & Biases,73860.97,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,67
+TXN-26-01136,2026-01-10,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,15485.52,Corporate Wire,Approved,No,Normal,6
+TXN-26-00467,2026-01-06,Operations & HR,Workplace & People Ops,Workday HRMS,5948.6,Corporate Wire,Approved,No,Normal,10
+TXN-26-00804,2026-01-06,Product & AI,AI Models & APIs,Weights & Biases,12729.59,Corporate Wire,Approved,No,Normal,15
+TXN-26-01035,2026-01-06,Sales,Sales Enablement & CRM,Highspot Enablement,10043.99,Corporate Card,Approved,No,Normal,6
+TXN-26-00884,2026-01-05,Product & AI,AI Models & APIs,OpenAI API Services,13603.42,ACH Transfer,Settled,No,Normal,19
+TXN-26-00132,2026-01-04,Product & AI,AI Models & APIs,Scale AI Labeling,6151.74,Corporate Wire,Approved,No,Normal,29
+TXN-26-00983,2026-01-04,Sales,Sales Enablement & CRM,Gong.io Analytics,2026.67,ACH Transfer,Approved,No,Normal,16
+TXN-26-00074,2026-01-03,Operations & HR,Workplace & People Ops,Deel Global Payroll,5302.34,Corporate Wire,Approved,No,Normal,8
+TXN-26-00249,2026-01-03,Sales,Sales Enablement & CRM,Salesforce Enterprise,2458.39,Corporate Wire,Approved,No,Normal,17
+TXN-26-00251,2026-01-03,Operations & HR,Workplace & People Ops,Workday HRMS,2249.32,ACH Transfer,Settled,No,Normal,19
+TXN-26-00561,2026-01-03,Operations & HR,Workplace & People Ops,WeWork Global Offices,22403.16,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,84
+TXN-26-01083,2026-01-03,Operations & HR,Workplace & People Ops,WeWork Global Offices,3850.98,ACH Transfer,Pending Review,No,Normal,28
+TXN-26-00784,2026-01-02,Marketing & Growth,Digital Ads & Acquisition,Google Ads,59979.34,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,82
+TXN-26-00755,2026-01-01,Sales,Sales Enablement & CRM,Salesforce Enterprise,12014.8,ACH Transfer,Approved,No,Normal,25
+TXN-25-00619,2025-12-31,Operations & HR,Workplace & People Ops,Deel Global Payroll,3640.34,Direct Debit,Settled,No,Normal,14
+TXN-25-00813,2025-12-31,Product & AI,AI Models & APIs,Pinecone Vector DB,4481.64,Corporate Card,Settled,No,Normal,13
+TXN-25-00332,2025-12-30,Marketing & Growth,Digital Ads & Acquisition,Google Ads,10204.95,Corporate Card,Approved,No,Normal,23
+TXN-25-00630,2025-12-30,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,3281.65,Corporate Card,Approved,No,Normal,12
+TXN-25-01125,2025-12-29,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,33694.47,Corporate Wire,Pending Review,No,Normal,23
+TXN-25-01067,2025-12-28,Sales,Sales Enablement & CRM,Gong.io Analytics,2148.36,Corporate Wire,Approved,No,Normal,20
+TXN-25-00720,2025-12-27,Sales,Sales Enablement & CRM,ZoomInfo Tech,1625.39,ACH Transfer,Approved,No,Normal,25
+TXN-25-01091,2025-12-27,Product & AI,AI Models & APIs,Anthropic Claude AI,8998.9,ACH Transfer,Approved,No,Normal,6
+TXN-25-00800,2025-12-26,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,6203.55,ACH Transfer,Approved,No,Normal,18
+TXN-25-00977,2025-12-26,Sales,Sales Enablement & CRM,Highspot Enablement,27570.25,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,75
+TXN-25-01008,2025-12-26,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,132910.11,ACH Transfer,Approved,No,Normal,5
+TXN-25-00810,2025-12-25,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,1396.75,Corporate Card,Approved,No,Normal,24
+TXN-25-00817,2025-12-25,Product & AI,AI Models & APIs,Anthropic Claude AI,7728.13,Corporate Wire,Settled,No,Normal,18
+TXN-25-00703,2025-12-24,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,11284.0,ACH Transfer,Approved,No,Normal,13
+TXN-25-00950,2025-12-23,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,6640.09,Corporate Card,Approved,No,Normal,19
+TXN-25-00007,2025-12-22,Sales,Sales Enablement & CRM,Highspot Enablement,4538.04,ACH Transfer,Approved,No,Normal,16
+TXN-25-00541,2025-12-22,Engineering,Cloud Compute & Infra,GitHub Enterprise,3784.36,ACH Transfer,Pending Review,No,Normal,26
+TXN-25-00505,2025-12-21,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,18732.86,Corporate Card,Approved,No,Normal,29
+TXN-25-00704,2025-12-20,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,14418.29,ACH Transfer,Approved,No,Normal,19
+TXN-25-01185,2025-12-20,Product & AI,AI Models & APIs,Scale AI Labeling,6006.67,ACH Transfer,Approved,No,Normal,8
+TXN-25-00145,2025-12-19,Operations & HR,Workplace & People Ops,Brex Corporate Cards,22015.58,ACH Transfer,Approved,No,Normal,5
+TXN-25-00087,2025-12-18,Marketing & Growth,Digital Ads & Acquisition,Google Ads,11124.03,ACH Transfer,Settled,No,Normal,22
+TXN-25-01018,2025-12-17,Product & AI,AI Models & APIs,OpenAI API Services,45637.99,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,97
+TXN-25-01032,2025-12-16,Operations & HR,Workplace & People Ops,Deel Global Payroll,4699.33,ACH Transfer,Approved,No,Normal,25
+TXN-25-00125,2025-12-15,Marketing & Growth,Digital Ads & Acquisition,Google Ads,19209.67,ACH Transfer,Approved,No,Normal,20
+TXN-25-00314,2025-12-15,Operations & HR,Workplace & People Ops,Brex Corporate Cards,23906.62,ACH Transfer,Settled,No,Normal,8
+TXN-25-00716,2025-12-15,Operations & HR,Workplace & People Ops,Workday HRMS,7023.71,Corporate Wire,Approved,No,Normal,14
+TXN-25-01012,2025-12-15,Engineering,Cloud Compute & Infra,GitHub Enterprise,27750.92,ACH Transfer,Approved,No,Normal,29
+TXN-25-01163,2025-12-14,Operations & HR,Workplace & People Ops,Deel Global Payroll,12644.82,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,95
+TXN-25-01090,2025-12-13,Marketing & Growth,Digital Ads & Acquisition,Google Ads,2395.96,Corporate Wire,Settled,No,Normal,7
+TXN-25-00489,2025-12-12,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,14669.73,Corporate Wire,Settled,No,Normal,16
+TXN-25-00725,2025-12-12,Sales,Sales Enablement & CRM,DocuSign,9548.08,ACH Transfer,Pending Review,No,Normal,26
+TXN-25-01089,2025-12-12,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,46857.1,Corporate Wire,Approved,No,Normal,29
+TXN-25-00952,2025-12-11,Sales,Sales Enablement & CRM,Highspot Enablement,3752.83,ACH Transfer,Approved,No,Normal,8
+TXN-25-00284,2025-12-10,Sales,Sales Enablement & CRM,ZoomInfo Tech,2995.08,ACH Transfer,Approved,No,Normal,19
+TXN-25-01104,2025-12-10,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,19244.91,Corporate Wire,Settled,No,Normal,25
+TXN-25-00066,2025-12-09,Operations & HR,Workplace & People Ops,Brex Corporate Cards,4230.71,Corporate Wire,Settled,No,Normal,15
+TXN-25-00068,2025-12-09,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,70886.47,ACH Transfer,Approved,No,Normal,20
+TXN-25-00209,2025-12-08,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,7781.82,ACH Transfer,Approved,No,Normal,17
+TXN-25-00870,2025-12-08,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,17647.29,ACH Transfer,Pending Review,No,Normal,5
+TXN-25-00836,2025-12-07,Sales,Sales Enablement & CRM,ZoomInfo Tech,9662.13,ACH Transfer,Approved,No,Normal,21
+TXN-25-00763,2025-12-05,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,31899.69,ACH Transfer,Approved,No,Normal,23
+TXN-25-00291,2025-12-04,Operations & HR,Workplace & People Ops,WeWork Global Offices,1206.87,Corporate Wire,Approved,No,Normal,13
+TXN-25-00221,2025-12-03,Marketing & Growth,Digital Ads & Acquisition,Google Ads,4840.26,Direct Debit,Approved,No,Normal,29
+TXN-25-00737,2025-12-03,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,25332.68,Corporate Wire,Approved,No,Normal,11
+TXN-25-00751,2025-12-03,Operations & HR,Workplace & People Ops,WeWork Global Offices,4487.16,ACH Transfer,Approved,No,Normal,21
+TXN-25-00324,2025-12-02,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,7164.52,Corporate Wire,Settled,No,Normal,12
+TXN-25-00555,2025-12-02,Operations & HR,Workplace & People Ops,Brex Corporate Cards,3547.7,Direct Debit,Approved,No,Normal,24
+TXN-25-00998,2025-12-02,Marketing & Growth,Digital Ads & Acquisition,Google Ads,6311.71,ACH Transfer,Approved,No,Normal,13
+TXN-25-00085,2025-12-01,Engineering,Cloud Compute & Infra,Datadog Monitoring,31745.86,Corporate Card,Approved,No,Normal,5
+TXN-25-00271,2025-12-01,Sales,Sales Enablement & CRM,ZoomInfo Tech,3413.31,Corporate Wire,Approved,No,Normal,8
+TXN-25-00670,2025-12-01,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,19678.79,Corporate Wire,Approved,No,Normal,11
+TXN-25-00134,2025-11-30,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,8437.54,Direct Debit,Approved,No,Normal,23
+TXN-25-00176,2025-11-29,Operations & HR,Workplace & People Ops,Slack Technologies,66646.62,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,66
+TXN-25-00423,2025-11-29,Sales,Sales Enablement & CRM,Highspot Enablement,3121.9,ACH Transfer,Settled,No,Normal,18
+TXN-25-00432,2025-11-28,Operations & HR,Workplace & People Ops,WeWork Global Offices,6923.69,Corporate Wire,Settled,No,Normal,13
+TXN-25-01094,2025-11-27,Operations & HR,Workplace & People Ops,Brex Corporate Cards,878.19,ACH Transfer,Approved,No,Normal,29
+TXN-25-00356,2025-11-26,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,6415.92,Corporate Wire,Approved,No,Normal,8
+TXN-25-00962,2025-11-26,Sales,Sales Enablement & CRM,Highspot Enablement,7800.44,Corporate Card,Approved,No,Normal,5
+TXN-25-01174,2025-11-26,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,1434.48,Corporate Wire,Approved,No,Normal,24
+TXN-25-01016,2025-11-25,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,8365.71,ACH Transfer,Settled,No,Normal,17
+TXN-25-00277,2025-11-24,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,6247.21,Corporate Wire,Approved,No,Normal,16
+TXN-25-00433,2025-11-23,Marketing & Growth,Digital Ads & Acquisition,Google Ads,42971.25,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,73
+TXN-25-00625,2025-11-23,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,2924.04,Corporate Card,Approved,No,Normal,25
+TXN-25-00892,2025-11-23,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,27298.82,Direct Debit,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,72
+TXN-25-00989,2025-11-22,Marketing & Growth,Digital Ads & Acquisition,Google Ads,3672.69,Corporate Card,Approved,No,Normal,26
+TXN-25-01017,2025-11-22,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,9780.35,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,93
+TXN-25-00707,2025-11-20,Sales,Sales Enablement & CRM,Gong.io Analytics,16730.97,Corporate Wire,Approved,No,Normal,22
+TXN-25-00104,2025-11-19,Sales,Sales Enablement & CRM,Salesforce Enterprise,9104.91,ACH Transfer,Approved,No,Normal,11
+TXN-25-00154,2025-11-19,Sales,Sales Enablement & CRM,Gong.io Analytics,1496.66,ACH Transfer,Approved,No,Normal,14
+TXN-25-00267,2025-11-17,Engineering,Cloud Compute & Infra,MongoDB Atlas,2162.68,ACH Transfer,Settled,No,Normal,21
+TXN-25-01137,2025-11-17,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,20599.6,ACH Transfer,Settled,No,Normal,11
+TXN-25-00174,2025-11-16,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,41274.96,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,82
+TXN-25-00503,2025-11-16,Sales,Sales Enablement & CRM,DocuSign,11706.81,Corporate Wire,Approved,No,Normal,15
+TXN-25-01164,2025-11-16,Engineering,Cloud Compute & Infra,GitHub Enterprise,14494.28,Corporate Wire,Approved,No,Normal,29
+TXN-25-00553,2025-11-15,Sales,Sales Enablement & CRM,Salesforce Enterprise,2491.8,Corporate Wire,Settled,No,Normal,15
+TXN-25-00905,2025-11-15,Sales,Sales Enablement & CRM,Salesforce Enterprise,5063.04,Corporate Wire,Approved,No,Normal,18
+TXN-25-00188,2025-11-14,Operations & HR,Workplace & People Ops,Brex Corporate Cards,11597.51,ACH Transfer,Approved,No,Normal,19
+TXN-25-00320,2025-11-14,Operations & HR,Workplace & People Ops,Slack Technologies,678.59,Corporate Wire,Approved,No,Normal,12
+TXN-25-00728,2025-11-14,Engineering,Cloud Compute & Infra,Datadog Monitoring,16413.08,Corporate Card,Approved,No,Normal,5
+TXN-25-00170,2025-11-13,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,29309.03,ACH Transfer,Approved,No,Normal,25
+TXN-25-00231,2025-11-13,Product & AI,AI Models & APIs,Anthropic Claude AI,1661.98,ACH Transfer,Approved,No,Normal,9
+TXN-25-00968,2025-11-13,Operations & HR,Workplace & People Ops,Slack Technologies,7322.68,ACH Transfer,Approved,No,Normal,17
+TXN-25-01081,2025-11-13,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,11095.66,ACH Transfer,Approved,No,Normal,6
+TXN-25-01165,2025-11-13,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,8846.85,ACH Transfer,Approved,No,Normal,25
+TXN-25-00088,2025-11-12,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,6459.37,Corporate Card,Settled,No,Normal,19
+TXN-25-01149,2025-11-12,Product & AI,AI Models & APIs,Weights & Biases,6936.26,Corporate Wire,Approved,No,Normal,14
+TXN-25-01031,2025-11-11,Operations & HR,Workplace & People Ops,WeWork Global Offices,162348.54,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,84
+TXN-25-00517,2025-11-10,Product & AI,AI Models & APIs,Scale AI Labeling,13381.13,Corporate Wire,Approved,No,Normal,26
+TXN-25-00974,2025-11-09,Product & AI,AI Models & APIs,Weights & Biases,12943.22,ACH Transfer,Approved,No,Normal,12
+TXN-25-01161,2025-11-09,Sales,Sales Enablement & CRM,DocuSign,5687.67,Corporate Wire,Approved,No,Normal,23
+TXN-25-00460,2025-11-08,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,28814.2,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,67
+TXN-25-00822,2025-11-08,Sales,Sales Enablement & CRM,ZoomInfo Tech,27310.2,Direct Debit,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,78
+TXN-25-00878,2025-11-08,Engineering,Cloud Compute & Infra,MongoDB Atlas,75436.32,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,77
+TXN-25-00110,2025-11-07,Operations & HR,Workplace & People Ops,Deel Global Payroll,2603.84,Corporate Wire,Settled,No,Normal,22
+TXN-25-00490,2025-11-07,Sales,Sales Enablement & CRM,Gong.io Analytics,7724.9,ACH Transfer,Settled,No,Normal,23
+TXN-25-00478,2025-11-06,Product & AI,AI Models & APIs,Pinecone Vector DB,4747.55,Corporate Wire,Settled,No,Normal,11
+TXN-25-00675,2025-11-06,Engineering,Cloud Compute & Infra,Datadog Monitoring,21746.81,Corporate Wire,Approved,No,Normal,6
+TXN-25-00902,2025-11-06,Product & AI,AI Models & APIs,OpenAI API Services,20096.54,Corporate Wire,Approved,No,Normal,20
+TXN-25-00907,2025-11-06,Sales,Sales Enablement & CRM,Salesforce Enterprise,10770.38,Corporate Wire,Settled,No,Normal,6
+TXN-25-01177,2025-11-05,Operations & HR,Workplace & People Ops,Slack Technologies,1145.17,Corporate Wire,Approved,No,Normal,16
+TXN-25-00502,2025-11-03,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,44340.28,ACH Transfer,Approved,No,Normal,9
+TXN-25-00524,2025-11-03,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,3135.96,Corporate Card,Settled,No,Normal,9
+TXN-25-00090,2025-11-02,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,31145.76,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,85
+TXN-25-00220,2025-11-02,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,9116.49,ACH Transfer,Approved,No,Normal,21
+TXN-25-00425,2025-11-01,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,85977.62,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,75
+TXN-25-00574,2025-11-01,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,26062.7,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-25-00815,2025-10-29,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,10704.13,ACH Transfer,Settled,No,Normal,7
+TXN-25-01100,2025-10-28,Product & AI,AI Models & APIs,Scale AI Labeling,10173.5,ACH Transfer,Approved,No,Normal,28
+TXN-25-00146,2025-10-27,Operations & HR,Workplace & People Ops,Brex Corporate Cards,11828.04,Corporate Wire,Approved,No,Normal,18
+TXN-25-00377,2025-10-27,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,40859.84,Corporate Wire,Approved,No,Normal,29
+TXN-25-00554,2025-10-26,Product & AI,AI Models & APIs,Weights & Biases,182187.12,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,95
+TXN-25-00396,2025-10-25,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,33942.5,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,89
+TXN-25-00795,2025-10-25,Sales,Sales Enablement & CRM,Highspot Enablement,2562.87,ACH Transfer,Settled,No,Normal,17
+TXN-25-00268,2025-10-24,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,5989.36,Corporate Card,Approved,No,Normal,16
+TXN-25-00410,2025-10-24,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,29118.83,Corporate Wire,Settled,No,Normal,13
+TXN-25-00942,2025-10-24,Operations & HR,Workplace & People Ops,Deel Global Payroll,10613.02,Direct Debit,Approved,No,Normal,20
+TXN-25-00315,2025-10-23,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,38754.46,ACH Transfer,Approved,No,Normal,6
+TXN-25-00318,2025-10-23,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,138159.37,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,87
+TXN-25-00882,2025-10-23,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,16014.61,Corporate Wire,Approved,No,Normal,25
+TXN-25-00192,2025-10-22,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,8200.55,Corporate Card,Settled,No,Normal,27
+TXN-25-00601,2025-10-22,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,11485.96,ACH Transfer,Approved,No,Normal,6
+TXN-25-00816,2025-10-22,Operations & HR,Workplace & People Ops,Slack Technologies,2874.94,Corporate Wire,Approved,No,Normal,12
+TXN-25-00883,2025-10-21,Operations & HR,Workplace & People Ops,WeWork Global Offices,2117.45,ACH Transfer,Approved,No,Normal,29
+TXN-25-00633,2025-10-20,Operations & HR,Workplace & People Ops,Workday HRMS,19959.12,Corporate Card,Approved,No,Normal,8
+TXN-25-01021,2025-10-20,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,30614.76,ACH Transfer,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,62
+TXN-25-00200,2025-10-19,Sales,Sales Enablement & CRM,Gong.io Analytics,1134.78,ACH Transfer,Approved,No,Normal,5
+TXN-25-00645,2025-10-19,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,7185.0,Corporate Wire,Approved,No,Normal,25
+TXN-25-01150,2025-10-19,Product & AI,AI Models & APIs,Scale AI Labeling,29726.62,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,79
+TXN-25-00871,2025-10-18,Product & AI,AI Models & APIs,Weights & Biases,7775.99,Corporate Wire,Pending Review,No,Normal,24
+TXN-25-00912,2025-10-18,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,29722.01,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,78
+TXN-25-00507,2025-10-17,Product & AI,AI Models & APIs,Weights & Biases,5063.26,ACH Transfer,Approved,No,Normal,17
+TXN-25-00702,2025-10-17,Sales,Sales Enablement & CRM,Salesforce Enterprise,3838.67,Corporate Wire,Approved,No,Normal,20
+TXN-25-00721,2025-10-17,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,9020.17,Corporate Wire,Approved,No,Normal,13
+TXN-25-01058,2025-10-17,Operations & HR,Workplace & People Ops,WeWork Global Offices,23209.34,ACH Transfer,Approved,No,Normal,5
+TXN-25-00098,2025-10-15,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,10336.08,ACH Transfer,Pending Review,No,Normal,25
+TXN-25-00404,2025-10-15,Operations & HR,Workplace & People Ops,Slack Technologies,5462.03,Corporate Wire,Approved,No,Normal,23
+TXN-25-00073,2025-10-14,Engineering,Cloud Compute & Infra,MongoDB Atlas,34550.61,ACH Transfer,Approved,No,Normal,20
+TXN-25-00712,2025-10-14,Operations & HR,Workplace & People Ops,WeWork Global Offices,14045.65,ACH Transfer,Approved,No,Normal,25
+TXN-25-00054,2025-10-13,Engineering,Cloud Compute & Infra,GitHub Enterprise,8289.91,Corporate Wire,Approved,No,Normal,27
+TXN-25-00408,2025-10-12,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,9335.04,Corporate Card,Approved,No,Normal,6
+TXN-25-00918,2025-10-12,Marketing & Growth,Digital Ads & Acquisition,Google Ads,44831.37,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,82
+TXN-25-00480,2025-10-11,Operations & HR,Workplace & People Ops,Slack Technologies,6330.36,Corporate Wire,Approved,No,Normal,18
+TXN-25-00169,2025-10-10,Product & AI,AI Models & APIs,OpenAI API Services,40649.08,Corporate Wire,Approved,No,Normal,12
+TXN-25-00301,2025-10-10,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,5662.4,Corporate Wire,Approved,No,Normal,26
+TXN-25-00903,2025-10-10,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,10239.08,Corporate Card,Approved,No,Normal,24
+TXN-25-01086,2025-10-10,Product & AI,AI Models & APIs,OpenAI API Services,11276.4,Corporate Wire,Approved,No,Normal,21
+TXN-25-01106,2025-10-10,Operations & HR,Workplace & People Ops,Workday HRMS,3772.61,Corporate Card,Settled,No,Normal,14
+TXN-25-00097,2025-10-09,Operations & HR,Workplace & People Ops,Slack Technologies,3698.96,ACH Transfer,Approved,No,Normal,17
+TXN-25-00742,2025-10-09,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,3010.01,Corporate Card,Settled,No,Normal,27
+TXN-25-00358,2025-10-08,Engineering,Cloud Compute & Infra,Datadog Monitoring,31595.39,Corporate Wire,Approved,No,Normal,21
+TXN-25-00024,2025-10-07,Engineering,Cloud Compute & Infra,Datadog Monitoring,85638.52,Corporate Wire,Settled,No,Normal,7
+TXN-25-00468,2025-10-07,Product & AI,AI Models & APIs,OpenAI API Services,2726.47,Corporate Wire,Approved,No,Normal,6
+TXN-25-00842,2025-10-07,Engineering,Cloud Compute & Infra,GitHub Enterprise,3618.4,ACH Transfer,Settled,No,Normal,12
+TXN-25-00012,2025-10-06,Marketing & Growth,Digital Ads & Acquisition,Google Ads,16319.48,Corporate Card,Approved,No,Normal,20
+TXN-25-00660,2025-10-04,Operations & HR,Workplace & People Ops,Slack Technologies,16314.51,ACH Transfer,Settled,No,Normal,20
+TXN-25-00750,2025-10-04,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,9351.13,Corporate Wire,Approved,No,Normal,10
+TXN-25-00241,2025-10-02,Product & AI,AI Models & APIs,Weights & Biases,6276.47,Direct Debit,Settled,No,Normal,23
+TXN-25-00843,2025-10-02,Operations & HR,Workplace & People Ops,Brex Corporate Cards,5363.87,ACH Transfer,Approved,No,Normal,27
+TXN-25-00923,2025-10-02,Operations & HR,Workplace & People Ops,WeWork Global Offices,710.48,Corporate Wire,Pending Review,No,Normal,8
+TXN-25-00224,2025-10-01,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,20313.5,Corporate Wire,Approved,No,Normal,8
+TXN-25-00235,2025-09-29,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,41875.09,Corporate Card,Approved,No,Normal,18
+TXN-25-00351,2025-09-29,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,28021.93,Corporate Wire,Approved,No,Normal,8
+TXN-25-00924,2025-09-29,Sales,Sales Enablement & CRM,Gong.io Analytics,1514.03,ACH Transfer,Approved,No,Normal,6
+TXN-25-00865,2025-09-28,Operations & HR,Workplace & People Ops,Brex Corporate Cards,23195.68,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,73
+TXN-25-00455,2025-09-27,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,24378.2,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,66
+TXN-25-00957,2025-09-27,Product & AI,AI Models & APIs,Anthropic Claude AI,22565.4,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,66
+TXN-25-00700,2025-09-26,Engineering,Cloud Compute & Infra,Datadog Monitoring,10556.75,Corporate Wire,Approved,No,Normal,11
+TXN-25-00711,2025-09-26,Engineering,Cloud Compute & Infra,MongoDB Atlas,4991.32,Corporate Wire,Approved,No,Normal,17
+TXN-25-00900,2025-09-26,Product & AI,AI Models & APIs,Anthropic Claude AI,2752.48,ACH Transfer,Settled,No,Normal,25
+TXN-25-00398,2025-09-25,Product & AI,AI Models & APIs,OpenAI API Services,12626.68,Corporate Wire,Settled,No,Normal,11
+TXN-25-01159,2025-09-25,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,18732.46,ACH Transfer,Approved,No,Normal,6
+TXN-25-00500,2025-09-24,Operations & HR,Workplace & People Ops,WeWork Global Offices,25326.35,Corporate Wire,Approved,No,Normal,23
+TXN-25-00253,2025-09-23,Operations & HR,Workplace & People Ops,Brex Corporate Cards,2366.29,ACH Transfer,Approved,No,Normal,13
+TXN-25-00570,2025-09-23,Engineering,Cloud Compute & Infra,GitHub Enterprise,26081.12,ACH Transfer,Approved,No,Normal,17
+TXN-25-00701,2025-09-23,Product & AI,AI Models & APIs,Anthropic Claude AI,3455.8,Corporate Wire,Settled,No,Normal,13
+TXN-25-00346,2025-09-20,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,11518.51,Corporate Wire,Approved,No,Normal,23
+TXN-25-00764,2025-09-20,Operations & HR,Workplace & People Ops,Workday HRMS,16549.12,Corporate Wire,Settled,No,Normal,8
+TXN-25-00658,2025-09-19,Sales,Sales Enablement & CRM,ZoomInfo Tech,4158.41,Corporate Card,Approved,No,Normal,22
+TXN-25-01066,2025-09-19,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,20885.18,ACH Transfer,Settled,No,Normal,27
+TXN-25-01130,2025-09-18,Operations & HR,Workplace & People Ops,WeWork Global Offices,12233.57,Corporate Wire,Approved,No,Normal,29
+TXN-25-00546,2025-09-17,Operations & HR,Workplace & People Ops,Workday HRMS,8551.13,ACH Transfer,Settled,No,Normal,14
+TXN-25-00876,2025-09-17,Product & AI,AI Models & APIs,Scale AI Labeling,20275.73,Corporate Card,Pending Review,No,Normal,12
+TXN-25-00107,2025-09-16,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,12833.7,Corporate Wire,Approved,No,Normal,20
+TXN-25-00987,2025-09-16,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,12800.29,ACH Transfer,Approved,No,Normal,27
+TXN-25-00917,2025-09-15,Operations & HR,Workplace & People Ops,Slack Technologies,1362.04,Corporate Wire,Settled,No,Normal,29
+TXN-25-00195,2025-09-14,Marketing & Growth,Digital Ads & Acquisition,Google Ads,7744.16,ACH Transfer,Approved,No,Normal,10
+TXN-25-00177,2025-09-13,Sales,Sales Enablement & CRM,Highspot Enablement,6452.33,ACH Transfer,Settled,No,Normal,28
+TXN-25-00879,2025-09-13,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,14434.11,Corporate Wire,Approved,No,Normal,22
+TXN-25-01088,2025-09-13,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,1024.79,ACH Transfer,Approved,No,Normal,23
+TXN-25-00628,2025-09-12,Product & AI,AI Models & APIs,Weights & Biases,45238.22,Corporate Wire,Settled,No,Normal,23
+TXN-25-00745,2025-09-12,Operations & HR,Workplace & People Ops,Slack Technologies,633.65,Corporate Wire,Approved,No,Normal,14
+TXN-25-00286,2025-09-10,Operations & HR,Workplace & People Ops,Deel Global Payroll,1917.6,Corporate Card,Approved,No,Normal,8
+TXN-25-00492,2025-09-10,Product & AI,AI Models & APIs,Scale AI Labeling,1510.94,Corporate Wire,Pending Review,No,Normal,12
+TXN-25-00823,2025-09-09,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,11722.36,Corporate Wire,Approved,No,Normal,18
+TXN-25-00829,2025-09-09,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,62646.45,Corporate Wire,Approved,No,Normal,29
+TXN-25-00862,2025-09-09,Operations & HR,Workplace & People Ops,Deel Global Payroll,49027.5,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,76
+TXN-25-00417,2025-09-08,Operations & HR,Workplace & People Ops,Brex Corporate Cards,5376.22,ACH Transfer,Approved,No,Normal,10
+TXN-25-00419,2025-09-08,Engineering,Cloud Compute & Infra,MongoDB Atlas,6494.39,ACH Transfer,Approved,No,Normal,21
+TXN-25-00818,2025-09-08,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,49886.51,ACH Transfer,Approved,No,Normal,7
+TXN-25-00036,2025-09-07,Product & AI,AI Models & APIs,Anthropic Claude AI,59046.17,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,74
+TXN-25-00572,2025-09-07,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,21197.95,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,74
+TXN-25-00272,2025-09-06,Engineering,Cloud Compute & Infra,MongoDB Atlas,50045.8,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,67
+TXN-25-00375,2025-09-06,Sales,Sales Enablement & CRM,Salesforce Enterprise,5844.64,Direct Debit,Approved,No,Normal,18
+TXN-25-00635,2025-09-05,Sales,Sales Enablement & CRM,Highspot Enablement,17274.0,ACH Transfer,Approved,No,Normal,23
+TXN-25-00141,2025-09-03,Product & AI,AI Models & APIs,Weights & Biases,2210.62,Corporate Card,Settled,No,Normal,11
+TXN-25-00540,2025-09-03,Engineering,Cloud Compute & Infra,Datadog Monitoring,20655.92,ACH Transfer,Approved,No,Normal,26
+TXN-25-00481,2025-09-02,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,2170.8,Corporate Wire,Approved,No,Normal,24
+TXN-25-00580,2025-09-02,Operations & HR,Workplace & People Ops,Deel Global Payroll,23362.03,ACH Transfer,Pending Review,No,Normal,17
+TXN-25-01171,2025-09-02,Product & AI,AI Models & APIs,Pinecone Vector DB,8869.44,ACH Transfer,Approved,No,Normal,10
+TXN-25-00577,2025-09-01,Marketing & Growth,Digital Ads & Acquisition,Google Ads,2232.31,ACH Transfer,Pending Review,No,Normal,13
+TXN-25-00622,2025-09-01,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,17884.28,ACH Transfer,Approved,No,Normal,17
+TXN-25-01186,2025-09-01,Sales,Sales Enablement & CRM,DocuSign,4144.68,ACH Transfer,Settled,No,Normal,12
+TXN-25-00250,2025-08-31,Product & AI,AI Models & APIs,Anthropic Claude AI,11093.24,Corporate Wire,Approved,No,Normal,11
+TXN-25-00886,2025-08-31,Sales,Sales Enablement & CRM,Gong.io Analytics,13819.12,Corporate Wire,Approved,No,Normal,27
+TXN-25-01132,2025-08-31,Engineering,Cloud Compute & Infra,MongoDB Atlas,4208.23,Corporate Wire,Approved,No,Normal,6
+TXN-25-00533,2025-08-30,Product & AI,AI Models & APIs,Weights & Biases,22849.62,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,85
+TXN-25-00102,2025-08-29,Product & AI,AI Models & APIs,Pinecone Vector DB,19804.81,Corporate Wire,Approved,No,Normal,18
+TXN-25-00688,2025-08-29,Sales,Sales Enablement & CRM,Highspot Enablement,3370.89,Corporate Wire,Approved,No,Normal,12
+TXN-25-00424,2025-08-28,Sales,Sales Enablement & CRM,Salesforce Enterprise,1412.89,Corporate Wire,Approved,No,Normal,8
+TXN-25-00059,2025-08-27,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,23469.07,Corporate Wire,Approved,No,Normal,23
+TXN-25-01142,2025-08-26,Engineering,Cloud Compute & Infra,MongoDB Atlas,5178.13,ACH Transfer,Settled,No,Normal,8
+TXN-25-00103,2025-08-24,Product & AI,AI Models & APIs,OpenAI API Services,11906.99,Corporate Wire,Settled,No,Normal,25
+TXN-25-00229,2025-08-24,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,8319.1,Corporate Wire,Approved,No,Normal,28
+TXN-25-00973,2025-08-24,Operations & HR,Workplace & People Ops,WeWork Global Offices,2147.31,Corporate Wire,Settled,No,Normal,7
+TXN-25-00030,2025-08-23,Marketing & Growth,Digital Ads & Acquisition,Google Ads,21736.09,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,69
+TXN-25-00347,2025-08-23,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,7230.78,ACH Transfer,Approved,No,Normal,12
+TXN-25-00353,2025-08-23,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,15808.82,ACH Transfer,Approved,No,Normal,23
+TXN-25-01107,2025-08-23,Engineering,Cloud Compute & Infra,Datadog Monitoring,36585.02,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-25-01154,2025-08-23,Operations & HR,Workplace & People Ops,WeWork Global Offices,17284.69,Corporate Wire,Pending Review,No,Normal,13
+TXN-25-00198,2025-08-22,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,10950.53,Corporate Wire,Settled,No,Normal,23
+TXN-25-00513,2025-08-22,Engineering,Cloud Compute & Infra,Datadog Monitoring,19880.01,Corporate Wire,Settled,No,Normal,17
+TXN-25-00264,2025-08-21,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,15532.26,Corporate Card,Approved,No,Normal,28
+TXN-25-00824,2025-08-21,Marketing & Growth,Digital Ads & Acquisition,Google Ads,29914.58,Corporate Wire,Approved,No,Normal,19
+TXN-25-00547,2025-08-20,Engineering,Cloud Compute & Infra,Datadog Monitoring,22256.07,ACH Transfer,Settled,No,Normal,29
+TXN-25-00647,2025-08-20,Sales,Sales Enablement & CRM,Highspot Enablement,7295.05,Corporate Wire,Approved,No,Normal,26
+TXN-25-01097,2025-08-20,Operations & HR,Workplace & People Ops,Slack Technologies,5378.13,Corporate Card,Settled,No,Normal,15
+TXN-25-00557,2025-08-17,Engineering,Cloud Compute & Infra,MongoDB Atlas,5903.9,ACH Transfer,Approved,No,Normal,20
+TXN-25-01170,2025-08-17,Sales,Sales Enablement & CRM,ZoomInfo Tech,6830.91,Corporate Card,Settled,No,Normal,17
+TXN-25-00062,2025-08-16,Sales,Sales Enablement & CRM,Highspot Enablement,4081.15,Corporate Wire,Approved,No,Normal,13
+TXN-25-00401,2025-08-16,Product & AI,AI Models & APIs,OpenAI API Services,47284.16,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,75
+TXN-25-00697,2025-08-16,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,33881.8,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,69
+TXN-25-01169,2025-08-16,Product & AI,AI Models & APIs,Weights & Biases,48596.27,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,74
+TXN-25-00266,2025-08-14,Product & AI,AI Models & APIs,OpenAI API Services,19483.5,Corporate Wire,Approved,No,Normal,8
+TXN-25-00325,2025-08-14,Product & AI,AI Models & APIs,Anthropic Claude AI,31580.9,Corporate Card,Approved,No,Normal,25
+TXN-25-00508,2025-08-14,Sales,Sales Enablement & CRM,ZoomInfo Tech,2092.02,Corporate Wire,Approved,No,Normal,25
+TXN-25-00532,2025-08-13,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,117514.86,Corporate Wire,Approved,No,Normal,20
+TXN-25-00627,2025-08-12,Product & AI,AI Models & APIs,Anthropic Claude AI,1816.78,Direct Debit,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,81
+TXN-25-00683,2025-08-12,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,55690.3,ACH Transfer,Approved,No,Normal,18
+TXN-25-01198,2025-08-12,Engineering,Cloud Compute & Infra,Datadog Monitoring,30548.3,Corporate Card,Approved,No,Normal,20
+TXN-25-00653,2025-08-11,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,14105.54,Corporate Card,Approved,No,Normal,10
+TXN-25-00713,2025-08-11,Sales,Sales Enablement & CRM,ZoomInfo Tech,2350.72,ACH Transfer,Approved,No,Normal,7
+TXN-25-00461,2025-08-10,Operations & HR,Workplace & People Ops,Brex Corporate Cards,7736.02,ACH Transfer,Pending Review,No,Normal,18
+TXN-25-00260,2025-08-09,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,28846.63,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,65
+TXN-25-00583,2025-08-09,Sales,Sales Enablement & CRM,Salesforce Enterprise,10777.12,Corporate Wire,Approved,No,Normal,6
+TXN-25-01065,2025-08-09,Product & AI,AI Models & APIs,Scale AI Labeling,68446.63,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,69
+TXN-25-01077,2025-08-09,Sales,Sales Enablement & CRM,Salesforce Enterprise,1543.76,ACH Transfer,Approved,No,Normal,23
+TXN-25-01126,2025-08-09,Engineering,Cloud Compute & Infra,Datadog Monitoring,8478.0,Corporate Wire,Approved,No,Normal,24
+TXN-25-00982,2025-08-08,Sales,Sales Enablement & CRM,Gong.io Analytics,10796.85,ACH Transfer,Approved,No,Normal,9
+TXN-25-01129,2025-08-08,Operations & HR,Workplace & People Ops,Brex Corporate Cards,893.25,ACH Transfer,Settled,No,Normal,9
+TXN-25-00436,2025-08-07,Marketing & Growth,Digital Ads & Acquisition,Google Ads,11914.75,Corporate Wire,Approved,No,Normal,5
+TXN-25-01027,2025-08-07,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,52657.03,Corporate Card,Approved,No,Normal,28
+TXN-25-00302,2025-08-06,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,6552.42,Corporate Wire,Approved,No,Normal,11
+TXN-25-00226,2025-08-05,Engineering,Cloud Compute & Infra,MongoDB Atlas,5139.85,Corporate Card,Approved,No,Normal,26
+TXN-25-00245,2025-08-05,Product & AI,AI Models & APIs,OpenAI API Services,7140.87,Corporate Wire,Approved,No,Normal,5
+TXN-25-00416,2025-08-03,Operations & HR,Workplace & People Ops,WeWork Global Offices,15068.58,ACH Transfer,Approved,No,Normal,8
+TXN-25-00677,2025-08-01,Operations & HR,Workplace & People Ops,Brex Corporate Cards,6050.54,Corporate Wire,Settled,No,Normal,10
+TXN-25-00855,2025-08-01,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,2169.51,Direct Debit,Approved,No,Normal,7
+TXN-25-00355,2025-07-31,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,3740.12,Corporate Wire,Settled,No,Normal,23
+TXN-25-00614,2025-07-31,Sales,Sales Enablement & CRM,ZoomInfo Tech,93386.36,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,89
+TXN-25-00642,2025-07-31,Engineering,Cloud Compute & Infra,MongoDB Atlas,12749.94,Corporate Wire,Approved,No,Normal,14
+TXN-25-00850,2025-07-30,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,22724.26,Corporate Wire,Approved,No,Normal,26
+TXN-25-00929,2025-07-30,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,23798.16,Direct Debit,Approved,No,Normal,7
+TXN-25-00096,2025-07-29,Sales,Sales Enablement & CRM,DocuSign,1910.29,ACH Transfer,Approved,No,Normal,14
+TXN-25-00129,2025-07-29,Product & AI,AI Models & APIs,Anthropic Claude AI,1393.63,Corporate Card,Approved,No,Normal,16
+TXN-25-00147,2025-07-29,Engineering,Cloud Compute & Infra,MongoDB Atlas,1657.8,Direct Debit,Approved,No,Normal,6
+TXN-25-00341,2025-07-29,Sales,Sales Enablement & CRM,Highspot Enablement,16724.35,ACH Transfer,Approved,No,Normal,21
+TXN-25-00611,2025-07-29,Sales,Sales Enablement & CRM,DocuSign,3440.56,Corporate Wire,Approved,No,Normal,19
+TXN-25-00180,2025-07-28,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,19827.39,Corporate Wire,Approved,No,Normal,29
+TXN-25-00846,2025-07-28,Sales,Sales Enablement & CRM,Gong.io Analytics,6872.58,Corporate Wire,Approved,No,Normal,22
+TXN-25-00442,2025-07-26,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,16290.55,Corporate Wire,Approved,No,Normal,27
+TXN-25-00545,2025-07-26,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,44328.81,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,70
+TXN-25-00610,2025-07-26,Engineering,Cloud Compute & Infra,Datadog Monitoring,6454.07,Corporate Card,Approved,No,Normal,15
+TXN-25-00788,2025-07-26,Operations & HR,Workplace & People Ops,Slack Technologies,33792.27,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,81
+TXN-25-01025,2025-07-26,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,56010.21,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-25-00527,2025-07-24,Operations & HR,Workplace & People Ops,Slack Technologies,12211.76,Corporate Wire,Approved,No,Normal,7
+TXN-25-00944,2025-07-24,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,9704.37,Corporate Wire,Approved,No,Normal,10
+TXN-25-00991,2025-07-24,Sales,Sales Enablement & CRM,DocuSign,1271.52,ACH Transfer,Approved,No,Normal,12
+TXN-25-00643,2025-07-23,Operations & HR,Workplace & People Ops,Workday HRMS,18706.9,ACH Transfer,Approved,No,Normal,12
+TXN-25-00689,2025-07-23,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,29090.77,Corporate Wire,Settled,No,Normal,5
+TXN-25-00768,2025-07-23,Sales,Sales Enablement & CRM,Highspot Enablement,18444.43,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,94
+TXN-25-00352,2025-07-22,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,23852.62,Corporate Wire,Approved,No,Normal,6
+TXN-25-00441,2025-07-22,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,56197.47,Corporate Wire,Approved,No,Normal,18
+TXN-25-00483,2025-07-22,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,5195.89,ACH Transfer,Approved,No,Normal,11
+TXN-25-01026,2025-07-22,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,62391.74,Corporate Wire,Approved,No,Normal,14
+TXN-25-00567,2025-07-20,Product & AI,AI Models & APIs,Weights & Biases,4052.36,Direct Debit,Approved,No,Normal,23
+TXN-25-00604,2025-07-20,Product & AI,AI Models & APIs,Anthropic Claude AI,70319.06,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,67
+TXN-25-00699,2025-07-20,Operations & HR,Workplace & People Ops,Slack Technologies,2955.38,ACH Transfer,Approved,No,Normal,11
+TXN-25-00814,2025-07-20,Product & AI,AI Models & APIs,OpenAI API Services,12993.81,Corporate Wire,Settled,No,Normal,10
+TXN-25-00841,2025-07-20,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,34402.85,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,79
+TXN-25-00521,2025-07-19,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,6664.15,Corporate Wire,Approved,No,Normal,16
+TXN-25-00722,2025-07-19,Sales,Sales Enablement & CRM,ZoomInfo Tech,19542.48,Corporate Wire,Approved,No,Normal,26
+TXN-25-00494,2025-07-16,Marketing & Growth,Digital Ads & Acquisition,Google Ads,10976.41,Corporate Wire,Approved,No,Normal,18
+TXN-25-00576,2025-07-15,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,40100.57,Corporate Card,Approved,No,Normal,29
+TXN-25-00669,2025-07-15,Operations & HR,Workplace & People Ops,WeWork Global Offices,3375.82,ACH Transfer,Approved,No,Normal,12
+TXN-25-00840,2025-07-15,Sales,Sales Enablement & CRM,DocuSign,3226.22,Corporate Wire,Pending Review,No,Normal,19
+TXN-25-00891,2025-07-15,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,5409.39,ACH Transfer,Approved,No,Normal,12
+TXN-25-00328,2025-07-13,Operations & HR,Workplace & People Ops,Deel Global Payroll,10557.11,Corporate Wire,Approved,No,Normal,10
+TXN-25-01073,2025-07-13,Operations & HR,Workplace & People Ops,Slack Technologies,5816.58,Corporate Wire,Approved,No,Normal,10
+TXN-25-01119,2025-07-13,Product & AI,AI Models & APIs,Anthropic Claude AI,6214.12,Corporate Card,Approved,No,Normal,15
+TXN-25-00466,2025-07-12,Sales,Sales Enablement & CRM,Highspot Enablement,10666.13,Corporate Card,Approved,No,Normal,20
+TXN-25-00868,2025-07-11,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,1632.84,Corporate Wire,Approved,No,Normal,28
+TXN-25-00288,2025-07-10,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,8391.0,Corporate Wire,Approved,No,Normal,23
+TXN-25-00453,2025-07-10,Operations & HR,Workplace & People Ops,Brex Corporate Cards,1972.27,Corporate Wire,Approved,No,Normal,7
+TXN-25-00464,2025-07-10,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,12684.85,Corporate Card,Approved,No,Normal,23
+TXN-25-00415,2025-07-09,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,4857.68,Corporate Wire,Approved,No,Normal,28
+TXN-25-01099,2025-07-09,Operations & HR,Workplace & People Ops,WeWork Global Offices,1418.26,ACH Transfer,Approved,No,Normal,22
+TXN-25-00191,2025-07-08,Engineering,Cloud Compute & Infra,MongoDB Atlas,33979.52,ACH Transfer,Approved,No,Normal,25
+TXN-25-00387,2025-07-08,Operations & HR,Workplace & People Ops,Slack Technologies,7061.28,Direct Debit,Approved,No,Normal,12
+TXN-25-00861,2025-07-08,Product & AI,AI Models & APIs,OpenAI API Services,31429.95,ACH Transfer,Approved,No,Normal,10
+TXN-25-00651,2025-07-07,Operations & HR,Workplace & People Ops,Brex Corporate Cards,2053.55,Corporate Card,Approved,No,Normal,16
+TXN-25-00449,2025-07-06,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,17477.87,ACH Transfer,Settled,No,Normal,12
+TXN-25-00569,2025-07-05,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,2140.23,Corporate Wire,Approved,No,Normal,19
+TXN-25-00029,2025-07-04,Product & AI,AI Models & APIs,Anthropic Claude AI,24769.77,Corporate Card,Approved,No,Normal,22
+TXN-25-00390,2025-07-04,Product & AI,AI Models & APIs,Weights & Biases,35800.28,Corporate Wire,Settled,No,Normal,12
+TXN-25-00063,2025-07-03,Operations & HR,Workplace & People Ops,Deel Global Payroll,1153.51,Corporate Wire,Approved,No,Normal,9
+TXN-25-00283,2025-07-03,Engineering,Cloud Compute & Infra,Datadog Monitoring,18395.52,Corporate Wire,Approved,No,Normal,28
+TXN-25-00805,2025-07-03,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,11883.76,Corporate Card,Pending Review,No,Normal,17
+TXN-25-00207,2025-07-02,Product & AI,AI Models & APIs,Weights & Biases,5482.78,Corporate Wire,Settled,No,Normal,25
+TXN-25-01076,2025-07-02,Marketing & Growth,Digital Ads & Acquisition,Google Ads,13697.97,Corporate Wire,Approved,No,Normal,8
+TXN-25-01141,2025-07-02,Operations & HR,Workplace & People Ops,WeWork Global Offices,7747.05,Corporate Wire,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,75
+TXN-25-00136,2025-07-01,Product & AI,AI Models & APIs,OpenAI API Services,22373.87,ACH Transfer,Approved,No,Normal,5
+TXN-25-00522,2025-07-01,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,14271.62,Corporate Wire,Approved,No,Normal,24
+TXN-25-00679,2025-07-01,Sales,Sales Enablement & CRM,ZoomInfo Tech,3328.99,Corporate Wire,Settled,No,Normal,15
+TXN-25-00692,2025-07-01,Engineering,Cloud Compute & Infra,MongoDB Atlas,12917.37,ACH Transfer,Approved,No,Normal,8
+TXN-25-00091,2025-06-30,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,21698.25,ACH Transfer,Approved,No,Normal,26
+TXN-25-00247,2025-06-30,Sales,Sales Enablement & CRM,Salesforce Enterprise,3352.95,ACH Transfer,Approved,No,Normal,14
+TXN-25-00067,2025-06-29,Engineering,Cloud Compute & Infra,GitHub Enterprise,92483.8,Corporate Card,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,89
+TXN-25-00124,2025-06-29,Product & AI,AI Models & APIs,Anthropic Claude AI,11510.8,Corporate Wire,Pending Review,No,Normal,9
+TXN-25-00172,2025-06-29,Product & AI,AI Models & APIs,OpenAI API Services,15737.59,Corporate Wire,Approved,No,Normal,13
+TXN-25-01135,2025-06-29,Sales,Sales Enablement & CRM,Salesforce Enterprise,34679.42,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,77
+TXN-25-00979,2025-06-28,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,20524.91,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,83
+TXN-25-00434,2025-06-27,Engineering,Cloud Compute & Infra,Datadog Monitoring,4992.8,ACH Transfer,Approved,No,Normal,13
+TXN-25-00874,2025-06-27,Product & AI,AI Models & APIs,OpenAI API Services,2073.13,Corporate Wire,Approved,No,Normal,18
+TXN-25-01085,2025-06-27,Operations & HR,Workplace & People Ops,Brex Corporate Cards,10785.35,Corporate Card,Approved,No,Normal,13
+TXN-25-00128,2025-06-26,Engineering,Cloud Compute & Infra,GitHub Enterprise,4583.26,Corporate Wire,Settled,No,Normal,21
+TXN-25-00296,2025-06-26,Operations & HR,Workplace & People Ops,Slack Technologies,11727.61,Corporate Wire,Settled,No,Normal,25
+TXN-25-00709,2025-06-26,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,6259.01,ACH Transfer,Approved,No,Normal,18
+TXN-25-01004,2025-06-26,Sales,Sales Enablement & CRM,Highspot Enablement,7053.69,ACH Transfer,Approved,No,Normal,13
+TXN-25-01045,2025-06-26,Sales,Sales Enablement & CRM,Salesforce Enterprise,8340.95,Corporate Wire,Approved,No,Normal,11
+TXN-25-00006,2025-06-25,Operations & HR,Workplace & People Ops,Slack Technologies,4314.66,ACH Transfer,Approved,No,Normal,11
+TXN-25-00447,2025-06-24,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,18100.3,Corporate Card,Approved,No,Normal,5
+TXN-25-00519,2025-06-24,Sales,Sales Enablement & CRM,Gong.io Analytics,5689.37,Corporate Wire,Approved,No,Normal,20
+TXN-25-00730,2025-06-24,Engineering,Cloud Compute & Infra,MongoDB Atlas,13803.75,Corporate Wire,Approved,No,Normal,26
+TXN-25-00779,2025-06-23,Sales,Sales Enablement & CRM,DocuSign,31174.39,Corporate Wire,Pending Review,No,Normal,11
+TXN-25-01103,2025-06-23,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,12403.86,ACH Transfer,Approved,No,Normal,23
+TXN-25-00262,2025-06-22,Operations & HR,Workplace & People Ops,Workday HRMS,3524.35,ACH Transfer,Approved,No,Normal,10
+TXN-25-00339,2025-06-22,Product & AI,AI Models & APIs,Anthropic Claude AI,5791.07,ACH Transfer,Settled,No,Normal,22
+TXN-25-00205,2025-06-21,Product & AI,AI Models & APIs,OpenAI API Services,18886.21,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,88
+TXN-25-00714,2025-06-20,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,16867.48,ACH Transfer,Approved,No,Normal,22
+TXN-25-00644,2025-06-19,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,34544.14,Corporate Wire,Approved,No,Normal,22
+TXN-25-00921,2025-06-19,Engineering,Cloud Compute & Infra,Datadog Monitoring,8670.85,ACH Transfer,Approved,No,Normal,17
+TXN-25-01007,2025-06-19,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,26609.03,ACH Transfer,Settled,No,Normal,16
+TXN-25-00323,2025-06-18,Sales,Sales Enablement & CRM,Salesforce Enterprise,4798.35,Corporate Card,Approved,No,Normal,14
+TXN-25-00418,2025-06-18,Operations & HR,Workplace & People Ops,Deel Global Payroll,2660.46,Direct Debit,Approved,No,Normal,28
+TXN-25-00280,2025-06-17,Operations & HR,Workplace & People Ops,Workday HRMS,5551.56,Corporate Wire,Settled,No,Normal,20
+TXN-25-00281,2025-06-17,Engineering,Cloud Compute & Infra,MongoDB Atlas,27243.44,Corporate Wire,Approved,No,Normal,28
+TXN-25-00808,2025-06-17,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,8130.11,Corporate Wire,Approved,No,Normal,9
+TXN-25-01145,2025-06-17,Marketing & Growth,Digital Ads & Acquisition,Google Ads,2519.04,Corporate Wire,Settled,No,Normal,8
+TXN-25-00391,2025-06-16,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,15893.26,Corporate Card,Approved,No,Normal,28
+TXN-25-00018,2025-06-15,Product & AI,AI Models & APIs,Pinecone Vector DB,42400.75,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,94
+TXN-25-00273,2025-06-15,Sales,Sales Enablement & CRM,DocuSign,2645.25,ACH Transfer,Approved,No,Normal,29
+TXN-25-01015,2025-06-15,Sales,Sales Enablement & CRM,DocuSign,25954.29,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,80
+TXN-25-00893,2025-06-14,Engineering,Cloud Compute & Infra,GitHub Enterprise,13400.45,ACH Transfer,Approved,No,Normal,21
+TXN-25-00011,2025-06-13,Engineering,Cloud Compute & Infra,MongoDB Atlas,17928.53,Corporate Wire,Approved,No,Normal,22
+TXN-25-00338,2025-06-13,Product & AI,AI Models & APIs,Anthropic Claude AI,11265.75,Corporate Wire,Settled,No,Normal,25
+TXN-25-00438,2025-06-13,Sales,Sales Enablement & CRM,ZoomInfo Tech,3082.93,Corporate Card,Approved,No,Normal,12
+TXN-25-00520,2025-06-13,Operations & HR,Workplace & People Ops,Brex Corporate Cards,4735.7,ACH Transfer,Approved,No,Normal,27
+TXN-25-01101,2025-06-13,Marketing & Growth,Digital Ads & Acquisition,Google Ads,16437.05,Corporate Wire,Approved,No,Normal,20
+TXN-25-01146,2025-06-13,Operations & HR,Workplace & People Ops,Slack Technologies,2561.88,Corporate Wire,Approved,No,Normal,17
+TXN-25-00551,2025-06-12,Product & AI,AI Models & APIs,OpenAI API Services,18167.49,Corporate Wire,Approved,No,Normal,26
+TXN-25-00959,2025-06-12,Operations & HR,Workplace & People Ops,Slack Technologies,9456.24,ACH Transfer,Approved,No,Normal,28
+TXN-25-00772,2025-06-11,Sales,Sales Enablement & CRM,DocuSign,7752.95,Corporate Wire,Approved,No,Normal,5
+TXN-25-00008,2025-06-10,Sales,Sales Enablement & CRM,DocuSign,10105.91,Corporate Wire,Approved,No,Normal,27
+TXN-25-00440,2025-06-10,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,34616.85,Corporate Wire,Approved,No,Normal,29
+TXN-25-00966,2025-06-10,Engineering,Cloud Compute & Infra,MongoDB Atlas,24515.95,Corporate Wire,Approved,No,Normal,6
+TXN-25-00980,2025-06-09,Sales,Sales Enablement & CRM,ZoomInfo Tech,2658.1,Corporate Wire,Approved,No,Normal,25
+TXN-25-01071,2025-06-09,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,11258.12,ACH Transfer,Approved,No,Normal,22
+TXN-25-00157,2025-06-06,Sales,Sales Enablement & CRM,Salesforce Enterprise,12973.26,ACH Transfer,Approved,No,Normal,17
+TXN-25-00801,2025-06-06,Sales,Sales Enablement & CRM,Highspot Enablement,2187.98,Direct Debit,Approved,No,Normal,22
+TXN-25-00919,2025-06-06,Sales,Sales Enablement & CRM,ZoomInfo Tech,5405.23,ACH Transfer,Approved,No,Normal,12
+TXN-25-00202,2025-06-05,Sales,Sales Enablement & CRM,Gong.io Analytics,2850.86,ACH Transfer,Pending Review,No,Normal,18
+TXN-25-00225,2025-06-05,Engineering,Cloud Compute & Infra,MongoDB Atlas,9049.41,Corporate Wire,Approved,No,Normal,13
+TXN-25-00916,2025-06-05,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,27179.08,ACH Transfer,Approved,No,Normal,18
+TXN-25-01157,2025-06-05,Marketing & Growth,Digital Ads & Acquisition,Google Ads,20046.3,Corporate Wire,Approved,No,Normal,24
+TXN-25-00183,2025-06-02,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,26649.64,Corporate Wire,Approved,No,Normal,7
+TXN-25-00600,2025-06-02,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,30004.47,Corporate Wire,Approved,No,Normal,15
+TXN-25-00618,2025-06-01,Operations & HR,Workplace & People Ops,Deel Global Payroll,4761.3,Corporate Card,Approved,No,Normal,20
+TXN-25-00115,2025-05-31,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,1704.13,Corporate Wire,Approved,No,Normal,6
+TXN-25-00255,2025-05-30,Sales,Sales Enablement & CRM,DocuSign,42816.97,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,85
+TXN-25-00978,2025-05-30,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,34471.51,Corporate Wire,Pending Review,No,Normal,12
+TXN-25-00599,2025-05-29,Engineering,Cloud Compute & Infra,MongoDB Atlas,4193.81,ACH Transfer,Settled,No,Normal,12
+TXN-25-00833,2025-05-28,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,35278.81,Corporate Wire,Approved,No,Normal,5
+TXN-25-00118,2025-05-26,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,8561.35,ACH Transfer,Approved,No,Normal,16
+TXN-25-00933,2025-05-26,Operations & HR,Workplace & People Ops,Workday HRMS,13824.84,Corporate Wire,Approved,No,Normal,11
+TXN-25-00159,2025-05-25,Operations & HR,Workplace & People Ops,Deel Global Payroll,3524.47,ACH Transfer,Approved,No,Normal,5
+TXN-25-00894,2025-05-25,Operations & HR,Workplace & People Ops,Brex Corporate Cards,1432.56,ACH Transfer,Approved,No,Normal,22
+TXN-25-00042,2025-05-24,Operations & HR,Workplace & People Ops,Deel Global Payroll,514.08,Corporate Wire,Approved,No,Normal,8
+TXN-25-00179,2025-05-24,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,21976.31,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,75
+TXN-25-00282,2025-05-23,Engineering,Cloud Compute & Infra,GitHub Enterprise,33817.43,ACH Transfer,Approved,No,Normal,16
+TXN-25-01040,2025-05-23,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,18400.16,Corporate Card,Approved,No,Normal,10
+TXN-25-00043,2025-05-20,Product & AI,AI Models & APIs,Anthropic Claude AI,50245.09,Corporate Card,Approved,No,Normal,14
+TXN-25-00208,2025-05-20,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,6988.92,Corporate Wire,Approved,No,Normal,18
+TXN-25-00526,2025-05-20,Sales,Sales Enablement & CRM,Highspot Enablement,77876.66,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,79
+TXN-25-01143,2025-05-20,Sales,Sales Enablement & CRM,Highspot Enablement,3357.24,Corporate Wire,Approved,No,Normal,11
+TXN-25-00165,2025-05-19,Engineering,Cloud Compute & Infra,MongoDB Atlas,1943.25,Corporate Wire,Approved,No,Normal,22
+TXN-25-00374,2025-05-19,Operations & HR,Workplace & People Ops,Deel Global Payroll,4844.37,Corporate Card,Approved,No,Normal,24
+TXN-25-00122,2025-05-17,Engineering,Cloud Compute & Infra,MongoDB Atlas,49802.06,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,76
+TXN-25-00163,2025-05-17,Operations & HR,Workplace & People Ops,Deel Global Payroll,14924.57,Corporate Wire,Approved,No,Normal,8
+TXN-25-00246,2025-05-17,Sales,Sales Enablement & CRM,Salesforce Enterprise,4454.5,ACH Transfer,Approved,No,Normal,24
+TXN-25-00518,2025-05-17,Engineering,Cloud Compute & Infra,Datadog Monitoring,10629.94,Direct Debit,Approved,No,Normal,21
+TXN-25-00135,2025-05-16,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,44556.58,Corporate Wire,Approved,No,Normal,24
+TXN-25-00560,2025-05-16,Sales,Sales Enablement & CRM,ZoomInfo Tech,925.61,Corporate Card,Settled,No,Normal,28
+TXN-25-00652,2025-05-16,Operations & HR,Workplace & People Ops,Brex Corporate Cards,5666.85,ACH Transfer,Approved,No,Normal,21
+TXN-25-01102,2025-05-15,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,11060.64,ACH Transfer,Settled,No,Normal,19
+TXN-25-00869,2025-05-14,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,16110.13,Corporate Wire,Approved,No,Normal,27
+TXN-25-00970,2025-05-14,Operations & HR,Workplace & People Ops,Brex Corporate Cards,10361.86,Corporate Card,Approved,No,Normal,5
+TXN-25-01053,2025-05-14,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,22130.42,Corporate Wire,Approved,No,Normal,11
+TXN-25-00953,2025-05-13,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,4974.46,Corporate Wire,Settled,No,Normal,25
+TXN-25-00295,2025-05-12,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,7983.83,Corporate Wire,Approved,No,Normal,10
+TXN-25-00326,2025-05-12,Product & AI,AI Models & APIs,Scale AI Labeling,52907.89,ACH Transfer,Settled,No,Normal,21
+TXN-25-00316,2025-05-11,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,39311.66,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,66
+TXN-25-00394,2025-05-11,Sales,Sales Enablement & CRM,Highspot Enablement,7717.77,ACH Transfer,Approved,No,Normal,18
+TXN-25-00798,2025-05-11,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,5965.79,Corporate Wire,Approved,No,Normal,16
+TXN-25-01180,2025-05-11,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,127131.64,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,76
+TXN-25-00037,2025-05-09,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,53476.91,ACH Transfer,Approved,No,Normal,5
+TXN-25-00579,2025-05-09,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,9263.23,ACH Transfer,Approved,No,Normal,24
+TXN-25-01006,2025-05-09,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,21481.81,ACH Transfer,Approved,No,Normal,12
+TXN-25-00065,2025-05-08,Engineering,Cloud Compute & Infra,Datadog Monitoring,22756.69,Corporate Card,Approved,No,Normal,6
+TXN-25-00738,2025-05-08,Engineering,Cloud Compute & Infra,MongoDB Atlas,13927.82,Corporate Wire,Approved,No,Normal,16
+TXN-25-00955,2025-05-08,Sales,Sales Enablement & CRM,Gong.io Analytics,9003.6,Direct Debit,Approved,No,Normal,10
+TXN-25-00178,2025-05-07,Operations & HR,Workplace & People Ops,Deel Global Payroll,11359.84,Corporate Card,Approved,No,Normal,26
+TXN-25-00451,2025-05-07,Sales,Sales Enablement & CRM,Highspot Enablement,11905.19,Corporate Wire,Approved,No,Normal,26
+TXN-25-00602,2025-05-07,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,27511.31,Corporate Card,Approved,No,Normal,8
+TXN-25-00849,2025-05-07,Product & AI,AI Models & APIs,OpenAI API Services,26300.81,Corporate Card,Approved,No,Normal,20
+TXN-25-00946,2025-05-07,Product & AI,AI Models & APIs,Scale AI Labeling,23840.8,Corporate Wire,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,81
+TXN-25-01098,2025-05-07,Product & AI,AI Models & APIs,Anthropic Claude AI,10483.69,Corporate Wire,Approved,No,Normal,12
+TXN-25-00197,2025-05-06,Product & AI,AI Models & APIs,Pinecone Vector DB,24217.9,ACH Transfer,Approved,No,Normal,21
+TXN-25-00222,2025-05-06,Operations & HR,Workplace & People Ops,Slack Technologies,1922.32,ACH Transfer,Settled,No,Normal,13
+TXN-25-00613,2025-05-06,Sales,Sales Enablement & CRM,DocuSign,14651.65,ACH Transfer,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,80
+TXN-25-00897,2025-05-06,Operations & HR,Workplace & People Ops,Deel Global Payroll,7558.91,ACH Transfer,Approved,No,Normal,29
+TXN-25-01030,2025-05-06,Sales,Sales Enablement & CRM,Salesforce Enterprise,2288.26,Corporate Wire,Settled,No,Normal,16
+TXN-25-00331,2025-05-05,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,13740.66,Corporate Card,Approved,No,Normal,19
+TXN-25-00411,2025-05-05,Sales,Sales Enablement & CRM,ZoomInfo Tech,6111.05,Corporate Wire,Approved,No,Normal,7
+TXN-25-00649,2025-05-05,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,20801.77,Corporate Wire,Approved,No,Normal,17
+TXN-25-01051,2025-05-05,Product & AI,AI Models & APIs,OpenAI API Services,3968.04,ACH Transfer,Approved,No,Normal,19
+TXN-25-00292,2025-05-04,Operations & HR,Workplace & People Ops,WeWork Global Offices,16701.98,Corporate Wire,Approved,No,Normal,23
+TXN-25-00319,2025-05-03,Marketing & Growth,Digital Ads & Acquisition,Google Ads,9136.75,ACH Transfer,Approved,No,Normal,17
+TXN-25-00357,2025-05-03,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,52815.96,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-25-00926,2025-05-03,Sales,Sales Enablement & CRM,Highspot Enablement,2334.67,ACH Transfer,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,62
+TXN-25-01114,2025-05-03,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,17747.24,Corporate Card,Approved,No,Normal,9
+TXN-25-00607,2025-05-02,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,11206.33,Corporate Wire,Approved,No,Normal,26
+TXN-25-00705,2025-05-02,Engineering,Cloud Compute & Infra,MongoDB Atlas,6862.4,ACH Transfer,Approved,No,Normal,16
+TXN-25-00167,2025-05-01,Product & AI,AI Models & APIs,Anthropic Claude AI,12045.06,Corporate Wire,Approved,No,Normal,27
+TXN-25-00216,2025-05-01,Operations & HR,Workplace & People Ops,Brex Corporate Cards,3043.97,ACH Transfer,Approved,No,Normal,24
+TXN-25-00927,2025-05-01,Sales,Sales Enablement & CRM,ZoomInfo Tech,3651.04,Corporate Wire,Approved,No,Normal,24
+TXN-25-01193,2025-05-01,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,7129.18,ACH Transfer,Settled,No,Normal,10
+TXN-25-00717,2025-04-29,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,23373.36,Corporate Wire,Approved,No,Normal,24
+TXN-25-00985,2025-04-29,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,8492.94,Corporate Wire,Approved,No,Normal,10
+TXN-25-00477,2025-04-28,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,18628.89,Direct Debit,Approved,No,Normal,11
+TXN-25-00552,2025-04-28,Sales,Sales Enablement & CRM,Gong.io Analytics,11181.49,Corporate Wire,Approved,No,Normal,9
+TXN-25-00735,2025-04-28,Product & AI,AI Models & APIs,Scale AI Labeling,18407.95,Direct Debit,Approved,No,Normal,12
+TXN-25-00744,2025-04-27,Sales,Sales Enablement & CRM,Highspot Enablement,2458.68,Corporate Wire,Approved,No,Normal,17
+TXN-25-01118,2025-04-27,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,29783.72,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,78
+TXN-25-00359,2025-04-25,Product & AI,AI Models & APIs,OpenAI API Services,37480.05,Corporate Wire,Settled,No,Normal,13
+TXN-25-00637,2025-04-25,Engineering,Cloud Compute & Infra,GitHub Enterprise,14413.3,Corporate Wire,Approved,No,Normal,16
+TXN-25-00766,2025-04-25,Marketing & Growth,Digital Ads & Acquisition,Google Ads,3183.02,ACH Transfer,Approved,No,Normal,12
+TXN-25-00144,2025-04-24,Product & AI,AI Models & APIs,OpenAI API Services,51964.79,ACH Transfer,Approved,No,Normal,26
+TXN-25-00194,2025-04-24,Operations & HR,Workplace & People Ops,Workday HRMS,12567.38,ACH Transfer,Approved,No,Normal,20
+TXN-25-00825,2025-04-24,Sales,Sales Enablement & CRM,Gong.io Analytics,5595.91,ACH Transfer,Approved,No,Normal,19
+TXN-25-00752,2025-04-23,Sales,Sales Enablement & CRM,DocuSign,1990.94,Corporate Wire,Approved,No,Normal,24
+TXN-25-00450,2025-04-22,Operations & HR,Workplace & People Ops,Slack Technologies,5449.18,Corporate Card,Settled,No,Normal,26
+TXN-25-00807,2025-04-21,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,18996.69,Corporate Wire,Approved,No,Normal,12
+TXN-25-00981,2025-04-21,Product & AI,AI Models & APIs,Pinecone Vector DB,23568.38,Direct Debit,Settled,No,Normal,16
+TXN-25-00484,2025-04-20,Sales,Sales Enablement & CRM,Highspot Enablement,5304.52,ACH Transfer,Approved,No,Normal,24
+TXN-25-00582,2025-04-20,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,11113.93,ACH Transfer,Approved,No,Normal,29
+TXN-25-00013,2025-04-19,Sales,Sales Enablement & CRM,Highspot Enablement,9157.97,Corporate Wire,Approved,No,Normal,9
+TXN-25-00544,2025-04-19,Engineering,Cloud Compute & Infra,GitHub Enterprise,64438.35,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,72
+TXN-25-00603,2025-04-19,Product & AI,AI Models & APIs,Weights & Biases,4272.57,Corporate Wire,Approved,No,Normal,18
+TXN-25-00860,2025-04-19,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,16639.48,ACH Transfer,Settled,No,Normal,29
+TXN-25-00034,2025-04-18,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,35516.26,ACH Transfer,Approved,No,Normal,19
+TXN-25-01052,2025-04-18,Product & AI,AI Models & APIs,Weights & Biases,20879.4,Corporate Wire,Approved,No,Normal,17
+TXN-25-00459,2025-04-17,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,20736.13,Direct Debit,Approved,No,Normal,14
+TXN-25-00914,2025-04-17,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,34587.37,Corporate Wire,Approved,No,Normal,19
+TXN-25-00047,2025-04-16,Operations & HR,Workplace & People Ops,Brex Corporate Cards,24811.72,Corporate Wire,Approved,No,Normal,9
+TXN-25-00414,2025-04-16,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,9217.16,Corporate Wire,Approved,No,Normal,13
+TXN-25-00708,2025-04-16,Sales,Sales Enablement & CRM,Salesforce Enterprise,2780.02,ACH Transfer,Settled,No,Normal,26
+TXN-25-00588,2025-04-15,Engineering,Cloud Compute & Infra,Datadog Monitoring,31518.19,ACH Transfer,Settled,No,Normal,7
+TXN-25-00680,2025-04-15,Sales,Sales Enablement & CRM,DocuSign,894.02,Corporate Wire,Pending Review,No,Normal,23
+TXN-25-00109,2025-04-14,Marketing & Growth,Digital Ads & Acquisition,Google Ads,47065.97,ACH Transfer,Settled,No,Normal,6
+TXN-25-00474,2025-04-14,Sales,Sales Enablement & CRM,DocuSign,2941.91,Corporate Card,Approved,No,Normal,17
+TXN-25-00366,2025-04-13,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,6865.35,Corporate Wire,Approved,No,Normal,25
+TXN-25-00988,2025-04-13,Product & AI,AI Models & APIs,Weights & Biases,3541.35,ACH Transfer,Approved,No,Normal,21
+TXN-25-00497,2025-04-10,Product & AI,AI Models & APIs,Pinecone Vector DB,25024.98,Corporate Wire,Settled,No,Normal,15
+TXN-25-00663,2025-04-09,Sales,Sales Enablement & CRM,Salesforce Enterprise,2682.67,Direct Debit,Approved,No,Normal,27
+TXN-25-00022,2025-04-07,Product & AI,AI Models & APIs,OpenAI API Services,17005.15,ACH Transfer,Approved,No,Normal,9
+TXN-25-00330,2025-04-07,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,29492.24,ACH Transfer,Approved,No,Normal,24
+TXN-25-00014,2025-04-06,Marketing & Growth,Digital Ads & Acquisition,Google Ads,13479.82,ACH Transfer,Settled,No,Normal,23
+TXN-25-00780,2025-04-06,Product & AI,AI Models & APIs,Anthropic Claude AI,27960.04,Corporate Card,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,86
+TXN-25-00792,2025-04-05,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,10684.05,ACH Transfer,Approved,No,Normal,24
+TXN-25-00739,2025-04-04,Sales,Sales Enablement & CRM,Salesforce Enterprise,10480.44,Corporate Card,Approved,No,Normal,21
+TXN-25-01123,2025-04-04,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,32494.83,Corporate Card,Settled,No,Normal,17
+TXN-25-00086,2025-04-03,Marketing & Growth,Digital Ads & Acquisition,Google Ads,2422.99,ACH Transfer,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,62
+TXN-25-00479,2025-04-03,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,7861.59,ACH Transfer,Approved,No,Normal,18
+TXN-25-00758,2025-04-02,Sales,Sales Enablement & CRM,DocuSign,10276.07,ACH Transfer,Approved,No,Normal,18
+TXN-25-00046,2025-04-01,Sales,Sales Enablement & CRM,Gong.io Analytics,1985.6,Corporate Wire,Settled,No,Normal,24
+TXN-25-00160,2025-04-01,Operations & HR,Workplace & People Ops,Deel Global Payroll,750.88,ACH Transfer,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,74
+TXN-25-00361,2025-04-01,Product & AI,AI Models & APIs,OpenAI API Services,254011.7,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,89
+TXN-25-01014,2025-04-01,Product & AI,AI Models & APIs,Anthropic Claude AI,137436.9,Corporate Wire,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,83
+TXN-25-00715,2025-03-31,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,1547.5,Corporate Wire,Approved,No,Normal,17
+TXN-25-00828,2025-03-31,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,6132.17,Corporate Wire,Approved,No,Normal,21
+TXN-25-00774,2025-03-30,Product & AI,AI Models & APIs,Anthropic Claude AI,24519.36,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,70
+TXN-25-01113,2025-03-30,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,12230.94,ACH Transfer,Approved,No,Normal,20
+TXN-25-00052,2025-03-29,Product & AI,AI Models & APIs,Pinecone Vector DB,2212.98,Corporate Card,Approved,No,Normal,22
+TXN-25-01184,2025-03-28,Product & AI,AI Models & APIs,Anthropic Claude AI,3597.51,Corporate Wire,Approved,No,Normal,28
+TXN-25-00143,2025-03-27,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,68815.84,ACH Transfer,Approved,No,Normal,8
+TXN-25-00185,2025-03-27,Product & AI,AI Models & APIs,Weights & Biases,56195.74,Corporate Wire,Pending Review,No,Normal,13
+TXN-25-00372,2025-03-27,Sales,Sales Enablement & CRM,Highspot Enablement,12573.52,Corporate Wire,Approved,No,Normal,10
+TXN-25-00835,2025-03-27,Operations & HR,Workplace & People Ops,Workday HRMS,4693.26,ACH Transfer,Approved,No,Normal,15
+TXN-25-00904,2025-03-27,Operations & HR,Workplace & People Ops,Slack Technologies,9523.01,Corporate Wire,Settled,No,Normal,7
+TXN-25-00269,2025-03-26,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,15259.67,ACH Transfer,Approved,No,Normal,25
+TXN-25-00471,2025-03-25,Legal & Compliance,"Legal, Audit & Compliance",Wilson Sonsini Law,6624.5,Corporate Wire,Settled,No,Normal,17
+TXN-25-00694,2025-03-25,Engineering,Cloud Compute & Infra,MongoDB Atlas,2920.38,Corporate Card,Approved,No,Normal,11
+TXN-25-00017,2025-03-24,Product & AI,AI Models & APIs,Pinecone Vector DB,3345.18,Corporate Card,Approved,No,Normal,24
+TXN-25-00337,2025-03-24,Sales,Sales Enablement & CRM,Gong.io Analytics,3639.4,ACH Transfer,Approved,No,Normal,20
+TXN-25-00199,2025-03-22,Product & AI,AI Models & APIs,Scale AI Labeling,1737.28,Direct Debit,Approved,No,Normal,16
+TXN-25-00631,2025-03-22,Operations & HR,Workplace & People Ops,WeWork Global Offices,2527.82,ACH Transfer,Approved,No,Normal,8
+TXN-25-00695,2025-03-22,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,16940.35,ACH Transfer,Approved,No,Normal,7
+TXN-25-00781,2025-03-21,Sales,Sales Enablement & CRM,Highspot Enablement,1156.44,Corporate Card,Settled,No,Normal,17
+TXN-25-00340,2025-03-20,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,16194.09,Corporate Wire,Approved,No,Normal,14
+TXN-25-00811,2025-03-20,Product & AI,AI Models & APIs,Pinecone Vector DB,10639.02,Corporate Card,Approved,No,Normal,9
+TXN-25-00044,2025-03-19,Operations & HR,Workplace & People Ops,Workday HRMS,2055.35,Corporate Wire,Approved,No,Normal,9
+TXN-25-00748,2025-03-19,Sales,Sales Enablement & CRM,Highspot Enablement,18785.33,Corporate Card,Settled,No,Normal,29
+TXN-25-01068,2025-03-18,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,7938.12,ACH Transfer,Pending Review,No,Normal,7
+TXN-25-00234,2025-03-17,Operations & HR,Workplace & People Ops,Workday HRMS,32637.41,Corporate Card,Settled,No,Normal,24
+TXN-25-00239,2025-03-17,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,15420.44,Direct Debit,Approved,No,Normal,19
+TXN-25-00395,2025-03-17,Engineering,Cloud Compute & Infra,GitHub Enterprise,24144.6,Corporate Card,Approved,No,Normal,22
+TXN-25-00399,2025-03-17,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,1595.74,ACH Transfer,Approved,No,Normal,22
+TXN-25-00790,2025-03-17,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,41018.9,ACH Transfer,Approved,No,Normal,13
+TXN-25-00349,2025-03-16,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,18010.91,Corporate Wire,Approved,No,Normal,13
+TXN-25-00100,2025-03-15,Sales,Sales Enablement & CRM,Gong.io Analytics,4484.96,ACH Transfer,Approved,No,Normal,7
+TXN-25-01039,2025-03-15,Sales,Sales Enablement & CRM,Salesforce Enterprise,1411.8,Corporate Wire,Approved,No,Normal,19
+TXN-25-00812,2025-03-14,Engineering,Cloud Compute & Infra,MongoDB Atlas,3343.12,Corporate Wire,Approved,No,Normal,15
+TXN-25-00057,2025-03-12,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,19024.54,ACH Transfer,Approved,No,Normal,26
+TXN-25-00058,2025-03-11,Legal & Compliance,"Legal, Audit & Compliance",Deloitte Advisory,73656.86,Corporate Card,Approved,No,Normal,20
+TXN-25-00140,2025-03-11,Operations & HR,Workplace & People Ops,Brex Corporate Cards,2750.53,Corporate Wire,Approved,No,Normal,17
+TXN-25-00439,2025-03-10,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,16060.42,Corporate Wire,Settled,No,Normal,6
+TXN-25-00685,2025-03-10,Product & AI,AI Models & APIs,Pinecone Vector DB,30632.51,ACH Transfer,Approved,No,Normal,27
+TXN-25-00853,2025-03-08,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,17215.63,ACH Transfer,Approved,No,Normal,25
+TXN-25-01111,2025-03-07,Product & AI,AI Models & APIs,Weights & Biases,11644.77,Corporate Wire,Approved,No,Normal,17
+TXN-25-01036,2025-03-06,Operations & HR,Workplace & People Ops,Brex Corporate Cards,11556.06,Corporate Wire,Settled,No,Normal,23
+TXN-25-00035,2025-03-04,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,4085.76,Corporate Wire,Approved,No,Normal,21
+TXN-25-00794,2025-03-04,Product & AI,AI Models & APIs,Weights & Biases,4332.78,Corporate Wire,Flagged for Audit,Yes,Potential Duplicate Billing Pattern,66
+TXN-25-01029,2025-03-04,Sales,Sales Enablement & CRM,DocuSign,1951.52,Corporate Wire,Approved,No,Normal,23
+TXN-25-00175,2025-03-03,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,2842.42,Corporate Wire,Approved,No,Normal,5
+TXN-25-00265,2025-03-03,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,26076.86,Corporate Wire,Approved,No,Normal,14
+TXN-25-01019,2025-03-03,Sales,Sales Enablement & CRM,ZoomInfo Tech,861.21,ACH Transfer,Settled,No,Normal,20
+TXN-25-00426,2025-02-28,Marketing & Growth,Digital Ads & Acquisition,HubSpot CRM,11171.43,ACH Transfer,Approved,No,Normal,23
+TXN-25-00778,2025-02-27,Operations & HR,Workplace & People Ops,Brex Corporate Cards,3642.7,Corporate Wire,Approved,No,Normal,28
+TXN-25-01095,2025-02-27,Product & AI,AI Models & APIs,Weights & Biases,9859.01,Corporate Wire,Approved,No,Normal,5
+TXN-25-00943,2025-02-26,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,29016.74,ACH Transfer,Approved,No,Normal,27
+TXN-25-00585,2025-02-25,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,28183.41,Corporate Wire,Approved,No,Normal,13
+TXN-25-00734,2025-02-25,Product & AI,AI Models & APIs,OpenAI API Services,90690.28,ACH Transfer,Approved,No,Normal,24
+TXN-25-00605,2025-02-23,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,15368.77,Corporate Wire,Settled,No,Normal,27
+TXN-25-00940,2025-02-23,Sales,Sales Enablement & CRM,ZoomInfo Tech,5971.89,Corporate Card,Settled,No,Normal,28
+TXN-25-00218,2025-02-22,Operations & HR,Workplace & People Ops,Workday HRMS,537.19,ACH Transfer,Approved,No,Normal,12
+TXN-25-00274,2025-02-22,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,39051.16,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,79
+TXN-25-00638,2025-02-22,Product & AI,AI Models & APIs,Weights & Biases,20436.9,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,81
+TXN-25-00072,2025-02-21,Sales,Sales Enablement & CRM,ZoomInfo Tech,1158.86,Corporate Card,Approved,No,Normal,26
+TXN-25-00166,2025-02-21,Operations & HR,Workplace & People Ops,Deel Global Payroll,3395.58,Corporate Card,Settled,No,Normal,18
+TXN-25-00908,2025-02-21,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,7092.56,Corporate Card,Settled,No,Normal,8
+TXN-25-00312,2025-02-18,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,15226.28,ACH Transfer,Approved,No,Normal,5
+TXN-25-00623,2025-02-18,Product & AI,AI Models & APIs,Pinecone Vector DB,4895.13,Corporate Card,Approved,No,Normal,13
+TXN-25-00153,2025-02-16,Product & AI,AI Models & APIs,Weights & Biases,29822.2,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,87
+TXN-25-00370,2025-02-16,Sales,Sales Enablement & CRM,ZoomInfo Tech,11619.61,ACH Transfer,Settled,No,Normal,15
+TXN-25-00470,2025-02-16,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,25928.27,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,82
+TXN-25-00687,2025-02-16,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,47948.48,ACH Transfer,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,83
+TXN-25-00723,2025-02-16,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,8238.65,ACH Transfer,Approved,No,Normal,25
+TXN-25-01151,2025-02-15,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,15451.65,Corporate Wire,Approved,No,Normal,17
+TXN-25-01178,2025-02-15,Operations & HR,Workplace & People Ops,Deel Global Payroll,2307.89,Corporate Wire,Approved,No,Normal,25
+TXN-25-00055,2025-02-14,Product & AI,AI Models & APIs,Weights & Biases,26732.69,Corporate Wire,Settled,No,Normal,14
+TXN-25-00661,2025-02-14,Engineering,Cloud Compute & Infra,MongoDB Atlas,29604.89,ACH Transfer,Settled,No,Normal,23
+TXN-25-00696,2025-02-14,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,14563.9,Corporate Wire,Settled,No,Normal,6
+TXN-25-00181,2025-02-13,Operations & HR,Workplace & People Ops,Workday HRMS,13498.32,Corporate Wire,Settled,No,Normal,23
+TXN-25-00261,2025-02-12,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,3596.62,Corporate Card,Approved,No,Normal,8
+TXN-25-00844,2025-02-12,Operations & HR,Workplace & People Ops,Workday HRMS,3785.23,Corporate Wire,Approved,No,Normal,7
+TXN-25-00071,2025-02-11,Product & AI,AI Models & APIs,Pinecone Vector DB,9723.32,Corporate Wire,Approved,No,Normal,14
+TXN-25-00123,2025-02-11,Product & AI,AI Models & APIs,Pinecone Vector DB,22010.86,Corporate Wire,Approved,No,Normal,28
+TXN-25-00362,2025-02-11,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,26022.07,Corporate Wire,Approved,No,Normal,24
+TXN-25-01138,2025-02-11,Engineering,Cloud Compute & Infra,MongoDB Atlas,60995.42,ACH Transfer,Approved,No,Normal,6
+TXN-25-00422,2025-02-10,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,9684.9,Corporate Wire,Approved,No,Normal,12
+TXN-25-00783,2025-02-10,Legal & Compliance,"Legal, Audit & Compliance",Vanta Compliance SOC2,64109.28,ACH Transfer,Approved,No,Normal,12
+TXN-25-00173,2025-02-09,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,10172.91,Corporate Wire,Pending Review,No,Normal,24
+TXN-25-00584,2025-02-09,Operations & HR,Workplace & People Ops,Deel Global Payroll,815.96,ACH Transfer,Approved,No,Normal,21
+TXN-25-00762,2025-02-09,Operations & HR,Workplace & People Ops,WeWork Global Offices,6742.05,Corporate Card,Approved,No,Normal,6
+TXN-25-00885,2025-02-09,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,5488.4,Corporate Wire,Approved,No,Normal,8
+TXN-25-00911,2025-02-08,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,22998.79,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,73
+TXN-25-01134,2025-02-08,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,9160.82,ACH Transfer,Approved,No,Normal,12
+TXN-25-00558,2025-02-07,Operations & HR,Workplace & People Ops,WeWork Global Offices,8608.77,Direct Debit,Approved,No,Normal,22
+TXN-25-00573,2025-02-07,Product & AI,AI Models & APIs,Scale AI Labeling,3429.23,ACH Transfer,Approved,No,Normal,17
+TXN-25-00130,2025-02-05,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,24086.45,ACH Transfer,Approved,No,Normal,27
+TXN-25-00137,2025-02-05,Operations & HR,Workplace & People Ops,Brex Corporate Cards,10487.59,ACH Transfer,Approved,No,Normal,18
+TXN-25-00612,2025-02-05,Operations & HR,Workplace & People Ops,Workday HRMS,35962.52,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,93
+TXN-25-01109,2025-02-05,Legal & Compliance,"Legal, Audit & Compliance",Ernst & Young Audit,52392.97,Corporate Wire,Approved,No,Normal,19
+TXN-25-00223,2025-02-04,Operations & HR,Workplace & People Ops,Brex Corporate Cards,4315.25,Corporate Wire,Pending Review,No,Normal,11
+TXN-25-00400,2025-02-04,Operations & HR,Workplace & People Ops,Slack Technologies,3455.44,Corporate Wire,Approved,No,Normal,14
+TXN-25-00787,2025-02-04,Engineering,Cloud Compute & Infra,GitHub Enterprise,8080.53,Corporate Card,Settled,No,Normal,5
+TXN-25-00938,2025-02-04,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,11406.48,Corporate Wire,Settled,No,Normal,20
+TXN-25-00457,2025-02-03,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,10979.78,Corporate Wire,Approved,No,Normal,10
+TXN-25-00910,2025-02-03,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,8382.01,Corporate Wire,Approved,No,Normal,11
+TXN-25-00161,2025-02-02,Product & AI,AI Models & APIs,Pinecone Vector DB,13655.58,Corporate Wire,Approved,No,Normal,29
+TXN-25-00789,2025-02-02,Sales,Sales Enablement & CRM,Gong.io Analytics,2409.26,Corporate Wire,Settled,No,Normal,27
+TXN-25-00932,2025-02-02,Sales,Sales Enablement & CRM,DocuSign,4146.7,ACH Transfer,Approved,No,Normal,20
+TXN-25-00182,2025-02-01,Engineering,Cloud Compute & Infra,MongoDB Atlas,31758.42,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,66
+TXN-25-00020,2025-01-31,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,13380.35,ACH Transfer,Approved,No,Normal,7
+TXN-25-00131,2025-01-31,Product & AI,AI Models & APIs,Weights & Biases,25964.31,Corporate Card,Approved,No,Normal,11
+TXN-25-00487,2025-01-31,Sales,Sales Enablement & CRM,DocuSign,5577.32,ACH Transfer,Settled,No,Normal,28
+TXN-25-01166,2025-01-31,Sales,Sales Enablement & CRM,Salesforce Enterprise,5993.3,Corporate Wire,Approved,No,Normal,15
+TXN-25-00564,2025-01-30,Product & AI,AI Models & APIs,Pinecone Vector DB,1958.53,Corporate Wire,Pending Review,No,Normal,10
+TXN-25-00590,2025-01-30,Sales,Sales Enablement & CRM,Salesforce Enterprise,7425.98,Corporate Card,Approved,No,Normal,16
+TXN-25-00881,2025-01-30,Sales,Sales Enablement & CRM,Highspot Enablement,590.62,Corporate Wire,Approved,No,Normal,13
+TXN-25-00475,2025-01-29,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,45047.39,ACH Transfer,Approved,No,Normal,11
+TXN-25-00832,2025-01-29,Product & AI,AI Models & APIs,Weights & Biases,6038.7,Corporate Wire,Approved,No,Normal,20
+TXN-25-01063,2025-01-29,Product & AI,AI Models & APIs,Pinecone Vector DB,28754.03,Corporate Wire,Settled,No,Normal,8
+TXN-25-01056,2025-01-28,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,9960.92,Corporate Card,Settled,No,Normal,10
+TXN-25-01182,2025-01-26,Product & AI,AI Models & APIs,Anthropic Claude AI,2804.15,ACH Transfer,Pending Review,No,Normal,12
+TXN-25-00304,2025-01-25,Product & AI,AI Models & APIs,OpenAI API Services,34898.9,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,79
+TXN-25-00854,2025-01-24,Product & AI,AI Models & APIs,Weights & Biases,8241.43,ACH Transfer,Approved,No,Normal,23
+TXN-25-00069,2025-01-23,Sales,Sales Enablement & CRM,DocuSign,9947.77,Corporate Wire,Approved,No,Normal,21
+TXN-25-00509,2025-01-23,Engineering,Cloud Compute & Infra,MongoDB Atlas,35209.2,Corporate Wire,Pending Review,No,Normal,21
+TXN-25-00510,2025-01-22,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,3482.29,ACH Transfer,Approved,No,Normal,18
+TXN-25-00769,2025-01-22,Product & AI,AI Models & APIs,OpenAI API Services,10957.18,Direct Debit,Approved,No,Normal,27
+TXN-25-00857,2025-01-22,Operations & HR,Workplace & People Ops,Brex Corporate Cards,6110.2,ACH Transfer,Settled,No,Normal,6
+TXN-25-00796,2025-01-21,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,9439.46,Corporate Card,Approved,No,Normal,26
+TXN-25-01120,2025-01-21,Marketing & Growth,Digital Ads & Acquisition,Meta Advertising,5567.44,ACH Transfer,Approved,No,Normal,6
+TXN-25-00228,2025-01-20,Operations & HR,Workplace & People Ops,Slack Technologies,14240.02,Corporate Card,Settled,No,Normal,16
+TXN-25-00469,2025-01-20,Marketing & Growth,Digital Ads & Acquisition,Gartner Market Intelligence,12929.46,Corporate Wire,Settled,No,Normal,10
+TXN-25-01064,2025-01-19,Product & AI,AI Models & APIs,OpenAI API Services,52174.82,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,68
+TXN-25-00428,2025-01-18,Sales,Sales Enablement & CRM,DocuSign,3713.08,ACH Transfer,Approved,No,Normal,16
+TXN-25-00984,2025-01-18,Operations & HR,Workplace & People Ops,Workday HRMS,630.68,Corporate Wire,Approved,No,Normal,19
+TXN-25-01160,2025-01-17,Sales,Sales Enablement & CRM,Gong.io Analytics,12128.79,ACH Transfer,Approved,No,Normal,24
+TXN-25-00016,2025-01-16,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,14459.11,Corporate Wire,Approved,No,Normal,14
+TXN-25-00913,2025-01-16,Sales,Sales Enablement & CRM,Highspot Enablement,35467.25,Corporate Wire,Approved,No,Normal,16
+TXN-25-01034,2025-01-16,Engineering,Cloud Compute & Infra,AWS Cloud Infrastructure,80933.32,ACH Transfer,Flagged for Audit,Yes,Unusual Expense Magnitude Spike,86
+TXN-25-00289,2025-01-15,Sales,Sales Enablement & CRM,Gong.io Analytics,1305.97,Corporate Card,Settled,No,Normal,17
+TXN-25-00162,2025-01-13,Sales,Sales Enablement & CRM,Highspot Enablement,5516.8,Corporate Wire,Approved,No,Normal,11
+TXN-25-00313,2025-01-13,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,126211.61,ACH Transfer,Approved,No,Normal,17
+TXN-25-00376,2025-01-11,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,29190.31,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,74
+TXN-25-00279,2025-01-10,Sales,Sales Enablement & CRM,Gong.io Analytics,3432.71,ACH Transfer,Pending Review,No,Normal,21
+TXN-25-00531,2025-01-09,Product & AI,AI Models & APIs,Weights & Biases,5947.29,Corporate Wire,Approved,No,Normal,14
+TXN-25-00045,2025-01-08,Legal & Compliance,"Legal, Audit & Compliance",PwC Tax,7835.31,Corporate Card,Approved,No,Normal,17
+TXN-25-00740,2025-01-08,Operations & HR,Workplace & People Ops,Brex Corporate Cards,973.72,Corporate Wire,Approved,No,Normal,28
+TXN-25-00458,2025-01-06,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,2539.5,ACH Transfer,Approved,No,Normal,23
+TXN-25-00785,2025-01-06,Sales,Sales Enablement & CRM,DocuSign,11500.28,Corporate Card,Approved,No,Normal,20
+TXN-25-00888,2025-01-06,Engineering,Cloud Compute & Infra,Snowflake Data Warehouse,10769.14,Corporate Wire,Approved,No,Normal,9
+TXN-25-00523,2025-01-05,Operations & HR,Workplace & People Ops,WeWork Global Offices,1396.57,ACH Transfer,Settled,No,Normal,21
+TXN-25-00562,2025-01-05,Marketing & Growth,Digital Ads & Acquisition,LinkedIn Marketing,9659.44,Corporate Wire,Approved,No,Normal,26
+TXN-25-00732,2025-01-05,Engineering,Cloud Compute & Infra,MongoDB Atlas,15046.0,Corporate Wire,Settled,No,Normal,20
+TXN-25-00345,2025-01-04,Sales,Sales Enablement & CRM,DocuSign,785.3,Corporate Wire,Approved,No,Normal,10
+TXN-25-00501,2025-01-04,Product & AI,AI Models & APIs,Pinecone Vector DB,31525.85,Corporate Wire,Flagged for Audit,Yes,Off-cycle Weekend High Value Transfer,84
+TXN-25-00050,2025-01-01,Engineering,Cloud Compute & Infra,Datadog Monitoring,21779.56,Corporate Wire,Approved,No,Normal,19

@@ -1,23 +1,9 @@
-# PowerShell Launcher for Finance Data Analysis & AI Automation Dashboard
-Set-Location -Path $PSScriptRoot
-
-Write-Host "=====================================================================" -ForegroundColor Cyan
-Write-Host " Finance Data Analysis & AI Automation Dashboard " -ForegroundColor Green
-Write-Host "=====================================================================" -ForegroundColor Cyan
-
-$pyPath = (Get-Command python -ErrorAction SilentlyContinue).Source
-if (-not $pyPath) {
-    $alt = "$env:LOCALAPPDATA\Programs\Python\Python314\python.exe"
-    if (Test-Path $alt) { $pyPath = $alt }
-}
-
-if (-not $pyPath) {
-    Write-Host "[ERROR] Python was not found in system PATH." -ForegroundColor Red
-    pause
-    exit 1
-}
-
-Write-Host "Python Path: $pyPath" -ForegroundColor Gray
-Write-Host "`nLaunching Dashboard and opening browser at http://localhost:8501...`n" -ForegroundColor Yellow
-
-& $pyPath launcher.py
+Write-Host "=========================================================================" -ForegroundColor Cyan
+Write-Host "  Finance Data Analysis & AI Automation Dashboard" -ForegroundColor White
+Write-Host "=========================================================================" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "Starting Production WSGI Server (Waitress)..." -ForegroundColor Green
+Write-Host "Access dashboard at: http://127.0.0.1:5000" -ForegroundColor Yellow
+Write-Host ""
+Start-Process "http://127.0.0.1:5000"
+python "c:\Users\prasa\OneDrive\Documents\FDA AI Project\app.py"

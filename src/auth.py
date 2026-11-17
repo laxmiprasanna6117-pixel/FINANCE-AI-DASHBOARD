@@ -1,6 +1,6 @@
 """
 User Authentication, Registration & Profile Management System
-Handles user registration, login, profile persistence, and user-specific datasets.
+Handles secure user registration, password verification, profile persistence, and data isolation.
 """
 
 import os
@@ -21,17 +21,6 @@ def hash_password(password: str) -> str:
 
 def get_default_users():
     return {
-        "prasad@fda.finance": {
-            "id": "usr_001",
-            "name": "Prasad",
-            "email": "prasad@fda.finance",
-            "password_hash": hash_password("admin123"),
-            "organization": "FDA Global Health & Finance",
-            "role": "Chief Financial Officer (CFO)",
-            "avatar_color": "#3B82F6",
-            "created_at": "2026-01-15T09:00:00",
-            "uploaded_files": []
-        },
         "analyst@fda.finance": {
             "id": "usr_002",
             "name": "Alex Morgan",
@@ -39,8 +28,19 @@ def get_default_users():
             "password_hash": hash_password("analyst123"),
             "organization": "FDA Financial Intelligence",
             "role": "Senior Financial Analyst",
-            "avatar_color": "#10B981",
+            "avatar_color": "#10A37F",
             "created_at": "2026-02-01T10:30:00",
+            "uploaded_files": []
+        },
+        "executive@fda.finance": {
+            "id": "usr_004",
+            "name": "Jordan Hayes",
+            "email": "executive@fda.finance",
+            "password_hash": hash_password("admin123"),
+            "organization": "FDA Global Health & Finance",
+            "role": "VP of Finance & Strategy",
+            "avatar_color": "#06B6D4",
+            "created_at": "2026-02-15T09:00:00",
             "uploaded_files": []
         }
     }
@@ -76,7 +76,7 @@ def register_user(name, email, password, organization, role="Financial Analyst")
     if len(password) < 4:
         return False, "Password must be at least 4 characters long."
     if email_clean in users:
-        return False, f"Account with email '{email_clean}' already exists. Please log in."
+        return False, f"An account with email '{email_clean}' already exists. Please log in with your password."
         
     colors = ["#3B82F6", "#10B981", "#8B5CF6", "#F59E0B", "#EC4899", "#06B6D4"]
     avatar_color = colors[len(users) % len(colors)]
@@ -98,34 +98,58 @@ def register_user(name, email, password, organization, role="Financial Analyst")
     save_users(users)
     return True, user_profile
 
-def authenticate_user(email, password):
+def authenticate_user(identifier, password):
+    """
+    Authenticate user by email or full name, and verify password hash.
+    """
+    if not identifier or not identifier.strip():
+        return False, "Please enter your Email or Username."
+    if not password:
+        return False, "Please enter your Password."
+        
     users = load_users()
-    email_clean = email.strip().lower()
-    if email_clean not in users:
-        return False, "Account not found. Please register a new account."
-    user = users[email_clean]
-    if user["password_hash"] == hash_password(password):
-        return True, user
-    return False, "Incorrect password. Please try again."
+    ident_clean = identifier.strip().lower()
+    target_user = None
+    
+    for email, user in users.items():
+        if email.lower() == ident_clean or user.get("name", "").strip().lower() == ident_clean:
+            target_user = user
+            break
+            
+    if not target_user:
+        return False, "Account not found. Please check your email/username or register a new account."
+        
+    if target_user["password_hash"] == hash_password(password):
+        return True, target_user
+        
+    return False, "Incorrect password. Please verify and try again."
 
 def add_user_uploaded_file(email, file_name, file_path, row_count, col_count):
+    """
+    Registers an uploaded file metadata exclusively to the specific user's account.
+    """
     users = load_users()
     email_clean = email.strip().lower()
     if email_clean in users:
         file_meta = {
             "file_name": file_name,
             "file_path": file_path,
-            "uploaded_at": datetime.now().isoformat(),
+            "uploaded_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "row_count": row_count,
             "col_count": col_count
         }
-        # Prepend to list
-        users[email_clean]["uploaded_files"].insert(0, file_meta)
+        # Prepend to user's private list (avoid duplicates with same name)
+        user_files = [f for f in users[email_clean].get("uploaded_files", []) if f["file_name"] != file_name]
+        user_files.insert(0, file_meta)
+        users[email_clean]["uploaded_files"] = user_files
         save_users(users)
         return True
     return False
 
 def get_user_workspace_dir(user_id):
+    """
+    Returns the isolated filesystem directory path for a specific user's files.
+    """
     ensure_dirs()
     user_dir = os.path.join(UPLOADS_DIR, user_id)
     os.makedirs(user_dir, exist_ok=True)

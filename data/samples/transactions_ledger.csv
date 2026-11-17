@@ -1,0 +1,351 @@
+Transaction_Date,Category,Amount,Transaction_Type,Counterparty,Status
+2025-01-02 01:00,Office Lease,6970.18,Expense,Google Workspace,Completed
+2025-01-02 17:00,SaaS Licenses,2458.47,Expense,ADP Payroll,Completed
+2025-01-03 17:00,Marketing Campaigns,501.54,Expense,Amazon Web Services,Completed
+2025-01-04 22:00,Subscription Billing,4273.13,Income,Global Logistics,Completed
+2025-01-06 07:00,Subscription Billing,13044.24,Income,Global Logistics,Completed
+2025-01-06 19:00,Marketing Campaigns,620.5,Expense,ADP Payroll,Completed
+2025-01-07 11:00,Marketing Campaigns,22040.52,Expense,Meta Ads Platform,Completed
+2025-01-08 19:00,Marketing Campaigns,5777.11,Expense,WeWork HQ,Completed
+2025-01-09 20:00,SaaS Licenses,925.53,Expense,WeWork HQ,Completed
+2025-01-10 11:00,Subscription Billing,8439.89,Income,Global Logistics,Completed
+2025-01-11 06:00,Travel & Entertainment,4631.08,Expense,Google Workspace,Completed
+2025-01-11 20:00,Consulting Fees,13626.51,Income,Omega Retail,Completed
+2025-01-13 00:00,Travel & Entertainment,5746.82,Expense,Meta Ads Platform,Completed
+2025-01-13 22:00,Office Lease,9271.49,Expense,Salesforce Inc,Processing
+2025-01-15 03:00,Consulting Fees,7780.43,Income,Stripe Inflow,Completed
+2025-01-15 16:00,Cloud Hosting,3412.83,Expense,Amazon Web Services,Completed
+2025-01-17 02:00,Office Lease,4945.34,Expense,Meta Ads Platform,Completed
+2025-01-18 13:00,Subscription Billing,5603.77,Income,Omega Retail,Completed
+2025-01-19 05:00,Consulting Fees,7503.09,Income,Global Logistics,Completed
+2025-01-20 03:00,Office Lease,3328.27,Expense,WeWork HQ,Completed
+2025-01-20 22:00,Cloud Hosting,1162.84,Expense,Amazon Web Services,Pending
+2025-01-21 12:00,Consulting Fees,7187.42,Income,Stripe Inflow,Completed
+2025-01-22 04:00,Consulting Fees,3322.56,Income,Vertex Media,Completed
+2025-01-22 21:00,Subscription Billing,6169.11,Income,Omega Retail,Completed
+2025-01-23 10:00,Subscription Billing,5750.03,Income,Vertex Media,Completed
+2025-01-24 12:00,SaaS Licenses,4823.44,Expense,ADP Payroll,Completed
+2025-01-25 15:00,Subscription Billing,3307.15,Income,Acme Corp,Completed
+2025-01-26 05:00,Cloud Hosting,1292.62,Expense,ADP Payroll,Completed
+2025-01-27 15:00,Legal & Compliance,5244.28,Expense,Google Workspace,Completed
+2025-01-29 02:00,Office Lease,5148.07,Expense,ADP Payroll,Completed
+2025-01-30 02:00,Consulting Fees,5055.43,Income,Stripe Inflow,Completed
+2025-01-31 12:00,Marketing Campaigns,1164.71,Expense,Amazon Web Services,Completed
+2025-02-01 21:00,SaaS Licenses,8805.9,Expense,Salesforce Inc,Completed
+2025-02-02 18:00,Office Lease,4376.56,Expense,Google Workspace,Completed
+2025-02-03 20:00,Payroll & Benefits,3758.91,Expense,Amazon Web Services,Completed
+2025-02-04 17:00,SaaS Licenses,1964.29,Expense,Salesforce Inc,Completed
+2025-02-05 06:00,Legal & Compliance,3020.67,Expense,ADP Payroll,Completed
+2025-02-05 18:00,Marketing Campaigns,807.9,Expense,ADP Payroll,Completed
+2025-02-06 21:00,Cloud Hosting,7629.82,Expense,ADP Payroll,Completed
+2025-02-08 08:00,Travel & Entertainment,7419.17,Expense,WeWork HQ,Completed
+2025-02-09 03:00,Marketing Campaigns,15746.84,Expense,ADP Payroll,Completed
+2025-02-10 01:00,Cloud Hosting,420.19,Expense,ADP Payroll,Completed
+2025-02-11 12:00,Payroll & Benefits,4597.33,Expense,Amazon Web Services,Completed
+2025-02-12 10:00,Legal & Compliance,2860.3,Expense,Meta Ads Platform,Completed
+2025-02-13 03:00,Payroll & Benefits,5116.42,Expense,Salesforce Inc,Completed
+2025-02-14 07:00,Cloud Hosting,58400.0,Income,Vertex Media,Completed
+2025-02-14 22:00,Office Lease,602.22,Expense,Google Workspace,Completed
+2025-02-15 14:00,Travel & Entertainment,3425.24,Expense,Google Workspace,Completed
+2025-02-16 03:00,Cloud Hosting,1516.78,Expense,Meta Ads Platform,Completed
+2025-02-16 23:00,Legal & Compliance,3940.32,Expense,WeWork HQ,Completed
+2025-02-18 03:00,Marketing Campaigns,7147.31,Expense,Salesforce Inc,Completed
+2025-02-19 11:00,Legal & Compliance,18270.36,Expense,Google Workspace,Completed
+2025-02-20 01:00,Subscription Billing,9984.06,Income,Omega Retail,Completed
+2025-02-20 20:00,SaaS Licenses,5675.56,Expense,Salesforce Inc,Completed
+2025-02-22 04:00,Marketing Campaigns,6803.39,Expense,WeWork HQ,Completed
+2025-02-22 19:00,SaaS Licenses,8369.37,Expense,Amazon Web Services,Completed
+2025-02-23 14:00,Travel & Entertainment,5153.81,Expense,WeWork HQ,Completed
+2025-02-24 02:00,Travel & Entertainment,2594.8,Expense,Amazon Web Services,Completed
+2025-02-24 14:00,Travel & Entertainment,3284.13,Expense,Meta Ads Platform,Pending
+2025-02-25 20:00,Travel & Entertainment,872.4,Expense,ADP Payroll,Completed
+2025-02-27 02:00,Legal & Compliance,4896.34,Expense,Salesforce Inc,Completed
+2025-02-27 14:00,Cloud Hosting,5540.29,Expense,WeWork HQ,Completed
+2025-02-28 07:00,SaaS Licenses,1819.54,Expense,Meta Ads Platform,Completed
+2025-02-28 19:00,Cloud Hosting,3606.11,Expense,Google Workspace,Completed
+2025-03-01 16:00,Subscription Billing,1905.94,Income,Vertex Media,Completed
+2025-03-02 07:00,Legal & Compliance,3919.69,Expense,Meta Ads Platform,Completed
+2025-03-03 09:00,Cloud Hosting,5267.96,Expense,Google Workspace,Completed
+2025-03-04 15:00,Office Lease,3567.6,Expense,Google Workspace,Completed
+2025-03-05 07:00,Cloud Hosting,1161.52,Expense,Google Workspace,Completed
+2025-03-06 00:00,Legal & Compliance,2493.6,Expense,Google Workspace,Pending
+2025-03-06 23:00,Legal & Compliance,3078.98,Expense,Amazon Web Services,Completed
+2025-03-07 18:00,Cloud Hosting,9938.88,Expense,Meta Ads Platform,Pending
+2025-03-08 13:00,Subscription Billing,6781.56,Income,Global Logistics,Completed
+2025-03-09 19:00,Legal & Compliance,7374.27,Expense,WeWork HQ,Completed
+2025-03-10 20:00,Marketing Campaigns,16318.86,Expense,ADP Payroll,Completed
+2025-03-12 06:00,SaaS Licenses,1934.01,Expense,ADP Payroll,Completed
+2025-03-13 01:00,Marketing Campaigns,2212.28,Expense,Meta Ads Platform,Completed
+2025-03-14 08:00,SaaS Licenses,417.64,Expense,Amazon Web Services,Completed
+2025-03-15 15:00,SaaS Licenses,7967.94,Expense,ADP Payroll,Completed
+2025-03-16 20:00,Consulting Fees,17492.88,Income,Stripe Inflow,Completed
+2025-03-18 02:00,Payroll & Benefits,1137.41,Expense,Salesforce Inc,Completed
+2025-03-19 13:00,Subscription Billing,4125.22,Income,Stripe Inflow,Completed
+2025-03-20 18:00,Marketing Campaigns,3151.07,Expense,Amazon Web Services,Processing
+2025-03-21 22:00,Cloud Hosting,2434.9,Expense,Salesforce Inc,Completed
+2025-03-22 17:00,Subscription Billing,3514.64,Income,Vertex Media,Completed
+2025-03-23 23:00,Legal & Compliance,9076.6,Expense,ADP Payroll,Completed
+2025-03-24 23:00,Legal & Compliance,3764.55,Expense,Amazon Web Services,Completed
+2025-03-26 01:00,Consulting Fees,6030.52,Income,Omega Retail,Completed
+2025-03-26 18:00,Office Lease,1041.07,Expense,Amazon Web Services,Completed
+2025-03-28 04:00,Travel & Entertainment,5717.58,Expense,Google Workspace,Completed
+2025-03-29 05:00,Consulting Fees,4615.68,Income,Omega Retail,Completed
+2025-03-29 23:00,Legal & Compliance,504.39,Expense,WeWork HQ,Completed
+2025-03-30 18:00,Payroll & Benefits,1974.77,Expense,Meta Ads Platform,Completed
+2025-03-31 06:00,Legal & Compliance,798.01,Expense,ADP Payroll,Completed
+2025-04-01 07:00,Cloud Hosting,11381.04,Expense,ADP Payroll,Completed
+2025-04-02 17:00,Consulting Fees,1285.07,Income,Acme Corp,Completed
+2025-04-03 23:00,Office Lease,3724.12,Expense,Salesforce Inc,Completed
+2025-04-04 11:00,Marketing Campaigns,1989.44,Expense,Google Workspace,Completed
+2025-04-05 01:00,Travel & Entertainment,532.34,Expense,Salesforce Inc,Completed
+2025-04-05 18:00,SaaS Licenses,2577.12,Expense,Salesforce Inc,Completed
+2025-04-07 03:00,Legal & Compliance,860.97,Expense,ADP Payroll,Completed
+2025-04-08 04:00,Travel & Entertainment,6513.11,Expense,Amazon Web Services,Completed
+2025-04-09 08:00,SaaS Licenses,3364.33,Expense,Meta Ads Platform,Completed
+2025-04-10 04:00,Payroll & Benefits,4336.0,Expense,ADP Payroll,Processing
+2025-04-11 04:00,Consulting Fees,3266.2,Income,Stripe Inflow,Completed
+2025-04-12 12:00,Cloud Hosting,3019.48,Expense,Google Workspace,Completed
+2025-04-13 05:00,Travel & Entertainment,828.25,Expense,ADP Payroll,Completed
+2025-04-13 22:00,Legal & Compliance,1496.9,Expense,Meta Ads Platform,Completed
+2025-04-14 16:00,Subscription Billing,4726.96,Income,Omega Retail,Completed
+2025-04-15 17:00,Consulting Fees,2382.1,Income,Stripe Inflow,Completed
+2025-04-17 01:00,Marketing Campaigns,74200.0,Expense,Meta Ads Platform,Completed
+2025-04-17 20:00,Cloud Hosting,5224.34,Expense,WeWork HQ,Pending
+2025-04-19 06:00,Legal & Compliance,10895.3,Expense,Meta Ads Platform,Completed
+2025-04-19 21:00,Cloud Hosting,1071.66,Expense,Salesforce Inc,Completed
+2025-04-20 21:00,Consulting Fees,7546.55,Income,Global Logistics,Completed
+2025-04-21 17:00,Legal & Compliance,5350.06,Expense,Amazon Web Services,Completed
+2025-04-22 12:00,SaaS Licenses,1475.01,Expense,WeWork HQ,Completed
+2025-04-23 11:00,Office Lease,1607.08,Expense,Google Workspace,Completed
+2025-04-24 03:00,Subscription Billing,2156.35,Income,Global Logistics,Completed
+2025-04-25 07:00,Legal & Compliance,5797.67,Expense,Meta Ads Platform,Completed
+2025-04-25 23:00,Payroll & Benefits,4253.16,Expense,Amazon Web Services,Pending
+2025-04-26 22:00,SaaS Licenses,11357.16,Expense,Google Workspace,Completed
+2025-04-28 02:00,Travel & Entertainment,3483.68,Expense,ADP Payroll,Pending
+2025-04-29 03:00,Marketing Campaigns,5389.9,Expense,WeWork HQ,Pending
+2025-04-30 08:00,Travel & Entertainment,6428.37,Expense,ADP Payroll,Completed
+2025-04-30 22:00,Consulting Fees,6003.85,Income,Acme Corp,Completed
+2025-05-02 09:00,Office Lease,3525.58,Expense,Meta Ads Platform,Completed
+2025-05-03 01:00,Legal & Compliance,2610.32,Expense,Salesforce Inc,Completed
+2025-05-04 12:00,Subscription Billing,6224.89,Income,Acme Corp,Completed
+2025-05-05 00:00,Consulting Fees,1360.57,Income,Global Logistics,Processing
+2025-05-06 10:00,Consulting Fees,19386.95,Income,Stripe Inflow,Completed
+2025-05-07 11:00,Cloud Hosting,605.67,Expense,Amazon Web Services,Completed
+2025-05-08 19:00,SaaS Licenses,3703.36,Expense,Salesforce Inc,Processing
+2025-05-09 16:00,SaaS Licenses,1958.12,Expense,Salesforce Inc,Completed
+2025-05-10 20:00,Office Lease,2793.3,Expense,ADP Payroll,Completed
+2025-05-12 01:00,Marketing Campaigns,563.42,Expense,Amazon Web Services,Pending
+2025-05-13 03:00,SaaS Licenses,840.56,Expense,Amazon Web Services,Completed
+2025-05-14 02:00,Marketing Campaigns,6264.89,Expense,WeWork HQ,Completed
+2025-05-14 20:00,Legal & Compliance,8592.35,Expense,WeWork HQ,Pending
+2025-05-15 09:00,SaaS Licenses,5568.2,Expense,Salesforce Inc,Completed
+2025-05-16 16:00,Payroll & Benefits,3956.12,Expense,Meta Ads Platform,Completed
+2025-05-17 14:00,Consulting Fees,4350.26,Income,Acme Corp,Completed
+2025-05-18 04:00,Legal & Compliance,2037.71,Expense,Meta Ads Platform,Completed
+2025-05-19 14:00,Subscription Billing,5947.28,Income,Omega Retail,Processing
+2025-05-20 11:00,Office Lease,5795.25,Expense,ADP Payroll,Processing
+2025-05-21 01:00,Office Lease,1365.85,Expense,Meta Ads Platform,Completed
+2025-05-21 21:00,Cloud Hosting,3697.28,Expense,Google Workspace,Completed
+2025-05-23 08:00,Office Lease,1611.34,Expense,Meta Ads Platform,Pending
+2025-05-23 21:00,SaaS Licenses,1916.44,Expense,Amazon Web Services,Completed
+2025-05-24 10:00,Legal & Compliance,1506.64,Expense,ADP Payroll,Completed
+2025-05-25 02:00,Consulting Fees,1749.38,Income,Omega Retail,Completed
+2025-05-25 18:00,Subscription Billing,1612.69,Income,Vertex Media,Completed
+2025-05-27 00:00,Office Lease,2024.19,Expense,Google Workspace,Completed
+2025-05-28 00:00,Subscription Billing,14907.92,Income,Stripe Inflow,Completed
+2025-05-28 12:00,SaaS Licenses,1944.62,Expense,Meta Ads Platform,Completed
+2025-05-29 09:00,Cloud Hosting,4062.96,Expense,ADP Payroll,Completed
+2025-05-30 01:00,SaaS Licenses,512.8,Expense,Google Workspace,Completed
+2025-05-30 23:00,Marketing Campaigns,5570.5,Expense,Google Workspace,Completed
+2025-06-01 00:00,Travel & Entertainment,1215.47,Expense,Meta Ads Platform,Completed
+2025-06-02 04:00,SaaS Licenses,4196.83,Expense,Google Workspace,Completed
+2025-06-03 15:00,Office Lease,922.43,Expense,WeWork HQ,Completed
+2025-06-04 12:00,SaaS Licenses,12927.16,Expense,Salesforce Inc,Completed
+2025-06-05 04:00,Payroll & Benefits,10919.36,Expense,Salesforce Inc,Completed
+2025-06-06 08:00,Payroll & Benefits,5085.26,Expense,ADP Payroll,Completed
+2025-06-07 19:00,Consulting Fees,14538.73,Income,Vertex Media,Completed
+2025-06-08 09:00,Cloud Hosting,5795.64,Expense,Meta Ads Platform,Completed
+2025-06-09 02:00,Office Lease,1505.92,Expense,Google Workspace,Completed
+2025-06-09 15:00,Cloud Hosting,2510.68,Expense,Meta Ads Platform,Completed
+2025-06-10 17:00,Travel & Entertainment,7043.33,Expense,WeWork HQ,Completed
+2025-06-11 06:00,Cloud Hosting,4438.62,Expense,WeWork HQ,Completed
+2025-06-12 05:00,Legal & Compliance,2551.65,Expense,Meta Ads Platform,Pending
+2025-06-12 21:00,Cloud Hosting,2325.93,Expense,Amazon Web Services,Completed
+2025-06-13 09:00,Payroll & Benefits,1392.96,Expense,Meta Ads Platform,Completed
+2025-06-14 13:00,SaaS Licenses,5169.0,Expense,Google Workspace,Completed
+2025-06-15 16:00,Legal & Compliance,1059.13,Expense,Amazon Web Services,Completed
+2025-06-17 00:00,Legal & Compliance,6000.03,Expense,ADP Payroll,Completed
+2025-06-17 18:00,Office Lease,6455.5,Expense,Salesforce Inc,Completed
+2025-06-18 08:00,Cloud Hosting,6450.64,Expense,Amazon Web Services,Completed
+2025-06-19 02:00,Subscription Billing,7275.72,Income,Omega Retail,Completed
+2025-06-19 19:00,SaaS Licenses,1066.28,Expense,ADP Payroll,Completed
+2025-06-21 03:00,Consulting Fees,11582.5,Income,Stripe Inflow,Processing
+2025-06-22 07:00,Legal & Compliance,2774.01,Expense,ADP Payroll,Completed
+2025-06-23 08:00,Payroll & Benefits,1710.37,Expense,Meta Ads Platform,Completed
+2025-06-24 01:00,SaaS Licenses,553.62,Expense,ADP Payroll,Completed
+2025-06-24 21:00,Subscription Billing,1905.04,Income,Omega Retail,Completed
+2025-06-25 18:00,Legal & Compliance,437.31,Expense,Salesforce Inc,Completed
+2025-06-26 06:00,Subscription Billing,15120.41,Income,Acme Corp,Completed
+2025-06-27 15:00,Travel & Entertainment,941.08,Expense,Google Workspace,Completed
+2025-06-28 20:00,Consulting Fees,1473.36,Income,Omega Retail,Completed
+2025-06-29 18:00,Office Lease,9008.88,Expense,Amazon Web Services,Pending
+2025-06-30 12:00,SaaS Licenses,5091.63,Expense,Google Workspace,Completed
+2025-07-01 19:00,Travel & Entertainment,4508.65,Expense,Salesforce Inc,Completed
+2025-07-03 04:00,Office Lease,558.11,Expense,Salesforce Inc,Completed
+2025-07-04 02:00,Consulting Fees,1604.63,Income,Omega Retail,Completed
+2025-07-05 02:00,Office Lease,1340.33,Expense,ADP Payroll,Completed
+2025-07-05 21:00,Travel & Entertainment,2560.5,Expense,WeWork HQ,Completed
+2025-07-06 14:00,Consulting Fees,8084.73,Income,Vertex Media,Processing
+2025-07-07 10:00,Office Lease,723.16,Expense,WeWork HQ,Completed
+2025-07-08 19:00,Subscription Billing,13130.18,Income,Acme Corp,Completed
+2025-07-10 06:00,Cloud Hosting,4165.49,Expense,Salesforce Inc,Completed
+2025-07-11 13:00,Legal & Compliance,3378.17,Expense,WeWork HQ,Completed
+2025-07-12 04:00,Marketing Campaigns,2312.84,Expense,Salesforce Inc,Completed
+2025-07-12 17:00,Cloud Hosting,2481.26,Expense,Google Workspace,Processing
+2025-07-14 02:00,Office Lease,4106.6,Expense,Meta Ads Platform,Completed
+2025-07-14 16:00,Legal & Compliance,2374.92,Expense,ADP Payroll,Completed
+2025-07-15 15:00,Consulting Fees,2497.68,Income,Vertex Media,Completed
+2025-07-16 11:00,Payroll & Benefits,8174.82,Expense,ADP Payroll,Completed
+2025-07-17 18:00,Consulting Fees,1850.71,Income,Acme Corp,Completed
+2025-07-18 07:00,Office Lease,4463.18,Expense,Amazon Web Services,Completed
+2025-07-19 18:00,Cloud Hosting,13702.32,Expense,WeWork HQ,Pending
+2025-07-21 03:00,SaaS Licenses,2541.97,Expense,Salesforce Inc,Completed
+2025-07-22 02:00,Subscription Billing,3091.88,Income,Omega Retail,Completed
+2025-07-23 00:00,Marketing Campaigns,2076.54,Expense,Salesforce Inc,Completed
+2025-07-24 04:00,Legal & Compliance,6625.15,Expense,Salesforce Inc,Completed
+2025-07-24 21:00,Cloud Hosting,1594.6,Expense,Google Workspace,Completed
+2025-07-25 13:00,Cloud Hosting,601.71,Expense,Amazon Web Services,Completed
+2025-07-26 06:00,Marketing Campaigns,10721.59,Expense,Meta Ads Platform,Completed
+2025-07-27 12:00,Cloud Hosting,16796.05,Expense,WeWork HQ,Completed
+2025-07-28 01:00,SaaS Licenses,4273.0,Expense,Amazon Web Services,Completed
+2025-07-29 12:00,Consulting Fees,3927.04,Income,Omega Retail,Completed
+2025-07-30 12:00,Cloud Hosting,5034.85,Expense,Google Workspace,Completed
+2025-07-31 07:00,Consulting Fees,2556.45,Income,Vertex Media,Completed
+2025-07-31 23:00,Payroll & Benefits,1520.17,Expense,Amazon Web Services,Completed
+2025-08-01 21:00,Consulting Fees,3019.41,Income,Global Logistics,Completed
+2025-08-02 16:00,Subscription Billing,1400.58,Income,Acme Corp,Completed
+2025-08-03 04:00,Subscription Billing,2779.06,Income,Vertex Media,Completed
+2025-08-04 00:00,Consulting Fees,49571.2,Income,Acme Corp,Completed
+2025-08-05 03:00,SaaS Licenses,760.39,Expense,Amazon Web Services,Completed
+2025-08-05 16:00,Payroll & Benefits,1905.03,Expense,ADP Payroll,Completed
+2025-08-06 05:00,Consulting Fees,14868.48,Income,Stripe Inflow,Completed
+2025-08-06 17:00,Subscription Billing,92000.0,Expense,Amazon Web Services,Completed
+2025-08-07 05:00,Travel & Entertainment,3549.54,Expense,WeWork HQ,Completed
+2025-08-07 17:00,Subscription Billing,6328.3,Income,Stripe Inflow,Completed
+2025-08-08 15:00,Office Lease,1100.94,Expense,ADP Payroll,Completed
+2025-08-09 16:00,SaaS Licenses,2215.22,Expense,Google Workspace,Pending
+2025-08-10 05:00,Payroll & Benefits,9733.42,Expense,Meta Ads Platform,Completed
+2025-08-11 04:00,Marketing Campaigns,2333.69,Expense,Meta Ads Platform,Completed
+2025-08-11 19:00,Travel & Entertainment,6770.97,Expense,Google Workspace,Completed
+2025-08-12 17:00,Marketing Campaigns,1227.94,Expense,Meta Ads Platform,Pending
+2025-08-13 08:00,Office Lease,636.21,Expense,Meta Ads Platform,Completed
+2025-08-14 14:00,Consulting Fees,2382.48,Income,Omega Retail,Completed
+2025-08-15 21:00,Office Lease,3704.94,Expense,Google Workspace,Completed
+2025-08-17 02:00,Consulting Fees,3269.03,Income,Omega Retail,Completed
+2025-08-18 00:00,Travel & Entertainment,4743.15,Expense,Google Workspace,Completed
+2025-08-18 18:00,Legal & Compliance,6392.62,Expense,Meta Ads Platform,Completed
+2025-08-19 09:00,Cloud Hosting,2910.92,Expense,ADP Payroll,Completed
+2025-08-20 20:00,Travel & Entertainment,4261.07,Expense,Meta Ads Platform,Pending
+2025-08-21 16:00,SaaS Licenses,4352.65,Expense,Google Workspace,Completed
+2025-08-22 13:00,Legal & Compliance,5983.86,Expense,Amazon Web Services,Completed
+2025-08-23 05:00,Cloud Hosting,1621.0,Expense,WeWork HQ,Completed
+2025-08-23 23:00,SaaS Licenses,781.57,Expense,Salesforce Inc,Completed
+2025-08-25 09:00,Consulting Fees,2279.23,Income,Acme Corp,Completed
+2025-08-25 22:00,Subscription Billing,2787.89,Income,Acme Corp,Completed
+2025-08-26 14:00,Office Lease,3949.9,Expense,WeWork HQ,Completed
+2025-08-27 15:00,SaaS Licenses,3009.47,Expense,Google Workspace,Completed
+2025-08-28 09:00,Marketing Campaigns,4680.78,Expense,Google Workspace,Completed
+2025-08-29 03:00,SaaS Licenses,4880.48,Expense,Salesforce Inc,Completed
+2025-08-29 18:00,Payroll & Benefits,3681.94,Expense,Meta Ads Platform,Completed
+2025-08-30 13:00,Marketing Campaigns,8935.25,Expense,WeWork HQ,Completed
+2025-08-31 01:00,Payroll & Benefits,2066.3,Expense,Salesforce Inc,Completed
+2025-08-31 14:00,Marketing Campaigns,675.49,Expense,Meta Ads Platform,Completed
+2025-09-01 09:00,Consulting Fees,8609.0,Income,Omega Retail,Completed
+2025-09-01 23:00,Payroll & Benefits,4607.01,Expense,Salesforce Inc,Completed
+2025-09-03 03:00,Office Lease,5384.63,Expense,ADP Payroll,Completed
+2025-09-04 12:00,Cloud Hosting,12793.36,Expense,Meta Ads Platform,Completed
+2025-09-05 22:00,SaaS Licenses,6954.56,Expense,Salesforce Inc,Completed
+2025-09-06 21:00,Legal & Compliance,6430.38,Expense,ADP Payroll,Completed
+2025-09-08 03:00,Legal & Compliance,476.87,Expense,Salesforce Inc,Pending
+2025-09-09 02:00,Subscription Billing,13194.91,Income,Vertex Media,Completed
+2025-09-10 11:00,Consulting Fees,11279.59,Income,Acme Corp,Completed
+2025-09-11 10:00,Payroll & Benefits,1059.4,Expense,Meta Ads Platform,Completed
+2025-09-11 22:00,Travel & Entertainment,1560.22,Expense,Google Workspace,Completed
+2025-09-12 11:00,SaaS Licenses,3466.57,Expense,WeWork HQ,Completed
+2025-09-13 21:00,Cloud Hosting,8251.65,Expense,ADP Payroll,Pending
+2025-09-14 19:00,Payroll & Benefits,3576.94,Expense,Salesforce Inc,Completed
+2025-09-15 21:00,Subscription Billing,2004.13,Income,Global Logistics,Completed
+2025-09-17 08:00,Payroll & Benefits,978.78,Expense,Salesforce Inc,Completed
+2025-09-18 10:00,Marketing Campaigns,488.01,Expense,WeWork HQ,Completed
+2025-09-19 15:00,Cloud Hosting,3634.06,Expense,Google Workspace,Completed
+2025-09-21 00:00,Subscription Billing,17845.21,Income,Acme Corp,Completed
+2025-09-22 09:00,Cloud Hosting,3053.51,Expense,Amazon Web Services,Completed
+2025-09-23 09:00,Marketing Campaigns,893.38,Expense,Meta Ads Platform,Completed
+2025-09-24 11:00,Cloud Hosting,716.71,Expense,Salesforce Inc,Processing
+2025-09-25 11:00,Cloud Hosting,2600.0,Expense,Salesforce Inc,Completed
+2025-09-26 09:00,Consulting Fees,8027.58,Income,Stripe Inflow,Completed
+2025-09-27 01:00,Office Lease,1209.11,Expense,Amazon Web Services,Completed
+2025-09-27 23:00,Consulting Fees,1586.86,Income,Acme Corp,Completed
+2025-09-28 19:00,Office Lease,694.73,Expense,Salesforce Inc,Completed
+2025-09-30 01:00,Travel & Entertainment,4877.08,Expense,Salesforce Inc,Completed
+2025-09-30 16:00,Travel & Entertainment,1387.73,Expense,Meta Ads Platform,Completed
+2025-10-01 23:00,Cloud Hosting,4451.98,Expense,ADP Payroll,Completed
+2025-10-02 15:00,Cloud Hosting,2371.65,Expense,Meta Ads Platform,Completed
+2025-10-04 00:00,Travel & Entertainment,5426.68,Expense,ADP Payroll,Processing
+2025-10-05 10:00,Consulting Fees,2133.68,Income,Vertex Media,Completed
+2025-10-06 12:00,Marketing Campaigns,5827.63,Expense,Google Workspace,Completed
+2025-10-07 04:00,Subscription Billing,3740.35,Income,Global Logistics,Completed
+2025-10-08 12:00,Marketing Campaigns,6545.18,Expense,Meta Ads Platform,Completed
+2025-10-09 16:00,Office Lease,1574.37,Expense,WeWork HQ,Completed
+2025-10-10 23:00,Travel & Entertainment,1014.17,Expense,ADP Payroll,Completed
+2025-10-12 06:00,Consulting Fees,5400.94,Income,Acme Corp,Completed
+2025-10-12 23:00,Marketing Campaigns,12288.79,Expense,Amazon Web Services,Pending
+2025-10-14 03:00,Legal & Compliance,1839.94,Expense,Amazon Web Services,Completed
+2025-10-15 06:00,Subscription Billing,13147.28,Income,Global Logistics,Completed
+2025-10-16 01:00,Marketing Campaigns,7026.15,Expense,Google Workspace,Completed
+2025-10-17 10:00,Legal & Compliance,1378.24,Expense,Amazon Web Services,Completed
+2025-10-18 21:00,Office Lease,824.49,Expense,Salesforce Inc,Completed
+2025-10-19 13:00,Legal & Compliance,561.75,Expense,Amazon Web Services,Completed
+2025-10-20 01:00,Office Lease,680.91,Expense,Amazon Web Services,Pending
+2025-10-21 09:00,Legal & Compliance,2056.03,Expense,ADP Payroll,Processing
+2025-10-22 16:00,Office Lease,4514.83,Expense,Salesforce Inc,Completed
+2025-10-23 08:00,Marketing Campaigns,4502.86,Expense,Google Workspace,Completed
+2025-10-24 11:00,Subscription Billing,3476.23,Income,Acme Corp,Processing
+2025-10-25 13:00,Consulting Fees,1268.14,Income,Omega Retail,Completed
+2025-10-26 14:00,SaaS Licenses,4323.71,Expense,Google Workspace,Completed
+2025-10-27 19:00,Marketing Campaigns,908.43,Expense,WeWork HQ,Processing
+2025-10-29 04:00,Marketing Campaigns,10011.91,Expense,Salesforce Inc,Completed
+2025-10-30 01:00,Subscription Billing,18309.63,Income,Acme Corp,Completed
+2025-10-31 02:00,SaaS Licenses,1079.24,Expense,Salesforce Inc,Completed
+2025-11-01 10:00,Office Lease,8682.87,Expense,Meta Ads Platform,Completed
+2025-11-02 20:00,Travel & Entertainment,7521.76,Expense,Amazon Web Services,Completed
+2025-11-04 04:00,Marketing Campaigns,14972.76,Expense,ADP Payroll,Completed
+2025-11-04 22:00,Travel & Entertainment,4456.82,Expense,WeWork HQ,Completed
+2025-11-06 07:00,SaaS Licenses,10929.04,Expense,Meta Ads Platform,Completed
+2025-11-06 20:00,Marketing Campaigns,5319.3,Expense,WeWork HQ,Processing
+2025-11-07 22:00,Office Lease,1020.6,Expense,Salesforce Inc,Completed
+2025-11-08 20:00,Marketing Campaigns,3791.3,Expense,WeWork HQ,Completed
+2025-11-10 02:00,Travel & Entertainment,4836.86,Expense,Salesforce Inc,Completed
+2025-11-10 18:00,Legal & Compliance,2752.48,Expense,Amazon Web Services,Completed
+2025-11-11 08:00,Subscription Billing,3316.36,Income,Stripe Inflow,Completed
+2025-11-12 05:00,Consulting Fees,2683.31,Income,Global Logistics,Completed
+2025-11-13 06:00,Travel & Entertainment,4026.93,Expense,Google Workspace,Completed
+2025-11-14 06:00,SaaS Licenses,3470.19,Expense,ADP Payroll,Completed
+2025-11-15 15:00,Subscription Billing,1272.1,Income,Acme Corp,Pending
+2025-11-16 22:00,Office Lease,7410.9,Expense,ADP Payroll,Completed
+2025-11-17 14:00,Cloud Hosting,2249.63,Expense,Salesforce Inc,Completed
+2025-11-19 01:00,Payroll & Benefits,3816.39,Expense,Meta Ads Platform,Completed
+2025-11-20 10:00,Legal & Compliance,1146.58,Expense,Google Workspace,Completed
+2025-11-21 01:00,SaaS Licenses,2263.86,Expense,Amazon Web Services,Completed
+2025-11-21 16:00,Office Lease,654.8,Expense,Google Workspace,Completed
+2025-11-22 07:00,Legal & Compliance,3915.18,Expense,Google Workspace,Completed
+2025-11-23 13:00,Office Lease,3020.73,Expense,ADP Payroll,Completed
+2025-11-25 00:00,Payroll & Benefits,1294.98,Expense,Salesforce Inc,Completed
+2025-11-26 03:00,Cloud Hosting,896.04,Expense,Amazon Web Services,Completed
+2025-11-27 08:00,Cloud Hosting,645.42,Expense,Salesforce Inc,Completed
+2025-11-28 06:00,SaaS Licenses,10678.07,Expense,Meta Ads Platform,Completed
+2025-11-28 23:00,Cloud Hosting,3004.93,Expense,WeWork HQ,Completed
+2025-11-30 01:00,Travel & Entertainment,3623.67,Expense,Meta Ads Platform,Completed
+2025-11-30 22:00,Consulting Fees,2374.39,Income,Stripe Inflow,Completed
+2025-12-02 07:00,Payroll & Benefits,3173.9,Expense,Meta Ads Platform,Completed
+2025-12-03 13:00,Office Lease,2533.76,Expense,WeWork HQ,Completed

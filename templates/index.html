@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Data Analysis & AI Automation Dashboard</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="brand-text">
+                <span class="brand-title">FINANCE AI</span>
+                <span class="brand-subtitle">Analytics & Automation</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#overview" class="nav-link active" data-section="overview">
+                        <i class="fa-solid fa-gauge-high"></i>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#upload" class="nav-link" data-section="upload">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Dataset</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dashboard" class="nav-link" data-section="dashboard">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Financial Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#revenue" class="nav-link" data-section="revenue">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>Revenue Analysis</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#expense" class="nav-link" data-section="expense">
+                        <i class="fa-solid fa-receipt"></i>
+                        <span>Expense Analysis</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#insights" class="nav-link" data-section="insights">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>AI Insights</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reports" class="nav-link" data-section="reports">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                        <span>Automated Reports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#data" class="nav-link" data-section="data">
+                        <i class="fa-solid fa-table"></i>
+                        <span>Data Management</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#settings" class="nav-link" data-section="settings">
+                        <i class="fa-solid fa-sliders"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="dataset-pill">
+                <div class="status-indicator online"></div>
+                <div class="pill-info">
+                    <span class="pill-label">Active Dataset</span>
+                    <span class="pill-filename" id="sidebar-active-file">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Top App Bar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="btn btn-icon sidebar-toggle d-lg-none" id="sidebarToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="breadcrumb-container">
+                    <span class="breadcrumb-sub">Financial Intelligence Platform</span>
+                    <h1 class="page-title" id="page-title">Financial Dashboard</h1>
+                </div>
+            </div>
+
+            <div class="topbar-right">
+                <!-- Sample Dataset Selector -->
+                <div class="dropdown me-2">
+                    <button class="btn btn-outline-navy dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-database me-1"></i> Load Sample Data
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                        <li><h6 class="dropdown-header">Pre-bundled Financial Datasets</h6></li>
+                        <li><a class="dropdown-item sample-loader-btn" href="#" data-sample="pnl"><i class="fa-solid fa-chart-column me-2 text-primary"></i>Enterprise Monthly P&L (CSV)</a></li>
+                        <li><a class="dropdown-item sample-loader-btn" href="#" data-sample="ledger"><i class="fa-solid fa-list-check me-2 text-success"></i>Transaction Ledger (CSV)</a></li>
+                        <li><a class="dropdown-item sample-loader-btn" href="#" data-sample="budget"><i class="fa-solid fa-file-excel me-2 text-success"></i>Corporate Budget vs Actuals (Excel)</a></li>
+                    </ul>
+                </div>
+
+                <a href="#upload" class="btn btn-primary btn-sm me-2 nav-link-trigger" data-section="upload">
+                    <i class="fa-solid fa-upload me-1"></i> Upload File
+                </a>
+
+                <div class="btn-group">
+                    <a href="/api/export/pdf" class="btn btn-outline-secondary btn-sm" title="Download PDF Report">
+                        <i class="fa-solid fa-file-pdf text-danger me-1"></i> PDF
+                    </a>
+                    <a href="/api/export/excel" class="btn btn-outline-secondary btn-sm" title="Download Excel Model">
+                        <i class="fa-solid fa-file-excel text-success me-1"></i> Excel
+                    </a>
+                </div>
+
+                <!-- User Authentication Section in Topbar -->
+                <div id="auth-buttons-container" class="ms-3 d-flex align-items-center">
+                    <!-- Logged Out State -->
+                    <div id="auth-logged-out" class="d-flex align-items-center gap-2">
+                        <button class="btn btn-navy btn-sm" id="btn-open-auth-login">
+                            <i class="fa-solid fa-right-to-bracket me-1"></i> Sign In
+                        </button>
+                        <button class="btn btn-outline-navy btn-sm" id="btn-open-auth-register">
+                            <i class="fa-solid fa-user-plus me-1"></i> Register
+                        </button>
+                    </div>
+
+                    <!-- Logged In State -->
+                    <div id="auth-logged-in" class="dropdown d-none">
+                        <button class="btn btn-outline-navy btn-sm dropdown-toggle d-flex align-items-center gap-2" type="button" data-bs-toggle="dropdown">
+                            <div class="user-avatar-sm" id="user-avatar-initial">A</div>
+                            <span class="fw-semibold text-navy" id="user-display-name">Admin</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                            <li class="px-3 py-2 border-bottom">
+                                <span class="d-block small text-muted">Signed in as</span>
+                                <b class="d-block text-navy" id="user-dropdown-username">@admin</b>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#settings" data-section="settings"><i class="fa-solid fa-sliders me-2 text-muted"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item py-2 text-danger" href="#" id="btn-logout"><i class="fa-solid fa-right-from-bracket me-2"></i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Global Alert Banner for Diagnostics / Missing Data -->
+        <div id="diagnostic-banner" class="alert alert-warning alert-dismissible fade show d-none mx-4 mt-3" role="alert">
+            <div class="d-flex align-items-center">
+                <i class="fa-solid fa-triangle-exclamation fs-4 me-3 text-warning"></i>
+                <div id="diagnostic-content"></div>
+            </div>
+        </div>
+
+        <div class="content-container">
+
+            <!-- ========================================================= -->
+            <!-- SECTION 1: OVERVIEW -->
+            <!-- ========================================================= -->
+            <section id="section-overview" class="app-section">
+                <div class="hero-card mb-4">
+                    <div class="hero-body">
+                        <div class="hero-text">
+                            <h2>Automated Financial Analytics & Decision Intelligence</h2>
+                            <p>Upload any business financial dataset (CSV or Excel) to automatically clean raw records, identify key financial fields, calculate executive KPIs, and synthesize deterministic AI insights.</p>
+                            <div class="hero-actions">
+                                <a href="#upload" class="btn btn-primary nav-link-trigger" data-section="upload">
+                                    <i class="fa-solid fa-cloud-arrow-up me-2"></i> Upload Your Financial File
+                                </a>
+                                <a href="#dashboard" class="btn btn-outline-light nav-link-trigger" data-section="dashboard">
+                                    <i class="fa-solid fa-chart-line me-2"></i> View Interactive Dashboard
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat-box">
+                                <span class="stat-number" id="overview-records">-</span>
+                                <span class="stat-label">Records Analyzed</span>
+                            </div>
+                            <div class="hero-stat-box">
+                                <span class="stat-number" id="overview-quality">-</span>
+                                <span class="stat-label">Data Quality Score</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workflow Step Cards -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-3">
+                        <div class="feature-card">
+                            <div class="feature-icon bg-blue-subtle text-primary">
+                                <i class="fa-solid fa-file-import"></i>
+                            </div>
+                            <h5>1. Ingest Any File</h5>
+                            <p>Accepts CSV and Excel (.xlsx, .xls) files. Automatically identifies revenue, expenses, profits, budgets, and dates.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-card">
+                            <div class="feature-icon bg-green-subtle text-success">
+                                <i class="fa-solid fa-broom"></i>
+                            </div>
+                            <h5>2. Auto Data Clean</h5>
+                            <p>Normalizes currency symbols ($ € £ ₹), parses European decimals, handles negatives, and drops duplicates.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-card">
+                            <div class="feature-icon bg-purple-subtle text-indigo">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h5>3. Dynamic KPIs</h5>
+                            <p>Instantly calculates Net Profit, Margins, Growth Slopes, Budget Variance, and generates responsive charts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature-card">
+                            <div class="feature-icon bg-amber-subtle text-warning">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h5>4. Local AI Audit</h5>
+                            <p>Scikit-learn Isolation Forest anomaly scanner, Pareto 80/20 concentration, risk radars, and PDF/Excel export.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Datasets Quick-Load Cards -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                        <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-folder-open me-2 text-primary"></i>Try With Ready-To-Analyze Sample Datasets</h6>
+                        <span class="badge bg-light text-muted border">1-Click Test</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="sample-card">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <span class="badge bg-primary-subtle text-primary">CSV File</span>
+                                        <i class="fa-solid fa-building text-muted"></i>
+                                    </div>
+                                    <h6 class="fw-bold">Enterprise Monthly P&L</h6>
+                                    <p class="small text-muted mb-3">24-month multi-department income statement featuring revenue streams, expenses, planned budgets, and operating profits.</p>
+                                    <button class="btn btn-outline-primary btn-sm w-100 sample-loader-btn" data-sample="pnl">
+                                        <i class="fa-solid fa-play me-1"></i> Load P&L Dataset
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sample-card">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <span class="badge bg-success-subtle text-success">CSV File</span>
+                                        <i class="fa-solid fa-receipt text-muted"></i>
+                                    </div>
+                                    <h6 class="fw-bold">Daily Transaction Ledger</h6>
+                                    <p class="small text-muted mb-3">350 granular accounting entries with transaction types (Income vs Expense), counterparties, statuses, and statistical anomalies.</p>
+                                    <button class="btn btn-outline-success btn-sm w-100 sample-loader-btn" data-sample="ledger">
+                                        <i class="fa-solid fa-play me-1"></i> Load Ledger Dataset
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="sample-card">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <span class="badge bg-warning-subtle text-warning">Excel (.xlsx)</span>
+                                        <i class="fa-solid fa-file-excel text-muted"></i>
+                                    </div>
+                                    <h6 class="fw-bold">Corporate Budget vs Actuals</h6>
+                                    <p class="small text-muted mb-3">Multi-division departmental variance model comparing planned allocations vs actual expenditure with approval status flags.</p>
+                                    <button class="btn btn-outline-warning btn-sm w-100 sample-loader-btn" data-sample="budget">
+                                        <i class="fa-solid fa-play me-1"></i> Load Excel Dataset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 2: UPLOAD DATASET -->
+            <!-- ========================================================= -->
+            <section id="section-upload" class="app-section d-none">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-cloud-arrow-up me-2 text-primary"></i>Upload Financial Dataset</h6>
+                            </div>
+                            <div class="card-body p-4">
+                                <form id="upload-form">
+                                    <div class="upload-dropzone text-center p-5" id="dropzone">
+                                        <div class="dropzone-icon mb-3">
+                                            <i class="fa-solid fa-file-csv fa-3x text-primary me-2"></i>
+                                            <i class="fa-solid fa-file-excel fa-3x text-success"></i>
+                                        </div>
+                                        <h5 class="fw-bold mb-1">Drag & Drop Your File Here</h5>
+                                        <p class="text-muted small mb-3">Supports CSV, XLSX, and XLS up to 32MB</p>
+                                        <input type="file" id="file-input" name="file" class="d-none" accept=".csv, .xlsx, .xls">
+                                        <button type="button" class="btn btn-navy px-4" id="browse-btn">
+                                            <i class="fa-solid fa-folder-open me-2"></i> Browse Computer
+                                        </button>
+                                        <div id="selected-file-name" class="mt-3 fw-medium text-primary"></div>
+                                    </div>
+
+                                    <div class="mt-4 d-flex justify-content-between align-items-center">
+                                        <span class="small text-muted"><i class="fa-solid fa-lock me-1"></i> Uploaded data is processed locally in memory.</span>
+                                        <button type="submit" class="btn btn-primary px-4" id="upload-btn" disabled>
+                                            <span class="spinner-border spinner-border-sm me-2 d-none" id="upload-spinner"></span>
+                                            <i class="fa-solid fa-bolt me-1"></i> Ingest & Process
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <!-- Data Quality Scorecard Card -->
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-shield-halved me-2 text-success"></i>Data Quality & Integrity</h6>
+                                <span class="badge bg-success-subtle text-success" id="quality-badge">Score: -</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="quality-score-ring mb-4 text-center">
+                                    <div class="score-circle">
+                                        <span class="score-number" id="quality-score-val">-</span>
+                                        <span class="score-unit">/100</span>
+                                    </div>
+                                    <div class="small text-muted mt-2">Overall Data Health & Completeness</div>
+                                </div>
+
+                                <div class="quality-metrics-list">
+                                    <div class="metric-row">
+                                        <span><i class="fa-solid fa-list-ol text-muted me-2"></i>Cleaned Rows</span>
+                                        <span class="fw-bold" id="q-cleaned-rows">-</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span><i class="fa-solid fa-clone text-muted me-2"></i>Duplicates Removed</span>
+                                        <span class="fw-bold text-warning" id="q-duplicates">-</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span><i class="fa-solid fa-chart-column text-muted me-2"></i>Missing Cells</span>
+                                        <span class="fw-bold" id="q-missing">-</span>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span><i class="fa-solid fa-triangle-exclamation text-muted me-2"></i>Statistical Outliers</span>
+                                        <span class="fw-bold text-danger" id="q-outliers">-</span>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 pt-3 border-top">
+                                    <h6 class="small fw-bold text-muted mb-2">Detected Schema Mappings</h6>
+                                    <div id="detected-schema-chips" class="d-flex flex-wrap gap-1">
+                                        <span class="badge bg-light text-dark border">None loaded</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 3: FINANCIAL DASHBOARD -->
+            <!-- ========================================================= -->
+            <section id="section-dashboard" class="app-section d-none">
+                <!-- Universal Interactive Filter Bar -->
+                <div class="filter-bar card border-0 shadow-sm p-3 mb-4">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-3">
+                            <label class="form-label small fw-semibold text-muted mb-1"><i class="fa-solid fa-calendar me-1"></i>Date Range</label>
+                            <div class="input-group input-group-sm">
+                                <input type="date" class="form-control" id="filter-start-date" title="Start Date">
+                                <span class="input-group-text bg-light text-muted">to</span>
+                                <input type="date" class="form-control" id="filter-end-date" title="End Date">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label small fw-semibold text-muted mb-1"><i class="fa-solid fa-layer-group me-1"></i>Category Filter</label>
+                            <select class="form-select form-select-sm" id="filter-category">
+                                <option value="all">All Categories</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label small fw-semibold text-muted mb-1"><i class="fa-solid fa-clock me-1"></i>Aggregation Frequency</label>
+                            <div class="btn-group btn-group-sm w-100" role="group">
+                                <input type="radio" class="btn-check" name="frequency-radio" id="freq-monthly" value="monthly" checked>
+                                <label class="btn btn-outline-secondary" for="freq-monthly">Monthly</label>
+                                <input type="radio" class="btn-check" name="frequency-radio" id="freq-quarterly" value="quarterly">
+                                <label class="btn btn-outline-secondary" for="freq-quarterly">Quarterly</label>
+                                <input type="radio" class="btn-check" name="frequency-radio" id="freq-yearly" value="yearly">
+                                <label class="btn btn-outline-secondary" for="freq-yearly">Yearly</label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-end d-flex align-items-end justify-content-end gap-2 pt-3 pt-md-0">
+                            <button class="btn btn-primary btn-sm" id="btn-apply-filters">
+                                <i class="fa-solid fa-filter me-1"></i> Apply
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm" id="btn-reset-filters">
+                                <i class="fa-solid fa-arrow-rotate-left me-1"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Financial KPI Cards -->
+                <div class="row g-3 mb-4">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">TOTAL REVENUE</span>
+                                <div class="kpi-icon bg-blue-subtle text-primary">
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                </div>
+                            </div>
+                            <div class="kpi-value text-navy" id="kpi-revenue">$0.00</div>
+                            <div class="kpi-footer">
+                                <span class="badge bg-primary-subtle text-primary"><i class="fa-solid fa-circle-check me-1"></i>Top-line Inflows</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">TOTAL EXPENDITURES</span>
+                                <div class="kpi-icon bg-red-subtle text-danger">
+                                    <i class="fa-solid fa-arrow-trend-down"></i>
+                                </div>
+                            </div>
+                            <div class="kpi-value text-navy" id="kpi-expenses">$0.00</div>
+                            <div class="kpi-footer">
+                                <span class="badge bg-danger-subtle text-danger"><i class="fa-solid fa-receipt me-1"></i>Operating & COGS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">NET OPERATING PROFIT</span>
+                                <div class="kpi-icon bg-green-subtle text-success">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                </div>
+                            </div>
+                            <div class="kpi-value" id="kpi-profit">$0.00</div>
+                            <div class="kpi-footer">
+                                <span class="badge" id="kpi-margin-badge">Margin: 0.0%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="kpi-card">
+                            <div class="kpi-header">
+                                <span class="kpi-title">TRANSACTION VOLUME</span>
+                                <div class="kpi-icon bg-purple-subtle text-indigo">
+                                    <i class="fa-solid fa-hashtag"></i>
+                                </div>
+                            </div>
+                            <div class="kpi-value text-navy" id="kpi-tx-count">0</div>
+                            <div class="kpi-footer">
+                                <span class="text-muted small">Avg / Tx: <b id="kpi-avg-tx" class="text-dark">$0.00</b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget vs Actual Banner (Shown if budget present) -->
+                <div id="budget-banner" class="card border-0 shadow-sm p-3 mb-4 bg-light d-none">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="d-flex align-items-center mb-2 mb-md-0">
+                            <i class="fa-solid fa-bullseye text-primary fs-3 me-3"></i>
+                            <div>
+                                <h6 class="mb-0 fw-bold text-navy">Corporate Budget Allocation</h6>
+                                <span class="small text-muted">Total Planned Budget vs Actual Expenditures</span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <div>
+                                <span class="small text-muted d-block">Budget</span>
+                                <b class="text-dark" id="budget-total">$0.00</b>
+                            </div>
+                            <div>
+                                <span class="small text-muted d-block">Actual Spend</span>
+                                <b class="text-danger" id="budget-actual">$0.00</b>
+                            </div>
+                            <div>
+                                <span class="small text-muted d-block">Variance</span>
+                                <b id="budget-variance">$0.00</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Charts Grid -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-8">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-chart-line me-2 text-primary"></i>Revenue & Expense Trends</h6>
+                                <span class="badge bg-light text-muted border">Temporal Growth</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 320px;">
+                                    <canvas id="chart-trends"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-chart-pie me-2 text-primary"></i>Income vs Expenses</h6>
+                                <span class="badge bg-light text-muted border">Ratio</span>
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <div class="chart-container" style="height: 260px;">
+                                    <canvas id="chart-income-vs-expense"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Charts Grid: P&L & Category Breakdowns -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-chart-simple me-2 text-primary"></i>Net Operating Profit Evolution</h6>
+                                <span class="badge bg-light text-muted border">Period Margin</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 280px;">
+                                    <canvas id="chart-profit-evolution"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-layer-group me-2 text-primary"></i>Performance Trajectory (Cumulative Inflow & Spend)</h6>
+                                <span class="badge bg-light text-muted border">Cumulative</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 280px;">
+                                    <canvas id="chart-cumulative"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 4: REVENUE ANALYSIS -->
+            <!-- ========================================================= -->
+            <section id="section-revenue" class="app-section d-none">
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-7">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-ranking-star me-2 text-primary"></i>Top Revenue Contributors</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 320px;">
+                                    <canvas id="chart-revenue-categories"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-pie-chart me-2 text-primary"></i>Revenue Share Distribution</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 260px;">
+                                    <canvas id="chart-revenue-share"></canvas>
+                                </div>
+                                <div id="revenue-concentration-alert" class="mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 5: EXPENSE ANALYSIS -->
+            <!-- ========================================================= -->
+            <section id="section-expense" class="app-section d-none">
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-7">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-receipt me-2 text-danger"></i>Expense Allocations by Cost Center</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 320px;">
+                                    <canvas id="chart-expense-categories"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-chart-donut me-2 text-danger"></i>Expenditure Distribution</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-container" style="height: 260px;">
+                                    <canvas id="chart-expense-share"></canvas>
+                                </div>
+                                <div id="expense-concentration-alert" class="mt-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget vs Actual Chart if present -->
+                <div class="card shadow-sm border-0 mb-4" id="budget-chart-card">
+                    <div class="card-header bg-white py-3 border-bottom">
+                        <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-code-compare me-2 text-primary"></i>Budget vs Actual Expenditure by Department</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="chart-budget-vs-actual"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 6: AI INSIGHTS -->
+            <!-- ========================================================= -->
+            <section id="section-insights" class="app-section d-none">
+                <!-- Executive Narrative Summary Box -->
+                <div class="card shadow-sm border-0 mb-4 bg-navy-subtle">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="feature-icon bg-navy text-white me-3" style="width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-0 text-navy">Executive Financial Intelligence Summary</h5>
+                                <span class="small text-muted">Deterministic statistical analysis & local Machine Learning reasoning</span>
+                            </div>
+                        </div>
+                        <p class="mb-0 mt-3 fs-6 lh-base text-dark" id="ai-executive-summary">
+                            Generating AI executive summary...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Trend & Growth Regression Analysis Card -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-arrow-trend-up me-2 text-primary"></i>Statistical Trend & Growth Trajectory</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded text-center">
+                                            <span class="small text-muted d-block">Revenue Growth (CMGR)</span>
+                                            <h4 class="fw-bold text-primary mb-0" id="ai-rev-cmgr">0.0%</h4>
+                                            <span class="badge bg-primary-subtle text-primary mt-1" id="ai-rev-trend-badge">Stable</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-3 bg-light rounded text-center">
+                                            <span class="small text-muted d-block">Expense Growth (CMGR)</span>
+                                            <h4 class="fw-bold text-danger mb-0" id="ai-exp-cmgr">0.0%</h4>
+                                            <span class="badge bg-danger-subtle text-danger mt-1" id="ai-exp-trend-badge">Stable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 p-3 bg-light rounded" id="ai-margin-expansion-box">
+                                    <span class="small fw-bold d-block text-navy">Operating Momentum:</span>
+                                    <span class="small text-muted" id="ai-momentum-text">Evaluating revenue vs cost trajectories...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="card-header bg-white py-3 border-bottom">
+                                <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-triangle-exclamation me-2 text-warning"></i>Strategic Financial Risk Radar</h6>
+                            </div>
+                            <div class="card-body p-3" id="ai-risks-container">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anomaly Detection Table (Isolation Forest) -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-fingerprint me-2 text-danger"></i>Transaction Anomalies & Outliers</h6>
+                            <span class="small text-muted">Detected using Scikit-Learn Isolation Forest & Statistical Z-Score (Deviation &gt; 2.2&sigma;)</span>
+                        </div>
+                        <span class="badge bg-danger-subtle text-danger" id="ai-anomaly-count">0 Anomalies</span>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Date / ID</th>
+                                        <th>Category</th>
+                                        <th>Metric</th>
+                                        <th>Amount</th>
+                                        <th>Z-Score</th>
+                                        <th>Severity</th>
+                                        <th>Audit Rationale</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ai-anomalies-tbody">
+                                    <tr><td colspan="7" class="text-center py-4 text-muted">No anomalous transactions flagged.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data-Backed Actionable Recommendations -->
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white py-3 border-bottom">
+                        <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-lightbulb me-2 text-warning"></i>Data-Backed Actionable Recommendations</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3" id="ai-recommendations-container">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 7: AUTOMATED REPORTS -->
+            <!-- ========================================================= -->
+            <section id="section-reports" class="app-section d-none">
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-file-export me-2 text-primary"></i>Autonomous Financial Reports</h6>
+                            <span class="small text-muted">Generate and download institutional-grade summary reports</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="/api/export/pdf" class="btn btn-navy btn-sm">
+                                <i class="fa-solid fa-file-pdf me-2 text-danger"></i> Download PDF Report
+                            </a>
+                            <a href="/api/export/excel" class="btn btn-outline-success btn-sm">
+                                <i class="fa-solid fa-file-excel me-2"></i> Download Excel Workbook
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="report-preview-box p-4 border rounded bg-white">
+                            <div class="report-header text-center pb-3 border-bottom mb-4">
+                                <span class="badge bg-navy text-white px-3 py-1 mb-2">INSTITUTIONAL FINANCIAL REPORT</span>
+                                <h3 class="fw-bold text-navy mb-1">Executive Financial Performance & AI Advisory Briefing</h3>
+                                <span class="small text-muted" id="report-gen-date">Generated: Local System Analysis</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-navy border-start border-primary border-4 ps-2 mb-2">1. Executive Financial Narrative</h6>
+                                <p class="text-muted small lh-lg" id="report-narrative-preview">
+                                    Loading report preview...
+                                </p>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="fw-bold text-navy border-start border-primary border-4 ps-2 mb-3">2. Core KPI Scorecard</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-sm small mb-0">
+                                        <thead class="table-navy text-white">
+                                            <tr>
+                                                <th>Metric</th>
+                                                <th>Value</th>
+                                                <th>Operational Meaning</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="report-kpi-tbody">
+                                            <!-- Dynamically filled -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h6 class="fw-bold text-navy border-start border-primary border-4 ps-2 mb-3">3. Strategic Data-Backed Recommendations</h6>
+                                <div class="list-group list-group-flush" id="report-recs-list">
+                                    <!-- Dynamically filled -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 8: DATA MANAGEMENT -->
+            <!-- ========================================================= -->
+            <section id="section-data" class="app-section d-none">
+                <div class="card shadow-sm border-0 mb-4">
+                    <div class="card-header bg-white py-3 border-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+                        <div class="d-flex align-items-center gap-3">
+                            <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-table me-2 text-primary"></i>Cleaned Dataset Ledger</h6>
+                            <span class="badge bg-light text-muted border" id="table-row-count">0 Rows</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <div class="input-group input-group-sm" style="width: 240px;">
+                                <span class="input-group-text bg-light"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" id="table-search" placeholder="Search records...">
+                            </div>
+                            <a href="/api/export/csv" class="btn btn-outline-secondary btn-sm" title="Export Cleaned CSV">
+                                <i class="fa-solid fa-download me-1"></i> Export CSV
+                            </a>
+                            <button class="btn btn-outline-danger btn-sm" id="btn-reset-dataset" title="Reset Dataset">
+                                <i class="fa-solid fa-trash me-1"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive" style="max-height: 520px;">
+                            <table class="table table-hover table-striped align-middle small mb-0">
+                                <thead class="table-light sticky-top" id="data-table-head">
+                                    <tr><th>Loading...</th></tr>
+                                </thead>
+                                <tbody id="data-table-body">
+                                    <tr><td class="text-center py-4">No data loaded.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white py-2 border-top d-flex justify-content-between align-items-center">
+                        <span class="small text-muted" id="table-page-info">Page 1 of 1</span>
+                        <div class="btn-group btn-group-sm">
+                            <button class="btn btn-outline-secondary" id="table-prev-page" disabled><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                            <button class="btn btn-outline-secondary" id="table-next-page" disabled>Next <i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========================================================= -->
+            <!-- SECTION 9: SETTINGS -->
+            <!-- ========================================================= -->
+            <section id="section-settings" class="app-section d-none">
+                <div class="card shadow-sm border-0 mb-4" style="max-width: 800px;">
+                    <div class="card-header bg-white py-3 border-bottom">
+                        <h6 class="mb-0 fw-bold text-navy"><i class="fa-solid fa-sliders me-2 text-primary"></i>Platform Settings & Preferences</h6>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-4">
+                            <label class="form-label fw-bold text-navy">Currency Display Symbol</label>
+                            <p class="small text-muted mb-2">Select the currency symbol applied across KPI cards and charts.</p>
+                            <div class="btn-group" role="group" id="currency-selector">
+                                <input type="radio" class="btn-check" name="curr-sym" id="curr-usd" value="$" checked>
+                                <label class="btn btn-outline-navy btn-sm px-3" for="curr-usd">$ USD</label>
+                                <input type="radio" class="btn-check" name="curr-sym" id="curr-eur" value="€">
+                                <label class="btn btn-outline-navy btn-sm px-3" for="curr-eur">€ EUR</label>
+                                <input type="radio" class="btn-check" name="curr-sym" id="curr-gbp" value="£">
+                                <label class="btn btn-outline-navy btn-sm px-3" for="curr-gbp">£ GBP</label>
+                                <input type="radio" class="btn-check" name="curr-sym" id="curr-inr" value="₹">
+                                <label class="btn btn-outline-navy btn-sm px-3" for="curr-inr">₹ INR</label>
+                                <input type="radio" class="btn-check" name="curr-sym" id="curr-jpy" value="¥">
+                                <label class="btn btn-outline-navy btn-sm px-3" for="curr-jpy">¥ JPY</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pt-3 border-top">
+                            <label class="form-label fw-bold text-navy">AI Anomaly Sensitivity Threshold</label>
+                            <p class="small text-muted mb-2">Controls the contamination factor for Isolation Forest outlier detection (Default: 3%).</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <input type="range" class="form-range" min="1" max="8" step="1" id="anomaly-sensitivity" value="3" style="max-width: 300px;">
+                                <span class="fw-bold text-navy" id="sensitivity-val">3%</span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 pt-3 border-top">
+                            <label class="form-label fw-bold text-navy">Local System Environment</label>
+                            <div class="bg-light p-3 rounded small font-monospace">
+                                <div><b>Engine:</b> Python 3.14 + Flask + Scikit-Learn + ReportLab</div>
+                                <div><b>Theme:</b> Enterprise Financial Light Theme (Navy Blue #0F2942)</div>
+                                <div><b>API Status:</b> 100% Deterministic Local Processing (No external LLM APIs)</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                            <div>
+                                <span class="fw-bold d-block text-danger">Reset Workspace</span>
+                                <span class="small text-muted">Clear the current active dataset and reset to blank state.</span>
+                            </div>
+                            <button class="btn btn-outline-danger btn-sm" id="btn-settings-reset">
+                                <i class="fa-solid fa-arrow-rotate-left me-1"></i> Reset Active Dataset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Authentication Modal (Sign In / Register) -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header border-bottom-0 pb-0 pt-4 px-4 d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="d-flex align-items-center gap-2 mb-1">
+                            <div class="brand-icon" style="width: 28px; height: 28px; font-size: 0.85rem;">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <span class="fw-bold text-navy">FINANCE AI</span>
+                        </div>
+                        <h5 class="modal-title fw-bold text-navy" id="authModalTitle">Welcome Back</h5>
+                        <p class="small text-muted mb-0" id="authModalSubtitle">Sign in with your username and password</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-4">
+                    <!-- Nav Tabs (Sign In vs Register) -->
+                    <ul class="nav nav-pills nav-fill bg-light p-1 rounded-3 mb-4" id="authTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active py-2 fw-semibold" id="tab-login-btn" data-bs-toggle="pill" data-bs-target="#tab-login" type="button" role="tab">
+                                <i class="fa-solid fa-right-to-bracket me-1"></i> Sign In
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link py-2 fw-semibold" id="tab-register-btn" data-bs-toggle="pill" data-bs-target="#tab-register" type="button" role="tab">
+                                <i class="fa-solid fa-user-plus me-1"></i> Create Account
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Alert message container -->
+                    <div id="auth-alert" class="alert d-none py-2 px-3 small mb-3"></div>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="authTabsContent">
+                        <!-- Sign In Tab -->
+                        <div class="tab-pane fade show active" id="tab-login" role="tabpanel">
+                            <form id="form-login">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-navy">Username</label>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-user"></i></span>
+                                        <input type="text" class="form-control" id="login-username" placeholder="e.g. admin" required autocomplete="username">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-1">
+                                        <label class="form-label small fw-semibold text-navy mb-0">Password</label>
+                                    </div>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+                                        <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="login-password">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Quick Demo Account Chip -->
+                                <div class="p-2 bg-light rounded d-flex justify-content-between align-items-center mb-3">
+                                    <span class="small text-muted"><i class="fa-solid fa-key me-1 text-primary"></i>Demo Account: <code>admin</code> / <code>admin123</code></span>
+                                    <button type="button" class="btn btn-outline-primary btn-xs py-0 px-2 small" id="btn-fill-demo">Fill Demo</button>
+                                </div>
+
+                                <button type="submit" class="btn btn-navy w-100 py-2 fw-semibold" id="btn-login-submit">
+                                    <span class="spinner-border spinner-border-sm me-2 d-none" id="login-spinner"></span>
+                                    Sign In
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Create Account (Register) Tab -->
+                        <div class="tab-pane fade" id="tab-register" role="tabpanel">
+                            <form id="form-register">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-navy">Full Name <span class="text-muted fw-normal">(Optional)</span></label>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-id-card"></i></span>
+                                        <input type="text" class="form-control" id="register-fullname" placeholder="e.g. Alex Morgan">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-navy">Username <span class="text-danger">*</span></label>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-at"></i></span>
+                                        <input type="text" class="form-control" id="register-username" placeholder="e.g. alex_finance" required minlength="3">
+                                    </div>
+                                    <span class="form-text text-muted" style="font-size: 0.7rem;">Minimum 3 characters (letters, numbers, underscore).</span>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-navy">Password <span class="text-danger">*</span></label>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-lock"></i></span>
+                                        <input type="password" class="form-control" id="register-password" placeholder="At least 6 characters" required minlength="6">
+                                        <button class="btn btn-outline-secondary toggle-password-btn" type="button" data-target="register-password">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-semibold text-navy">Confirm Password <span class="text-danger">*</span></label>
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-text bg-light text-muted"><i class="fa-solid fa-shield-check"></i></span>
+                                        <input type="password" class="form-control" id="register-confirm-password" placeholder="Re-enter password" required minlength="6">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold" id="btn-register-submit">
+                                    <span class="spinner-border spinner-border-sm me-2 d-none" id="register-spinner"></span>
+                                    Create Account
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Application JS -->
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,99 +1,154 @@
-# 📈 Finance Data Analysis & AI Automation Dashboard
+# Finance Data Analysis & AI Automation Dashboard
 
-An enterprise-grade, high-performance Financial Intelligence, Continuous Auditing, and Autonomous Strategic Advisory platform built with Python, Streamlit, Pandas, and Altair.
+An enterprise-grade, fully autonomous **Finance Data Analysis & AI Automation Dashboard** running 100% locally on Python, Flask, Pandas, Scikit-Learn, and Chart.js.
 
----
-
-## 🌟 Key Capabilities & Modules
-
-### 1. 📊 Executive KPI Command Center
-- **Core P&L Metrics:** Instant tracking of Total Revenue, Gross Profit, Gross Margin %, EBITDA, Net Income, and Operating Cash Flow.
-- **Liquidity & Solvency Ratios:** Real-time Current Ratio, Debt-to-Equity, Liquid Treasury Balances, and Net Cash Runway calculation.
-- **SaaS & Unit Economics:** Customer Acquisition Cost (CAC), Lifetime Value (LTV), LTV:CAC Multiples, and Churn Velocity.
-- **Visual Trends:** Interactive dual-axis growth curves, Business Segment area breakdowns, and OPEX component allocations.
-
-### 2. 🤖 AI Financial Advisor & Strategic Synthesis
-- **Autonomous C-Level Briefing Generator:** One-click generation of institutional-grade executive reports with a composite Financial Health Index (0–100 score).
-- **Conversational Financial Query Engine:** Natural-language analysis answering queries on burn rate, runway, growth trajectory, unit economics, and margin optimization.
-- **One-Click Export:** Download executive briefings directly in Markdown or PDF-ready formats.
-
-### 3. 🛡️ Autonomous Audit & Anomaly Detection
-- **Continuous Procurement Scanner:** Automated auditing across general ledger transactions flagging invoice spikes, off-cycle transfers, and potential duplicate billings.
-- **Risk Scoring Engine:** Categorizes transactions by risk score (0–100) with anomaly reason tagging.
-- **Capital at Risk Metrics:** Real-time visibility into total capital requiring CFO authorization.
-
-### 4. 💼 Corporate Treasury Portfolio & Quantitative Risk Modeling
-- **Modern Portfolio Theory Analytics:** Weighted Expected Return, Portfolio Volatility, Sharpe Ratio, Sortino Ratio, and Beta.
-- **Value at Risk (VaR):** Parametric 95% and 99% annual VaR projections.
-- **Stochastic Monte Carlo Simulation Engine:** Geometric Brownian Motion simulation projecting 100 to 1,000 stochastic paths with confidence percentile ribbons (P10, P25, P50 Median, P75, P90).
-
-### 5. 🔮 Dynamic What-If Stress Testing & Scenario Simulator
-- **Interactive Financial Shock Sliders:** Test revenue contractions/expansions (-30% to +30%), OPEX adjustments (-30% to +30%), and COGS/supplier inflation shifts.
-- **Instant Impact Delta:** Computes simulated EBITDA, net profit margins, and resulting cash runway changes in real time.
-
-### 6. 📂 Data Ingestion & Export Hub
-- **Custom CSV Drag-and-Drop:** Ingest custom enterprise financials to dynamically replace baseline datasets.
-- **One-Click Data Exports:** Export filtered financials, audited transaction logs, and portfolio holdings directly to CSV.
+Designed with a professional **light analytics theme with navy blue accents** (`#0F2942`, `#1E3A8A`, `#2563EB`), this platform dynamically converts raw financial datasets into interactive dashboards, statistical anomaly audits, executive reports, and data-backed business insights without relying on fixed column names or external LLM APIs (No ChatGPT/OpenAI).
 
 ---
 
-## 🏗️ Directory Architecture
+## Key Capabilities & Features
 
+### 1. Universal Financial Data Ingestion & Auto-Cleaning
+- **Supported Formats:** CSV, Excel (`.xlsx`, `.xls`).
+- **Fuzzy Semantic Schema Discovery:** Automatically identifies monetary fields (Revenue, Expenses, Net Profit, Amounts, Planned Budgets), Categorical segments (Departments, Cost Centers, Product Lines), Dates/Periods, and Payment/Invoice Statuses.
+- **Automated Data Normalization:**
+  - Cleans currency symbols (`$`, `€`, `£`, `₹`, `¥`), commas, whitespace, and accounting parentheses `(1,250.00)` into valid numbers.
+  - Formats European vs standard decimal points.
+  - Parses diverse timestamp and date strings into temporal hierarchies (Year, Month, Quarter).
+  - Automatically identifies duplicates and missing cells.
+- **Data Quality Scorecard:** Real-time health meter (0–100 score), duplicate counter, missing value tracker, and clear diagnostics explaining missing fields if non-financial data is uploaded.
+
+### 2. Dynamic Financial KPI & Visual Dashboard
+- **Auto-Calculated Core KPIs:** Total Revenue, Total Expenditures, Net Operating Profit, Profit Margin (%), Transaction Volume, Average Transaction Value.
+- **Corporate Budget Variance:** Planned Budget, Actual Spend, Variance ($ and %), and Burn Rate metrics.
+- **Interactive Visualizations (Chart.js):**
+  - **Revenue & Expense Trajectories:** Dual-axis temporal area/line charts.
+  - **Income vs Expense Ratio:** Responsive donut comparison.
+  - **Net Profit Evolution:** Period-by-period bar chart with margin indicators.
+  - **Cumulative Cash Flow:** Performance trend lines.
+  - **Department & Category Breakdown:** Top revenue contributors and cost center allocations.
+  - **Budget vs Actual Comparison:** Grouped departmental variance bars.
+
+### 3. Local AI & Statistical Intelligence Module (No ChatGPT / No OpenAI)
+- **Machine Learning Anomaly Detection:** Uses `scikit-learn` **Isolation Forest** coupled with robust statistical **Z-Score** modeling ($Z > 2.2\sigma$) to flag anomalous transactions, out-of-cycle spend spikes, and high-variance line items with clear audit explanations.
+- **Growth Regression & Momentum Analysis:** Computes Compound Monthly Growth Rates (CMGR %), Ordinary Least Squares slopes, and evaluates whether operating costs are outpacing revenue acceleration (margin compression warning).
+- **Pareto 80/20 & Concentration Analysis:** Identifies top revenue engines, largest cost centers, and flags revenue or supplier concentration risks when a single category exceeds 45% of total volume.
+- **Data-Backed Actionable Recommendations:** Generates quantified business recommendations (cost rationalization targets, revenue scaling opportunities, and audit checkpoints) based strictly on verified numbers.
+- **Natural Language Executive Summary:** Deterministic generation of institutional-grade financial health summaries.
+
+### 4. Automated Multi-Format Report Generation
+- **Executive PDF Report (ReportLab):** Formatted multi-section PDF featuring custom corporate navy palette, executive narrative, KPI scorecards, category tables, risk radars, and strategic recommendations.
+- **Financial Excel Model (OpenPyXL):** Multi-tab formatted spreadsheet containing:
+  - Tab 1: `Executive Summary`
+  - Tab 2: `Cleaned Financial Data`
+  - Tab 3: `Category Breakdown`
+  - Tab 4: `Time Series Trends`
+  - Tab 5: `AI Risk & Recommendations`
+- **CSV Data Export:** Cleaned, standardized tabular export for downstream analytics.
+
+### 5. Interactive Navigation & Filter Controls
+- **Date Range Picker:** Custom start and end date filtering.
+- **Aggregation Frequency:** Switch seamlessly between **Monthly**, **Quarterly**, and **Yearly** chart views.
+- **Category Filter:** Live dropdown filtering by department, segment, or cost center.
+- **Real-Time Search & Pagination:** Live search with instant debounce and pagination controls.
+
+### 6. User Authentication & Registration System (`src/auth_manager.py`)
+- **Persistent Local Database:** Powered by embedded SQLite (`data/users.db`) with zero external infrastructure required.
+- **Cryptographic Security:** Passwords hashed with salt via PBKDF2:SHA256 (`werkzeug.security`).
+- **User Self-Registration:** Allows new users to create personal accounts with username, password, and display name.
+- **Pre-Configured Default Demo Account:**
+  - **Username:** `admin`
+  - **Password:** `admin123`
+- **Dynamic Profile Header:** Shows authenticated user avatar initial, username, and secure logout.
+
+---
+
+## 9 Navigation Sections
+
+1. **Overview:** Executive summary, system status, workflow steps, and 1-click sample dataset loaders.
+2. **Upload Dataset:** Drag-and-drop file ingestion, data quality meter, schema chip mapping, and missing-info diagnostics.
+3. **Financial Dashboard:** Core executive KPI cards, income vs expense donut, revenue & expense trend lines, and profit evolution.
+4. **Revenue Analysis:** Deep dive into revenue categories, Pareto contribution, and commercial share distribution.
+5. **Expense Analysis:** Cost center breakdown, expenditure distribution, and budget vs actual variance charts.
+6. **AI Insights:** Isolation Forest anomaly audit log, growth regression analysis, financial risk matrix, and data-backed recommendations.
+7. **Automated Reports:** Live report preview with 1-click PDF, Excel, and CSV download buttons.
+8. **Data Management:** Interactive paginated table with live search, column sorting, and CSV export.
+9. **Settings:** Currency symbol preference (`$`, `€`, `£`, `₹`, `¥`), anomaly sensitivity slider, and system reset.
+
+---
+
+## Pre-Bundled Sample Datasets
+
+Located in `data/samples/` for immediate 1-click testing:
+1. `enterprise_pnl_monthly.csv`: 24-month multi-department P&L with revenue, expenses, budgets, and operating profits.
+2. `transactions_ledger.csv`: 350-row granular transaction ledger with signed amounts, income/expense flows, counterparties, and built-in anomalies.
+3. `corporate_budget_actuals.xlsx`: Multi-division corporate budget allocation spreadsheet with planned vs actual expenses.
+
+---
+
+## Quick Start Guide
+
+### Prerequisites
+- Python 3.10+ (Tested on Python 3.14)
+- Google Chrome, Microsoft Edge, or any modern web browser
+
+### Installation
+Open terminal or PowerShell in this directory:
+```bash
+pip install -r requirements.txt
 ```
-FDA AI Project/
-├── data/
-│   ├── company_financials.csv    # Multi-year segmented financial dataset (2023-2026)
-│   ├── transactions_ledger.csv   # General ledger records with anomaly & risk tags
-│   └── portfolio_assets.csv      # Corporate treasury multi-asset allocation table
-├── src/
-│   ├── __init__.py
-│   ├── data_generator.py         # Realistic enterprise financial data generator
-│   ├── analytics.py              # Financial KPIs, anomaly detection, Sharpe ratio, Monte Carlo
-│   ├── ai_engine.py              # Financial conversational engine, audit scanner, scenario modeling
-│   ├── visualizations.py         # Interactive Altair visualization components
-│   └── styles.py                 # FinTech dark theme styling & metric card components
-├── tests/
-│   └── test_engine.py            # Unit test suite verifying quantitative algorithms
-├── app.py                        # Main Streamlit Dashboard Application
-├── run.bat                       # 1-click Windows launcher
-├── run.ps1                       # 1-click PowerShell launcher
-├── requirements.txt              # Project dependencies
-└── README.md                     # Comprehensive documentation
-```
 
----
+### Starting the Application
+You can start the application using any of the following methods:
 
-## 🚀 How to Run the Dashboard
-
-### Option A: One-Click Launcher (Windows)
+**Method 1: Using the Windows Batch Launcher**
 Double-click `run.bat` or run:
-```bat
-.\run.bat
+```cmd
+run.bat
 ```
 
-### Option B: PowerShell
+**Method 2: Using PowerShell**
 ```powershell
 .\run.ps1
 ```
 
-### Option C: Manual Command Line
+**Method 3: Direct Python Command**
 ```bash
-python -m streamlit run app.py
+python app.py
 ```
-Open your browser and navigate to: **`http://localhost:8501`**
 
----
-
-## 🧪 Running Unit Tests
-
-To run the automated test suite verifying financial models, Sharpe ratio, Monte Carlo paths, and the AI engine:
-```bash
-python -m unittest tests/test_engine.py
+Once started, open your web browser and navigate to:
+```
+http://127.0.0.1:5000
 ```
 
 ---
 
-## 🛠️ Customization & Extensibility
-- **Custom Financials:** Place your custom financials in `data/company_financials.csv` or upload them directly via the sidebar in the UI.
-- **Adding New Portfolio Assets:** Modify or append new rows to `data/portfolio_assets.csv`.
-- **Threshold Adjustments:** Modify anomaly detection Z-score thresholds in `src/analytics.py` or risk scoring parameters in `src/ai_engine.py`.
+## Project Structure
+
+```
+FDA AI Project/
+├── app.py                     # Main Flask backend application & REST API
+├── requirements.txt           # Project dependencies
+├── run.bat                    # Windows 1-click batch launcher
+├── run.ps1                    # PowerShell launcher
+├── README.md                  # Comprehensive documentation
+├── src/
+│   ├── auth_manager.py        # SQLite user registration, password hashing & verification
+│   ├── data_processor.py      # Schema discovery, currency cleaning, data quality scoring
+│   ├── financial_kpis.py      # Dynamic KPI calculations, aggregations, Chart.js series
+│   ├── ai_engine.py           # Isolation Forest anomaly audit, regression trends, risk matrix
+│   └── report_generator.py    # ReportLab PDF & OpenPyXL Excel export engines
+├── templates/
+│   └── index.html             # Single-page enterprise dashboard HTML
+├── static/
+│   ├── css/
+│   │   └── styles.css         # Enterprise light theme styling (Navy Blue #0F2942)
+│   └── js/
+│       └── app.js             # Interactive frontend application engine
+└── data/
+    └── samples/
+        ├── enterprise_pnl_monthly.csv     # Sample P&L dataset
+        ├── transactions_ledger.csv        # Sample granular transaction ledger
+        └── corporate_budget_actuals.xlsx  # Sample Excel budget variance dataset
+```
